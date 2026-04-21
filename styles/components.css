@@ -1,0 +1,162 @@
+/* ==========================================================================
+   BGD — components.css
+   Header, intro, tool cards, footer
+   ========================================================================== */
+
+/* --- 1. Header -------------------------------------------------------------- */
+
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.site-header > .wordmark {
+  display: block;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 1rem var(--space-page);
+}
+
+.wordmark .logo {
+  height: 56px;
+  width: auto;
+}
+
+/* --- 2. Intro sekcia -------------------------------------------------------- */
+
+.intro {
+  padding: 3rem 0 2rem;
+  text-align: left;
+}
+
+.intro-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.intro-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* --- 3. Tool grid ----------------------------------------------------------- */
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  padding-bottom: 3rem;
+}
+
+/* --- 4. Tool card (shared) -------------------------------------------------- */
+
+.tool-card {
+  display: block;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.25rem 1.5rem;
+  position: relative;
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.tool-card-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+}
+
+.tool-card-desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* --- 5. Tool card — live (clickable) ---------------------------------------- */
+
+.tool-card--live:hover {
+  border-color: var(--color-titanium);
+  transform: translateY(-1px);
+}
+
+.tool-card--live:active {
+  transform: translateY(0);
+}
+
+/* --- 6. Tool card — coming soon --------------------------------------------- */
+
+.tool-card--soon {
+  opacity: 0.55;
+}
+
+.tool-card-status {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  background-color: var(--color-bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  margin-top: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+/* --- 7. Footer -------------------------------------------------------------- */
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  max-width: var(--container-max);
+  margin: 2rem auto 0;
+  padding: 1.5rem var(--space-page);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.footer-nav a:hover {
+  color: var(--color-text);
+}
+
+.footer-copy {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   Media queries — väčšie obrazovky
+   ========================================================================== */
+
+@media (min-width: 480px) {
+  .tool-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 640px) {
+  .intro {
+    padding: 4rem 0 2.5rem;
+  }
+
+  .intro-title {
+    font-size: 2.75rem;
+  }
+
+  .wordmark .logo {
+    height: 64px;
+  }
+}

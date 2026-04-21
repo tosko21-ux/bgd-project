@@ -1,0 +1,121 @@
+/* ==========================================================================
+   BGD — base.css
+   Reset, premenné, typografia, základné layout pravidlá
+   ========================================================================== */
+
+/* --- 1. Načítanie fontu Inter z Google Fonts -------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+/* --- 2. CSS premenné (design tokens) ---------------------------------------- */
+
+:root {
+  /* Titánová paleta (primárna farba značky) */
+  --color-titanium: #8b7d6a;
+  --color-titanium-dark: #6f6456;
+  --color-titanium-light: #a79a87;
+
+  /* Neutrálne farby (pozadie, text, borders) */
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-text: #18181b;
+  --color-text-muted: #71717a;
+  --color-border: #e4e4e7;
+
+  /* Sémantické farby (pre diff badges v Comparator-e neskôr) */
+  --color-success: #166534;
+  --color-success-bg: #dcfce7;
+  --color-warning: #9a3412;
+  --color-warning-bg: #fed7aa;
+  --color-danger: #991b1b;
+  --color-danger-bg: #fee2e2;
+
+  /* Typografia */
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Rozmery */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Layout */
+  --container-max: 640px;
+  --space-page: 1.5rem;
+}
+
+/* --- 3. Reset --------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* --- 4. Typografia ---------------------------------------------------------- */
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* --- 5. Základné layout pravidlá -------------------------------------------- */
+
+.site-main {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-page);
+}

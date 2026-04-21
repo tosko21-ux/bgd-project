@@ -1,0 +1,13 @@
+<svg viewBox="0 0 1000 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BGD — Bike Gear Decoder">
+  <rect width="1000" height="300" fill="none"></rect>
+  
+  <!-- BGD -->
+  <text x="50" y="160" font-family="Inter, Arial, sans-serif" font-size="120" font-weight="600" fill="#8B7D6A">
+    BGD
+  </text>
+
+  <!-- Subtitle -->
+  <text x="55" y="220" font-family="Inter, Arial, sans-serif" font-size="36" letter-spacing="4" fill="#8B7D6A">
+    BIKE GEAR DECODER
+  </text>
+</svg>
