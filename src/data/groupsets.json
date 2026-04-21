@@ -1,0 +1,98 @@
+[
+  {
+    "id": "shimano-deore-m5100",
+    "brand": "Shimano",
+    "family": "Deore",
+    "series": "M5100",
+    "discipline": "mtb",
+    "speeds": 11,
+    "electronic": false,
+    "freehub": "HG (Hyperglide)",
+    "brand_tier": 6,
+    "brand_tier_total": 8,
+    "league": 3,
+    "league_label": "Enthusiast",
+    "year_introduced": 2020,
+    "price_eur_approx": 380,
+    "weight_g_approx": 2750,
+    "gear_range_percent": 467,
+    "cassette_range": "11-51T",
+    "compatible_chains": ["Shimano 11s HG"],
+    "cross_brand_equivalent": ["sram-nx-eagle"],
+    "honest_take": "If your bike already has 11-speed and HG freehub, this is the smart upgrade — keeps everything compatible. Don't switch to 12-speed just for the sake of it.",
+    "pros": [
+      "Cheaper than 12-speed",
+      "Works with standard HG freehub",
+      "Wide gear range for 11-speed"
+    ],
+    "cons": [
+      "One less gear than M6100",
+      "Heavier than higher tiers",
+      "No clutch refinement of SLX"
+    ]
+  },
+  {
+    "id": "shimano-deore-m6100",
+    "brand": "Shimano",
+    "family": "Deore",
+    "series": "M6100",
+    "discipline": "mtb",
+    "speeds": 12,
+    "electronic": false,
+    "freehub": "Micro Spline",
+    "brand_tier": 6,
+    "brand_tier_total": 8,
+    "league": 3,
+    "league_label": "Enthusiast",
+    "year_introduced": 2020,
+    "price_eur_approx": 450,
+    "weight_g_approx": 2680,
+    "gear_range_percent": 510,
+    "cassette_range": "10-51T",
+    "compatible_chains": ["Shimano 12s HG+"],
+    "cross_brand_equivalent": ["sram-gx-eagle"],
+    "honest_take": "If you ride 1-2 times per week, this is all you need. Don't pay extra for SLX unless you race or ride 4+ times weekly.",
+    "pros": [
+      "Excellent value for 12-speed performance",
+      "Wide gear range (510%)",
+      "Cross-compatible with SLX/XT chain and cassette"
+    ],
+    "cons": [
+      "Heavier than higher tiers",
+      "Requires Micro Spline freehub (not HG)",
+      "Brake feel basic compared to MT520"
+    ]
+  },
+  {
+    "id": "shimano-slx-m7100",
+    "brand": "Shimano",
+    "family": "SLX",
+    "series": "M7100",
+    "discipline": "mtb",
+    "speeds": 12,
+    "electronic": false,
+    "freehub": "Micro Spline",
+    "brand_tier": 7,
+    "brand_tier_total": 8,
+    "league": 4,
+    "league_label": "Performance",
+    "year_introduced": 2019,
+    "price_eur_approx": 650,
+    "weight_g_approx": 2470,
+    "gear_range_percent": 510,
+    "cassette_range": "10-51T",
+    "compatible_chains": ["Shimano 12s HG+"],
+    "cross_brand_equivalent": ["sram-x01-eagle"],
+    "honest_take": "SLX is the sweet spot for serious riders. 210g lighter than Deore for €200 more — not worth it for casual rides, essential if you race or ride hard 3+ times per week.",
+    "pros": [
+      "Significantly lighter than Deore",
+      "Smoother shifting, better clutch",
+      "Cross-compatible with Deore and XT"
+    ],
+    "cons": [
+      "€200 more than Deore for marginal gains for casual riders",
+      "XT is only €100-150 more — many will skip SLX",
+      "Same brake feel as Deore"
+    ]
+  }
+]
