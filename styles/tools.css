@@ -1,0 +1,348 @@
+/* ==========================================================================
+   BGD — tools.css
+   Styles for Comparator and future tools (Decoder, Upgrade, Compatibility)
+   ========================================================================== */
+
+/* --- 1. Tool intro (page header for tool pages) ----------------------------- */
+
+.tool-intro {
+  padding: 2rem 0 1.5rem;
+}
+
+.tool-breadcrumb {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.tool-breadcrumb a:hover {
+  color: var(--color-text);
+}
+
+.tool-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.tool-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* --- 2. Comparator container ------------------------------------------------ */
+
+.comparator {
+  padding-bottom: 3rem;
+}
+
+/* --- 3. Chips (selected groupsets) ------------------------------------------ */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border-radius: 999px;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: background-color 0.15s ease;
+}
+
+.chip:hover {
+  background-color: var(--color-titanium-dark);
+}
+
+.chip-remove {
+  font-size: 1.125rem;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.chip--add {
+  background-color: transparent;
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-border);
+}
+
+.chip--add:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  border-color: var(--color-titanium);
+}
+
+/* --- 4. Search input -------------------------------------------------------- */
+
+.search {
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.search-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.search-input:focus {
+  border-color: var(--color-titanium);
+}
+
+/* --- 5. Comparison table ---------------------------------------------------- */
+
+.compare-table-wrapper {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.compare-table thead {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 0.75rem 0.875rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.compare-table thead th {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--color-text);
+}
+
+.compare-brand {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.125rem;
+}
+
+.compare-model {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.compare-table tbody th {
+  font-weight: 500;
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+  width: 30%;
+}
+
+.compare-table tbody tr {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.compare-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.compare-label-col {
+  width: 30%;
+}
+
+/* --- 6. Diff badges --------------------------------------------------------- */
+
+.diff-badge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 0.125rem 0.4375rem;
+  border-radius: var(--radius-sm);
+  margin-right: 0.375rem;
+  letter-spacing: 0.01em;
+  vertical-align: 1px;
+}
+
+.diff-badge--good {
+  color: var(--color-success);
+  background-color: var(--color-success-bg);
+}
+
+.diff-badge--warn {
+  color: var(--color-warning);
+  background-color: var(--color-warning-bg);
+}
+
+.diff-badge--bad {
+  color: var(--color-danger);
+  background-color: var(--color-danger-bg);
+}
+
+/* --- 7. Honest take --------------------------------------------------------- */
+
+.honest-take {
+  background-color: var(--color-surface);
+  border-left: 3px solid var(--color-titanium);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.honest-take-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-titanium-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.honest-take-text {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--color-text);
+}
+
+/* --- 8. Pros & Cons --------------------------------------------------------- */
+
+.proscons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.proscons-col {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+}
+
+.proscons-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+  padding-bottom: 0.625rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.proscons-list {
+  list-style: none;
+  margin-bottom: 0.875rem;
+}
+
+.proscons-list:last-child {
+  margin-bottom: 0;
+}
+
+.proscons-list li {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  padding: 0.25rem 0 0.25rem 1.375rem;
+  position: relative;
+}
+
+.proscons-list--pros li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+.proscons-list--cons li::before {
+  content: "−";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  color: var(--color-warning);
+  font-weight: 600;
+}
+
+/* --- 9. CTA row (affiliate buttons) ----------------------------------------- */
+
+.cta-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.cta-btn {
+  display: block;
+  text-align: center;
+  padding: 0.875rem 1.25rem;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--color-titanium-dark);
+  transform: translateY(-1px);
+}
+
+.cta-btn:active {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Media queries — bigger screens
+   ========================================================================== */
+
+@media (min-width: 640px) {
+  .tool-title {
+    font-size: 2rem;
+  }
+
+  .compare-table th,
+  .compare-table td {
+    padding: 0.875rem 1rem;
+  }
+
+  .proscons {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .cta-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

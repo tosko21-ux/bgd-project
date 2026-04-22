@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Compare groupsets — BGD</title>
+    <meta
+      name="description"
+      content="Compare MTB groupsets side by side. Weight, price, speeds, compatibility — real differences, no fluff."
+    />
+
+    <meta property="og:title" content="Compare groupsets — BGD" />
+    <meta
+      property="og:description"
+      content="Pick 2–3 groupsets, see real differences."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/compare" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/tools.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a href="/" class="wordmark" aria-label="BGD homepage">
+        <svg
+          class="logo"
+          width="500"
+          height="200"
+          viewBox="0 0 500 200"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="BGD — Bike Gear Decoder"
+        >
+          <defs>
+            <linearGradient
+              id="metalGradient"
+              x1="0%"
+              y1="0%"
+              x2="0%"
+              y2="100%"
+            >
+              <stop offset="0%" style="stop-color: #b8b0a8; stop-opacity: 1" />
+              <stop offset="50%" style="stop-color: #968d85; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #7a726b; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M80,65 L84,55 L94,55 L98,65 L108,68 L115,62 L122,69 L116,79 L119,89 L129,93 L129,103 L119,107 L116,117 L122,127 L115,134 L105,128 L95,131 L91,141 L81,141 L77,131 L67,128 L57,134 L50,127 L56,117 L53,107 L43,103 L43,93 L53,89 L56,79 L50,69 L57,62 L67,68 Z"
+            fill="url(#metalGradient)"
+          />
+          <circle cx="86" cy="98" r="18" fill="white" />
+          <text
+            x="150"
+            y="125"
+            font-family="Arial, Helvetica, sans-serif"
+            font-weight="bold"
+            font-size="85"
+            fill="url(#metalGradient)"
+            letter-spacing="-2"
+          >
+            BGD
+          </text>
+          <text
+            x="80"
+            y="165"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="22"
+            fill="#b8b0a8"
+            letter-spacing="6"
+          >
+            BIKE GEAR DECODER
+          </text>
+        </svg>
+      </a>
+    </header>
+
+    <main class="site-main">
+      <section class="tool-intro">
+        <p class="tool-breadcrumb"><a href="/">← Back to tools</a></p>
+        <h1 class="tool-title">Compare groupsets</h1>
+        <p class="tool-subtitle">Pick 2–3 groupsets, see real differences.</p>
+      </section>
+
+      <section class="comparator" aria-label="Groupset comparator">
+        <div class="chips" role="list" aria-label="Selected groupsets">
+          <button class="chip" type="button" aria-label="Remove Deore M6100">
+            <span class="chip-label">Deore M6100</span>
+            <span class="chip-remove" aria-hidden="true">×</span>
+          </button>
+          <button class="chip" type="button" aria-label="Remove SLX M7100">
+            <span class="chip-label">SLX M7100</span>
+            <span class="chip-remove" aria-hidden="true">×</span>
+          </button>
+          <button
+            class="chip chip--add"
+            type="button"
+            aria-label="Add another groupset"
+          >
+            <span class="chip-label">+ Add another</span>
+          </button>
+        </div>
+
+        <div class="search">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Search Shimano, SRAM…"
+            aria-label="Search groupsets"
+          />
+        </div>
+
+        <div class="compare-table-wrapper">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th scope="col" class="compare-label-col"></th>
+                <th scope="col">
+                  <span class="compare-brand">Shimano Deore</span>
+                  <span class="compare-model">M6100</span>
+                </th>
+                <th scope="col">
+                  <span class="compare-brand">Shimano SLX</span>
+                  <span class="compare-model">M7100</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Speeds</th>
+                <td>12</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <th scope="row">Weight</th>
+                <td>2680 g</td>
+                <td>
+                  <span class="diff-badge diff-badge--good">−210 g</span>
+                  2470 g
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Price</th>
+                <td>€450</td>
+                <td>
+                  <span class="diff-badge diff-badge--warn">+€200</span>
+                  €650
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Freehub</th>
+                <td>Micro Spline</td>
+                <td>Micro Spline</td>
+              </tr>
+              <tr>
+                <th scope="row">Gear range</th>
+                <td>510%</td>
+                <td>510%</td>
+              </tr>
+              <tr>
+                <th scope="row">Cassette</th>
+                <td>10–51T</td>
+                <td>10–51T</td>
+              </tr>
+              <tr>
+                <th scope="row">League</th>
+                <td>Enthusiast</td>
+                <td>
+                  <span class="diff-badge diff-badge--good">↑</span>
+                  Performance
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Year</th>
+                <td>2020</td>
+                <td>2019</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="honest-take" aria-label="Honest take">
+          <p class="honest-take-label">Honest take</p>
+          <p class="honest-take-text">
+            Same shifting performance and gear range. SLX is 210 g lighter for
+            €200 more — worth it if you race or ride hard 3+ times a week. For
+            1–2 rides weekly, Deore is all you need.
+          </p>
+        </aside>
+
+        <div class="proscons">
+          <div class="proscons-col">
+            <h3 class="proscons-title">Deore M6100</h3>
+
+            <ul class="proscons-list proscons-list--pros">
+              <li>Excellent value for 12-speed performance</li>
+              <li>Wide gear range (510%)</li>
+              <li>Cross-compatible with SLX/XT chain and cassette</li>
+            </ul>
+
+            <ul class="proscons-list proscons-list--cons">
+              <li>Heavier than higher tiers</li>
+              <li>Requires Micro Spline freehub (not HG)</li>
+              <li>Brake feel basic compared to MT520</li>
+            </ul>
+          </div>
+
+          <div class="proscons-col">
+            <h3 class="proscons-title">SLX M7100</h3>
+
+            <ul class="proscons-list proscons-list--pros">
+              <li>Significantly lighter than Deore</li>
+              <li>Smoother shifting, better clutch</li>
+              <li>Cross-compatible with Deore and XT</li>
+            </ul>
+
+            <ul class="proscons-list proscons-list--cons">
+              <li>€200 more than Deore for marginal gains for casual riders</li>
+              <li>XT is only €100–150 more — many will skip SLX</li>
+              <li>Same brake feel as Deore</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a href="#" class="cta-btn" rel="sponsored nofollow"
+            >Buy Deore M6100 →</a
+          >
+          <a href="#" class="cta-btn" rel="sponsored nofollow"
+            >Buy SLX M7100 →</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/about">About</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+      <p class="footer-copy">© 2026 BGD</p>
+    </footer>
+  </body>
+</html>
