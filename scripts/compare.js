@@ -177,6 +177,45 @@ function renderTable() {
   table.querySelector("tbody").innerHTML = tbodyHTML;
 }
 
+// ---------- Render: Honest takes ----------
+function renderHonestTakes() {
+  const container = document.getElementById("honest-takes");
+  const selected = getSelected();
+
+  container.innerHTML = selected
+    .map(
+      (g) => `
+        <aside class="honest-take" aria-label="Honest take on ${displayName(g)}">
+          <p class="honest-take-label">Honest take — ${displayName(g)}</p>
+          <p class="honest-take-text">${g.honest_take}</p>
+        </aside>`,
+    )
+    .join("");
+}
+
+// ---------- Render: Pros/Cons ----------
+function renderProsCons() {
+  const container = document.getElementById("proscons");
+  const selected = getSelected();
+
+  container.innerHTML = selected
+    .map(
+      (g) => `
+        <div class="proscons-col">
+          <h3 class="proscons-title">${displayName(g)}</h3>
+
+          <ul class="proscons-list proscons-list--pros">
+            ${g.pros.map((item) => `<li>${item}</li>`).join("")}
+          </ul>
+
+          <ul class="proscons-list proscons-list--cons">
+            ${g.cons.map((item) => `<li>${item}</li>`).join("")}
+          </ul>
+        </div>`,
+    )
+    .join("");
+}
+
 // ---------- Render: Search dropdown ----------
 function renderSearchResults(query) {
   const dropdown = document.getElementById("search-results");
@@ -239,6 +278,8 @@ function removeGroupset(id) {
 function renderAll() {
   renderChips();
   renderTable();
+  renderHonestTakes();
+  renderProsCons();
 }
 
 // ---------- Event wiring ----------
