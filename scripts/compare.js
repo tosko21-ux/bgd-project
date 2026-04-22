@@ -1,18 +1,14 @@
 "use strict";
 
 // BGD Comparator — Phase B
-// Step 3: Render table with diff badges
+// Step 4: Interactive chips + search
 
-const selectedIds = ["shimano-deore-m6100", "shimano-slx-m7100"];
+const MIN_SELECTED = 1;
+const MAX_SELECTED = 3;
 
-// Row config:
-// - key: field in JSON
-// - label: shown to user
-// - format: optional, formats raw value
-// - diff: optional, defines how to compute the badge
-//   - type: 'number' (numeric diff like −210 g) or 'rank' (just an ↑ arrow)
-//   - lowerIsBetter: true if smaller value is better (weight, price)
-//   - unit: prefix or suffix for the badge
+let selectedIds = ["shimano-deore-m6100", "shimano-slx-m7100"];
+let allGroupsets = [];
+
 const tableRows = [
   {
     key: "speeds",
@@ -48,6 +44,7 @@ const tableRows = [
   { key: "year_introduced", label: "Year" },
 ];
 
+// ---------- Data loading ----------
 async function loadGroupsets() {
   try {
     const response = await fetch("data/groupsets.json");
@@ -58,8 +55,20 @@ async function loadGroupsets() {
   }
 }
 
-// Build a diff badge HTML for a single cell.
-// Returns '' if no badge should be shown (only one item, or this is the best, or all equal).
+// ---------- Helpers ----------
+function getById(id) {
+  return allGroupsets.find((g) => g.id === id);
+}
+
+function getSelected() {
+  return selectedIds.map(getById).filter(Boolean);
+}
+
+function displayName(g) {
+  return `${g.family} ${g.series}`;
+}
+
+// ---------- Diff badge ----------
 function buildBadge(value, allValues, diffConfig) {
   if (!diffConfig) return "";
   if (allValues.length < 2) return "";
@@ -68,13 +77,9 @@ function buildBadge(value, allValues, diffConfig) {
     ? Math.min(...allValues)
     : Math.max(...allValues);
 
-  // All values equal → no badge for anyone
   if (allValues.every((v) => v === allValues[0])) return "";
-
-  // This cell IS the best → no badge (the others get badges relative to it)
   if (value === best) return "";
 
-  // Compute diff vs best
   const diff = value - best;
   const isWorse = diffConfig.lowerIsBetter ? diff > 0 : diff < 0;
   const badgeClass = isWorse ? "diff-badge--warn" : "diff-badge--good";
@@ -84,8 +89,7 @@ function buildBadge(value, allValues, diffConfig) {
     return `<span class="diff-badge ${badgeClass}">${symbol}</span> `;
   }
 
-  // type: 'number'
-  const sign = diff > 0 ? "+" : "−"; // − is the proper minus sign
+  const sign = diff > 0 ? "+" : "−";
   const absDiff = Math.abs(diff);
   const text = diffConfig.suffix
     ? `${sign}${absDiff} ${diffConfig.unit}`
@@ -93,10 +97,46 @@ function buildBadge(value, allValues, diffConfig) {
   return `<span class="diff-badge ${badgeClass}">${text}</span> `;
 }
 
-function renderTable(allGroupsets) {
-  const selected = selectedIds
-    .map((id) => allGroupsets.find((g) => g.id === id))
-    .filter(Boolean);
+// ---------- Render: Chips ----------
+function renderChips() {
+  const container = document.getElementById("chips");
+  const selected = getSelected();
+
+  const canRemove = selected.length > MIN_SELECTED;
+  const canAdd = selected.length < MAX_SELECTED;
+
+  const chipsHTML = selected
+    .map((g) => {
+      const removeBtn = canRemove
+        ? `<span class="chip-remove" aria-hidden="true">×</span>`
+        : "";
+      return `
+        <button
+          class="chip"
+          type="button"
+          data-id="${g.id}"
+          aria-label="${canRemove ? `Remove ${displayName(g)}` : displayName(g)}"
+          ${canRemove ? "" : "disabled"}
+        >
+          <span class="chip-label">${displayName(g)}</span>
+          ${removeBtn}
+        </button>`;
+    })
+    .join("");
+
+  const addHTML = canAdd
+    ? `<button class="chip chip--add" type="button" id="add-chip" aria-label="Add another groupset">
+         <span class="chip-label">+ Add another</span>
+       </button>`
+    : "";
+
+  container.innerHTML = chipsHTML + addHTML;
+}
+
+// ---------- Render: Table ----------
+function renderTable() {
+  const selected = getSelected();
+  const table = document.getElementById("compare-table");
 
   const headerCells = selected
     .map(
@@ -116,9 +156,7 @@ function renderTable(allGroupsets) {
 
   const tbodyHTML = tableRows
     .map((row) => {
-      // Collect all values for this row across selected groupsets
       const allValues = selected.map((g) => g[row.key]);
-
       const cells = selected
         .map((g) => {
           const raw = g[row.key];
@@ -127,7 +165,6 @@ function renderTable(allGroupsets) {
           return `<td>${badge}${display}</td>`;
         })
         .join("");
-
       return `
         <tr>
           <th scope="row">${row.label}</th>
@@ -136,14 +173,121 @@ function renderTable(allGroupsets) {
     })
     .join("");
 
-  const table = document.getElementById("compare-table");
   table.querySelector("thead").innerHTML = theadHTML;
   table.querySelector("tbody").innerHTML = tbodyHTML;
 }
 
+// ---------- Render: Search dropdown ----------
+function renderSearchResults(query) {
+  const dropdown = document.getElementById("search-results");
+  const trimmed = query.trim().toLowerCase();
+
+  if (trimmed === "") {
+    dropdown.hidden = true;
+    dropdown.innerHTML = "";
+    return;
+  }
+
+  // Filter: not already selected, matches query in brand/family/series
+  const matches = allGroupsets.filter((g) => {
+    if (selectedIds.includes(g.id)) return false;
+    const haystack = `${g.brand} ${g.family} ${g.series}`.toLowerCase();
+    return haystack.includes(trimmed);
+  });
+
+  if (matches.length === 0) {
+    dropdown.innerHTML = `<li class="search-no-results">No matches found</li>`;
+    dropdown.hidden = false;
+    return;
+  }
+
+  dropdown.innerHTML = matches
+    .map(
+      (g) => `
+        <li class="search-result" role="option" data-id="${g.id}" tabindex="0">
+          <span class="search-result-brand">${g.brand}</span>
+          ${displayName(g)}
+        </li>`,
+    )
+    .join("");
+  dropdown.hidden = false;
+}
+
+function clearSearch() {
+  const input = document.getElementById("search-input");
+  const dropdown = document.getElementById("search-results");
+  input.value = "";
+  dropdown.hidden = true;
+  dropdown.innerHTML = "";
+}
+
+// ---------- Actions ----------
+function addGroupset(id) {
+  if (selectedIds.length >= MAX_SELECTED) return;
+  if (selectedIds.includes(id)) return;
+  selectedIds.push(id);
+  renderAll();
+  clearSearch();
+}
+
+function removeGroupset(id) {
+  if (selectedIds.length <= MIN_SELECTED) return;
+  selectedIds = selectedIds.filter((selectedId) => selectedId !== id);
+  renderAll();
+}
+
+function renderAll() {
+  renderChips();
+  renderTable();
+}
+
+// ---------- Event wiring ----------
+function setupEvents() {
+  const chipsContainer = document.getElementById("chips");
+  const searchInput = document.getElementById("search-input");
+  const dropdown = document.getElementById("search-results");
+
+  // Chips: click on × removes, click on "+ Add another" focuses search
+  chipsContainer.addEventListener("click", (event) => {
+    const removeBtn = event.target.closest(".chip-remove");
+    if (removeBtn) {
+      const chip = removeBtn.closest(".chip");
+      const id = chip.dataset.id;
+      removeGroupset(id);
+      return;
+    }
+
+    const addBtn = event.target.closest("#add-chip");
+    if (addBtn) {
+      searchInput.focus();
+    }
+  });
+
+  // Search: filter on input
+  searchInput.addEventListener("input", (event) => {
+    renderSearchResults(event.target.value);
+  });
+
+  // Dropdown: click on a result adds it
+  dropdown.addEventListener("click", (event) => {
+    const result = event.target.closest(".search-result");
+    if (!result) return;
+    addGroupset(result.dataset.id);
+  });
+
+  // Click outside the search → close dropdown
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".search")) {
+      dropdown.hidden = true;
+    }
+  });
+}
+
+// ---------- Init ----------
 async function init() {
-  const groupsets = await loadGroupsets();
-  renderTable(groupsets);
+  allGroupsets = await loadGroupsets();
+  setupEvents();
+  renderAll();
 }
 
 init();

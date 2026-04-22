@@ -89,31 +89,30 @@
       </section>
 
       <section class="comparator" aria-label="Groupset comparator">
-        <div class="chips" role="list" aria-label="Selected groupsets">
-          <button class="chip" type="button" aria-label="Remove Deore M6100">
-            <span class="chip-label">Deore M6100</span>
-            <span class="chip-remove" aria-hidden="true">×</span>
-          </button>
-          <button class="chip" type="button" aria-label="Remove SLX M7100">
-            <span class="chip-label">SLX M7100</span>
-            <span class="chip-remove" aria-hidden="true">×</span>
-          </button>
-          <button
-            class="chip chip--add"
-            type="button"
-            aria-label="Add another groupset"
-          >
-            <span class="chip-label">+ Add another</span>
-          </button>
+        <div
+          class="chips"
+          id="chips"
+          role="list"
+          aria-label="Selected groupsets"
+        >
+          <!-- Chips rendered by JS -->
         </div>
 
         <div class="search">
           <input
             type="search"
             class="search-input"
+            id="search-input"
             placeholder="Search Shimano, SRAM…"
             aria-label="Search groupsets"
+            autocomplete="off"
           />
+          <ul
+            class="search-results"
+            id="search-results"
+            role="listbox"
+            hidden
+          ></ul>
         </div>
 
         <div class="compare-table-wrapper">
