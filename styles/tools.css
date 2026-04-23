@@ -208,6 +208,16 @@
   background-color: var(--color-danger-bg);
 }
 
+/* --- 6b. Legend under comparison table -------------------------------------- */
+
+.compare-legend {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  padding: 0 0.25rem;
+}
+
 /* --- 7. Honest take --------------------------------------------------------- */
 
 .honest-take {
@@ -231,6 +241,11 @@
   font-size: 0.9375rem;
   line-height: 1.55;
   color: var(--color-text);
+}
+
+.honest-take--placeholder .honest-take-text {
+  color: var(--color-text-muted);
+  font-style: italic;
 }
 
 /* --- 8. Pros & Cons --------------------------------------------------------- */

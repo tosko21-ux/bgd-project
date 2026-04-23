@@ -1,13 +1,34 @@
 "use strict";
 
 // BGD Comparator — Phase B
-// Step 4: Interactive chips + search
+// Session 6: adapted for 31-record dataset with range values
 
 const MIN_SELECTED = 1;
 const MAX_SELECTED = 3;
 
 let selectedIds = ["shimano-deore-m6100", "shimano-slx-m7100"];
 let allGroupsets = [];
+
+// ---------- Helpers ----------
+
+// Parse numeric values, including ranges like "240 - 290" → midpoint 265.
+// Used for diff calculations only; cells display the raw string.
+function parseNumeric(value) {
+  if (typeof value === "number") return value;
+  if (typeof value !== "string") return NaN;
+  const parts = value.split("-").map((s) => parseFloat(s.trim()));
+  if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+    return (parts[0] + parts[1]) / 2;
+  }
+  return parseFloat(value);
+}
+
+// Format gear_range_percent ratio (e.g. 5.1) as a percent string (e.g. "510%")
+function formatGearRange(v) {
+  return `${Math.round(v * 100)}%`;
+}
+
+// ---------- Table config ----------
 
 const tableRows = [
   {
@@ -17,21 +38,31 @@ const tableRows = [
   },
   {
     key: "weight_g_approx",
-    label: "Weight",
-    format: (v) => `${v} g`,
-    diff: { type: "number", lowerIsBetter: true, unit: "g", suffix: true },
+    label: "Weight (g)",
+    diff: {
+      type: "number",
+      lowerIsBetter: true,
+      unit: "g",
+      suffix: true,
+      parse: parseNumeric,
+    },
   },
   {
     key: "price_eur_approx",
-    label: "Price",
-    format: (v) => `€${v}`,
-    diff: { type: "number", lowerIsBetter: true, unit: "€", suffix: false },
+    label: "Price (€)",
+    diff: {
+      type: "number",
+      lowerIsBetter: true,
+      unit: "€",
+      suffix: false,
+      parse: parseNumeric,
+    },
   },
   { key: "freehub", label: "Freehub" },
   {
     key: "gear_range_percent",
-    label: "Gear range",
-    format: (v) => `${v}%`,
+    label: "Gear range (%)",
+    format: (v) => Math.round(v * 100),
     diff: { type: "rank", lowerIsBetter: false },
   },
   { key: "cassette_range", label: "Cassette" },
@@ -55,7 +86,7 @@ async function loadGroupsets() {
   }
 }
 
-// ---------- Helpers ----------
+// ---------- Selection helpers ----------
 function getById(id) {
   return allGroupsets.find((g) => g.id === id);
 }
@@ -73,12 +104,17 @@ function buildBadge(value, allValues, diffConfig) {
   if (!diffConfig) return "";
   if (allValues.length < 2) return "";
 
-  const best = diffConfig.lowerIsBetter
-    ? Math.min(...allValues)
-    : Math.max(...allValues);
+  // Exclude NaN values (e.g. unparseable strings) from best calculation
+  const validValues = allValues.filter((v) => !Number.isNaN(v));
+  if (validValues.length < 2) return "";
 
-  if (allValues.every((v) => v === allValues[0])) return "";
+  const best = diffConfig.lowerIsBetter
+    ? Math.min(...validValues)
+    : Math.max(...validValues);
+
+  if (validValues.every((v) => v === validValues[0])) return "";
   if (value === best) return "";
+  if (Number.isNaN(value)) return "";
 
   const diff = value - best;
   const isWorse = diffConfig.lowerIsBetter ? diff > 0 : diff < 0;
@@ -90,7 +126,7 @@ function buildBadge(value, allValues, diffConfig) {
   }
 
   const sign = diff > 0 ? "+" : "−";
-  const absDiff = Math.abs(diff);
+  const absDiff = Math.round(Math.abs(diff));
   const text = diffConfig.suffix
     ? `${sign}${absDiff} ${diffConfig.unit}`
     : `${sign}${diffConfig.unit}${absDiff}`;
@@ -156,15 +192,21 @@ function renderTable() {
 
   const tbodyHTML = tableRows
     .map((row) => {
-      const allValues = selected.map((g) => g[row.key]);
+      // If diff config has a parser, use it to produce numeric values for diff.
+      // Cells still show the raw (or formatted) value.
+      const parser = row.diff?.parse;
+      const rawValues = selected.map((g) => g[row.key]);
+      const diffValues = parser ? rawValues.map(parseNumeric) : rawValues;
+
       const cells = selected
-        .map((g) => {
-          const raw = g[row.key];
+        .map((g, i) => {
+          const raw = rawValues[i];
           const display = row.format ? row.format(raw, g) : raw;
-          const badge = buildBadge(raw, allValues, row.diff);
+          const badge = buildBadge(diffValues[i], diffValues, row.diff);
           return `<td>${badge}${display}</td>`;
         })
         .join("");
+
       return `
         <tr>
           <th scope="row">${row.label}</th>
@@ -183,13 +225,16 @@ function renderHonestTakes() {
   const selected = getSelected();
 
   container.innerHTML = selected
-    .map(
-      (g) => `
-        <aside class="honest-take" aria-label="Honest take on ${displayName(g)}">
+    .map((g) => {
+      const text = g.honest_take || "Honest take coming soon.";
+      const isPlaceholder = !g.honest_take;
+      const extraClass = isPlaceholder ? " honest-take--placeholder" : "";
+      return `
+        <aside class="honest-take${extraClass}" aria-label="Honest take on ${displayName(g)}">
           <p class="honest-take-label">Honest take — ${displayName(g)}</p>
-          <p class="honest-take-text">${g.honest_take}</p>
-        </aside>`,
-    )
+          <p class="honest-take-text">${text}</p>
+        </aside>`;
+    })
     .join("");
 }
 
@@ -198,21 +243,33 @@ function renderProsCons() {
   const container = document.getElementById("proscons");
   const selected = getSelected();
 
+  // Hide entire block if no record has pros or cons data.
+  // Pros/cons will be generated dynamically from diffs in a future session.
+  const hasAnyData = selected.some(
+    (g) => Array.isArray(g.pros) || Array.isArray(g.cons),
+  );
+  if (!hasAnyData) {
+    container.innerHTML = "";
+    return;
+  }
+
   container.innerHTML = selected
-    .map(
-      (g) => `
+    .map((g) => {
+      const pros = Array.isArray(g.pros) ? g.pros : [];
+      const cons = Array.isArray(g.cons) ? g.cons : [];
+      const prosHTML = pros.length
+        ? `<ul class="proscons-list proscons-list--pros">${pros.map((i) => `<li>${i}</li>`).join("")}</ul>`
+        : "";
+      const consHTML = cons.length
+        ? `<ul class="proscons-list proscons-list--cons">${cons.map((i) => `<li>${i}</li>`).join("")}</ul>`
+        : "";
+      return `
         <div class="proscons-col">
           <h3 class="proscons-title">${displayName(g)}</h3>
-
-          <ul class="proscons-list proscons-list--pros">
-            ${g.pros.map((item) => `<li>${item}</li>`).join("")}
-          </ul>
-
-          <ul class="proscons-list proscons-list--cons">
-            ${g.cons.map((item) => `<li>${item}</li>`).join("")}
-          </ul>
-        </div>`,
-    )
+          ${prosHTML}
+          ${consHTML}
+        </div>`;
+    })
     .join("");
 }
 
@@ -227,7 +284,6 @@ function renderSearchResults(query) {
     return;
   }
 
-  // Filter: not already selected, matches query in brand/family/series
   const matches = allGroupsets.filter((g) => {
     if (selectedIds.includes(g.id)) return false;
     const haystack = `${g.brand} ${g.family} ${g.series}`.toLowerCase();
@@ -288,7 +344,6 @@ function setupEvents() {
   const searchInput = document.getElementById("search-input");
   const dropdown = document.getElementById("search-results");
 
-  // Chips: click on × removes, click on "+ Add another" focuses search
   chipsContainer.addEventListener("click", (event) => {
     const removeBtn = event.target.closest(".chip-remove");
     if (removeBtn) {
@@ -304,19 +359,16 @@ function setupEvents() {
     }
   });
 
-  // Search: filter on input
   searchInput.addEventListener("input", (event) => {
     renderSearchResults(event.target.value);
   });
 
-  // Dropdown: click on a result adds it
   dropdown.addEventListener("click", (event) => {
     const result = event.target.closest(".search-result");
     if (!result) return;
     addGroupset(result.dataset.id);
   });
 
-  // Click outside the search → close dropdown
   document.addEventListener("click", (event) => {
     if (!event.target.closest(".search")) {
       dropdown.hidden = true;
