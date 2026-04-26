@@ -3,35 +3,6 @@
    Styles for Comparator and future tools (Decoder, Upgrade, Compatibility)
    ========================================================================== */
 
-/* --- 1. Tool intro (page header for tool pages) ----------------------------- */
-
-.tool-intro {
-  padding: 2rem 0 1.5rem;
-}
-
-.tool-breadcrumb {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-  margin-bottom: 1rem;
-}
-
-.tool-breadcrumb a:hover {
-  color: var(--color-text);
-}
-
-.tool-title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
-  margin-bottom: 0.5rem;
-}
-
-.tool-subtitle {
-  font-size: 1rem;
-  color: var(--color-text-muted);
-}
-
 /* --- 2. Comparator container ------------------------------------------------ */
 
 .comparator {

@@ -137,6 +137,55 @@
   color: var(--color-text-muted);
 }
 
+/* --- 8. Page intro (info pages: about, privacy, etc.) ---------------------- */
+
+.page-intro {
+  padding: 2rem 0 1.5rem;
+}
+
+.page-breadcrumb {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.page-breadcrumb a:hover {
+  color: var(--color-text);
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* --- 9. Page body (info page text content) --------------------------------- */
+
+.page-body {
+  padding-bottom: 3rem;
+  max-width: 42rem;
+}
+
+.page-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.signature {
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
 /* ==========================================================================
    Media queries — väčšie obrazovky
    ========================================================================== */

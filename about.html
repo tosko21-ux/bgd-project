@@ -3,26 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Compare groupsets — BGD</title>
+    <title>About — BGD</title>
     <meta
       name="description"
-      content="Compare MTB groupsets side by side. Weight, price, speeds, compatibility — real differences, no fluff."
+      content="Why Bike Gear Decoder exists. Built by a hobby cyclist who got tired of long guides and surprise compatibility problems."
     />
-
-    <meta property="og:title" content="Compare groupsets — BGD" />
+    <meta property="og:title" content="About — BGD" />
     <meta
       property="og:description"
-      content="Pick 2–3 groupsets, see real differences."
+      content="Why Bike Gear Decoder exists, and what it promises."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://example.com/compare" />
-
+    <meta property="og:url" content="https://bikegeardecoder.com/about" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/components.css" />
-    <link rel="stylesheet" href="styles/tools.css" />
   </head>
-
   <body>
     <header class="site-header">
       <a href="/" class="wordmark" aria-label="BGD homepage">
@@ -82,63 +77,25 @@
     </header>
 
     <main class="site-main">
-      <section class="page-intro">
-        <p class="page-breadcrumb"><a href="/">← Back to tools</a></p>
-        <h1 class="page-title">Compare groupsets</h1>
-        <p class="page-subtitle">Pick 2–3 groupsets, see real differences.</p>
-      </section>
+  <section class="page-intro">
+    <h1 class="page-title">About</h1>
+  </section>
 
-      <section class="comparator" aria-label="Groupset comparator">
-        <div
-          class="chips"
-          id="chips"
-          role="list"
-          aria-label="Selected groupsets"
-        >
-          <!-- Chips rendered by JS -->
-        </div>
+  <section class="page-body">
+    <p>
+      bikegeardecoder.com is a project by a hobby cyclist for lazy hobby
+      cyclists — and any other cycling enthusiast who rarely makes it past
+      the first paragraph. The goal is to compare the components on your
+      bike as plainly as possible, without forcing you through endless
+      research and spec sheets. Hopefully it makes things easier when
+      you're picking a new bike, or figuring out where to go next with
+      upgrades to your trusty steed.
+    </p>
 
-        <div class="search">
-          <input
-            type="search"
-            class="search-input"
-            id="search-input"
-            placeholder="Search Shimano, SRAM…"
-            aria-label="Search groupsets"
-            autocomplete="off"
-          />
-          <ul
-            class="search-results"
-            id="search-results"
-            role="listbox"
-            hidden
-          ></ul>
-        </div>
+    <p class="signature">— Tomas, founder of BGD</p>
+  </section>
+</main>
 
-        <div class="compare-table-wrapper">
-          <table class="compare-table" id="compare-table">
-            <thead>
-              <!-- Rendered by JS -->
-            </thead>
-            <tbody>
-              <!-- Rendered by JS -->
-            </tbody>
-          </table>
-        </div>
-
-        <p class="compare-legend">
-          Price and weight shown as market ranges. Difference badges are
-          calculated from the midpoint of each range.
-        </p>
-
-        <div class="honest-takes" id="honest-takes" aria-label="Honest takes">
-          <!-- Honest takes rendered by JS -->
-        </div>
-
-        <div class="proscons" id="proscons">
-          <!-- Pros/Cons rendered by JS -->
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
@@ -148,7 +105,6 @@
       </nav>
       <p class="footer-copy">© 2026 BGD</p>
     </footer>
-    <script src="scripts/compare.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/footer.js"></script>
   </body>
 </html>
