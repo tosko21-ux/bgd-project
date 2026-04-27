@@ -49,7 +49,7 @@ const tableRows = [
   },
   {
     key: "price_eur_approx",
-    label: "Price (€)",
+    label: "Price (€)*",
     diff: {
       type: "number",
       lowerIsBetter: true,
