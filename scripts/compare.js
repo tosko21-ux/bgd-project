@@ -243,26 +243,29 @@ function renderProsCons() {
   const container = document.getElementById("proscons");
   const selected = getSelected();
 
-  // Hide entire block if no record has pros or cons data.
-  // Pros/cons will be generated dynamically from diffs in a future session.
-  const hasAnyData = selected.some(
-    (g) => Array.isArray(g.pros) || Array.isArray(g.cons),
-  );
-  if (!hasAnyData) {
+  // Generate dynamic pros/cons from rules engine
+  const prosConsByGroupset = generateProsCons(selected);
+
+  // Hide entire block if no rule produced output (e.g. only 1 set selected,
+  // or all selected sets are too similar)
+  if (!hasAnyProsCons(prosConsByGroupset)) {
     container.innerHTML = "";
     return;
   }
 
   container.innerHTML = selected
     .map((g) => {
-      const pros = Array.isArray(g.pros) ? g.pros : [];
-      const cons = Array.isArray(g.cons) ? g.cons : [];
-      const prosHTML = pros.length
-        ? `<ul class="proscons-list proscons-list--pros">${pros.map((i) => `<li>${i}</li>`).join("")}</ul>`
+      const entry = prosConsByGroupset[g.id] || { pros: [], cons: [] };
+      const prosHTML = entry.pros.length
+        ? `<ul class="proscons-list proscons-list--pros">${entry.pros.map((i) => `<li>${i}</li>`).join("")}</ul>`
         : "";
-      const consHTML = cons.length
-        ? `<ul class="proscons-list proscons-list--cons">${cons.map((i) => `<li>${i}</li>`).join("")}</ul>`
+      const consHTML = entry.cons.length
+        ? `<ul class="proscons-list proscons-list--cons">${entry.cons.map((i) => `<li>${i}</li>`).join("")}</ul>`
         : "";
+
+      // If a groupset got nothing from any rule, skip the column entirely
+      if (!prosHTML && !consHTML) return "";
+
       return `
         <div class="proscons-col">
           <h3 class="proscons-title">${displayName(g)}</h3>
