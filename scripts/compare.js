@@ -3,11 +3,36 @@
 // BGD Comparator — Phase B
 // Session 6: adapted for 31-record dataset with range values
 
-const MIN_SELECTED = 1;
+const MIN_SELECTED = 0;
 const MAX_SELECTED = 3;
 
-let selectedIds = ["shimano-deore-m6100", "shimano-slx-m7100"];
+let selectedIds = [];
 let allGroupsets = [];
+
+// ---------- URL params ----------
+// Reads selected groupset IDs from ?ids=id1,id2,id3
+function readIdsFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const ids = params.get("ids");
+  if (!ids) return [];
+  return ids
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+// Updates the URL to reflect the current selection without reloading
+function updateUrl() {
+  const params = new URLSearchParams(window.location.search);
+  if (selectedIds.length > 0) {
+    params.set("ids", selectedIds.join(","));
+  } else {
+    params.delete("ids");
+  }
+  const newSearch = params.toString();
+  const newUrl = window.location.pathname + (newSearch ? "?" + newSearch : "");
+  window.history.replaceState({}, "", newUrl);
+}
 
 // ---------- Helpers ----------
 
@@ -160,9 +185,10 @@ function renderChips() {
     })
     .join("");
 
+  const addLabel = selected.length === 0 ? "+ Add groupset" : "+ Add another";
   const addHTML = canAdd
-    ? `<button class="chip chip--add" type="button" id="add-chip" aria-label="Add another groupset">
-         <span class="chip-label">+ Add another</span>
+    ? `<button class="chip chip--add" type="button" id="add-chip" aria-label="${addLabel}">
+         <span class="chip-label">${addLabel}</span>
        </button>`
     : "";
 
@@ -335,10 +361,18 @@ function removeGroupset(id) {
 }
 
 function renderAll() {
+  const isEmpty = selectedIds.length === 0;
+  document.getElementById("empty-state").hidden = !isEmpty;
+  document.querySelector(".compare-table-wrapper").hidden = isEmpty;
+  document.querySelector(".compare-legend").hidden = isEmpty;
+  document.getElementById("honest-takes").hidden = isEmpty;
+  document.getElementById("proscons").hidden = isEmpty;
+
   renderChips();
   renderTable();
   renderHonestTakes();
   renderProsCons();
+  updateUrl();
 }
 
 // ---------- Event wiring ----------
@@ -382,6 +416,13 @@ function setupEvents() {
 // ---------- Init ----------
 async function init() {
   allGroupsets = await loadGroupsets();
+
+  const urlIds = readIdsFromUrl();
+  const validIds = allGroupsets.map((g) => g.id);
+  selectedIds = urlIds
+    .filter((id) => validIds.includes(id))
+    .slice(0, MAX_SELECTED);
+
   setupEvents();
   renderAll();
 }

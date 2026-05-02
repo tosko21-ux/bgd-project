@@ -332,3 +332,19 @@
     gap: 1rem;
   }
 }
+/* --- Empty state ----------------------------------------------------------- */
+
+.empty-state {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.5rem;
+}
+
+.empty-state-text {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  margin: 0;
+}
