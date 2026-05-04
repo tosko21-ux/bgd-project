@@ -339,14 +339,8 @@ function renderProsCons() {
   const container = document.getElementById("proscons");
   const selected = getSelected();
 
-  // Brakes: no pros/cons engine yet (rules added in session 17)
-  if (currentType === "brakes") {
-    container.innerHTML = "";
-    return;
-  }
-
   // Generate dynamic pros/cons from rules engine
-  const prosConsByGroupset = generateProsCons(selected);
+  const prosConsByGroupset = generateProsCons(selected, currentType);
 
   // Hide entire block if no rule produced output (e.g. only 1 set selected,
   // or all selected sets are too similar)
