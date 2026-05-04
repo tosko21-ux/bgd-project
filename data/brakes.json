@@ -19,7 +19,7 @@
     "one_finger_lever": false,
     "lever_features": "Reach adjust (tool)",
     "intended_use": "XC / Trail",
-    "honest_take": null,
+    "honest_take": "The \"you don't know what you don't know\" of mountain bike brakes. They'll stop you, the lever does what levers do, and as a first-time rider you'll have no reason to complain. The catch comes when the trails get steeper and longer — that's when MT200 reveals it was always a placeholder, not a destination.",
     "verified": true,
     "source_note": "bike-discount.de, trial-bikes.com, shimano.com"
   },
@@ -43,7 +43,7 @@
     "one_finger_lever": false,
     "lever_features": "Reach adjust (tool)",
     "intended_use": "XC / Trail",
-    "honest_take": null,
+    "honest_take": "A pair of brakes that quietly do their job and ask for nothing in return. As a beginner you'll have no reason to think about them, which is honestly the highest compliment a 60€ brake can get. Once you start chasing longer descents though, the fade will show up uninvited and start dropping hints about an upgrade.",
     "verified": true,
     "source_note": "axit.cz, trial-bikes.com, shimano.com"
   },
@@ -67,7 +67,7 @@
     "one_finger_lever": false,
     "lever_features": "Reach adjust (tool)",
     "intended_use": "XC / Trail",
-    "honest_take": null,
+    "honest_take": "Somewhere between \"fine\" and \"actually good\" lives the MT410, doing solid work for not a lot of money. Bite is honest, modulation is predictable, and unless you're hammering bike park laps you'll struggle to find a real complaint. The brake that proves you don't always need to spend Deore money to get Deore-ish results.",
     "verified": true,
     "source_note": "bike-discount.de, mtbiker.sk, shimano.com"
   },
@@ -91,7 +91,7 @@
     "one_finger_lever": false,
     "lever_features": "Reach adjust (tool)",
     "intended_use": "Trail / Enduro",
-    "honest_take": null,
+    "honest_take": "Four pistons, mineral oil, and a price tag that doesn't make your wallet flinch — MT420 is the budget enduro brake that quietly gets the job done. Real bite, real fade resistance, real \"okay, these are actually decent\". The cosmetics scream entry-level, but the performance whispers something a tier or two higher.",
     "verified": true,
     "source_note": "aliexpress.com, bike24.com, shimano.com, pinkbike.com"
   },
@@ -115,7 +115,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool), Servo Wave, I-SPEC EV",
     "intended_use": "Trail / All-mountain",
-    "honest_take": null,
+    "honest_take": "Deore is where Shimano stops messing around. M6100 brings Servo Wave lever action, real one-finger stopping power, and the kind of consistent bite that makes you trust your brakes on actual descents. Not as refined as XT, not as light as XTR — but for the money, it's the brake that ends most upgrade conversations before they even start.",
     "verified": true,
     "source_note": "mtbstupak.sk, mbr.co.uk, shimano.com"
   },
@@ -139,7 +139,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool), Servo Wave, I-SPEC EV",
     "intended_use": "Trail / Enduro",
-    "honest_take": null,
+    "honest_take": "The 4-piston Deore for riders who actually point the bike downhill. M6120 brings serious stopping power without leaving the Deore price bracket, with enough bite to handle long descents and heavier bikes without breaking a sweat. Servo Wave, mineral oil, 220mm rotor support — basically everything an enduro rider needs, minus the \"look at my brakes\" badge.",
     "verified": true,
     "source_note": "mtbstupak.sk, nsmb.com, shimano.com"
   },
@@ -163,7 +163,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool-less), Servo Wave, I-SPEC EV",
     "intended_use": "XC / Trail",
-    "honest_take": null,
+    "honest_take": "M7100 is where Shimano stops cutting corners. The lever has tool-less reach adjust, the bite is consistent from the first millimeter, and the whole brake feels like it was finished rather than just assembled. For trail riders who want premium feel without paying premium prices, this has been the answer for years — and it still is.",
     "verified": true,
     "source_note": "tsbohemia.sk, bikecomponents.ca, shimano.com"
   },
@@ -187,7 +187,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool-less), Servo Wave, I-SPEC EV",
     "intended_use": "Trail / Enduro",
-    "honest_take": null,
+    "honest_take": "M7120 is the brake for riders who treat \"trail\" as a suggestion and bike parks as a hobby. Four pistons deliver real stopping force, the tool-less lever puts the adjustments at your fingertips, and the fade resistance holds up where lesser brakes start to wilt. Premium-feeling brake without the premium price tag — basically what SLX has always been about.",
     "verified": true,
     "source_note": "mtbstupak.sk, singletracks.com, shimano.com"
   },
@@ -211,7 +211,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool-less), Free stroke adjust, Servo Wave, I-SPEC EV",
     "intended_use": "XC / Trail",
-    "honest_take": null,
+    "honest_take": "XT is what happens when Shimano takes SLX and polishes every last edge. M8100 adds free-stroke adjustment, sheds a few grams, and gives you the kind of lever feel that race mechanics have trusted for decades. At this point the brakes aren't the limit anymore — your tires are. When you can lock the wheels and the bike still keeps going, you know the upgrade conversation has moved on.",
     "verified": true,
     "source_note": "bike-discount.de, bikecomponents.ca, shimano.com"
   },
@@ -235,7 +235,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool-less), Free stroke adjust, Servo Wave, I-SPEC EV",
     "intended_use": "Trail / Enduro",
-    "honest_take": null,
+    "honest_take": "The 4-piston XT is what serious enduro riders quietly bolt onto their bikes and stop thinking about. M8120 brings genuinely massive stopping power, free-stroke adjustment, and the kind of fade resistance that holds up on descents long enough to make your forearms tap out before the brakes do. Heavy bike, steep trail, all-day ride — this is the brake that says \"fine, let's go\".",
     "verified": true,
     "source_note": "mtbstupak.sk, bikecomponents.ca, shimano.com"
   },
@@ -259,7 +259,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool), Servo Wave, I-SPEC EV, Carbon lever, Magnesium body",
     "intended_use": "XC / Race",
-    "honest_take": null,
+    "honest_take": "M9100 is what happens when Shimano builds a brake without compromises and then prices it accordingly. Carbon, magnesium, weight you can feel when you lift the wheel, and a lever that moves like it's been hand-finished. The XC racer's brake — for trail riders, it's mostly bragging rights and a slightly lighter bike.",
     "verified": true,
     "source_note": "ebay.com, bikeradar.com, mtbr.com, shimano.com"
   },
@@ -283,7 +283,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool), DirectLink, Expandable Bladder",
     "intended_use": "XC / Trail",
-    "honest_take": null,
+    "honest_take": "SRAM's answer to entry-level disc brakes for riders who prefer the SRAM lever shape and DOT fluid feel. Level T does its job for XC and casual trail use without complaint, but compared to what Shimano offers at this price, the bite is softer and the lever feels less crisp. Fine if your bike came with these — not the brake you'd actively shop for.",
     "verified": true,
     "source_note": "tsbohemia.sk, performancebike.com, sram.com, off-road.cc"
   },
@@ -307,7 +307,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool), MatchMaker X",
     "intended_use": "Trail / Enduro / eMTB",
-    "honest_take": null,
+    "honest_take": "DB8 is SRAM's olive branch to riders who hate dealing with DOT fluid. Mineral oil, four pistons, real bite, and a price that doesn't punish you — basically a budget enduro brake aimed squarely at eMTB owners and home mechanics. Lever feel is decent rather than premium, but for what it costs and what it does, complaining about lever refinement feels a bit ungrateful.",
     "verified": true,
     "source_note": "mtbiker.sk, vitalmtb.com, bikerumor.com, sram.com"
   },
@@ -331,7 +331,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool-less), DirectLink, MatchMaker X, Bleeding Edge, Heat Shield",
     "intended_use": "Enduro / DH / eMTB",
-    "honest_take": null,
+    "honest_take": "Code R is what happens when SRAM stops worrying about weight and starts focusing on stopping a heavy bike going fast down a long hill. Bigger calipers, four pistons, DOT 5.1 with heat shielding — the spec list reads like a brake designed by someone who's actually overheated a lesser brake. The entry-level Code that does the actual Code job, just with simpler adjustments.",
     "verified": true,
     "source_note": "kaufland.sk, vitalmtb.com, bikeradar.com, sram.com"
   },
@@ -355,7 +355,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool-less), Contact Point Adjust (tool-less), SwingLink, MMX, Carbon lever, Titanium hardware",
     "intended_use": "Enduro / DH / eMTB",
-    "honest_take": null,
+    "honest_take": "Maven is what happens when SRAM looks at every other enduro brake and says \"fine, we'll do it ourselves\". Carbon levers, titanium hardware, tool-less reach and contact point adjust, and stopping power that early testers described in language we can't repeat here. The brake for eMTB owners, DH racers, and anyone who's ever cooked a lesser brake on a long descent — overkill for everyone else, and probably the point.",
     "verified": true,
     "source_note": "tradeinn.com, sram.com, freehub.com, vitalmtb.com"
   },
@@ -379,7 +379,7 @@
     "one_finger_lever": false,
     "lever_features": "Reach adjust (tool)",
     "intended_use": "XC / Trail",
-    "honest_take": null,
+    "honest_take": "Tektro M275 exists so bike companies can write \"hydraulic disc brakes\" on a 600€ bike and be technically correct. Stops the bike, mostly. Lever feels cheap, bite is unconvincing, and the moment you ride somewhere with real elevation you'll start wondering if your brakes are broken. They're not — they're just M275s, which is its own kind of broken.",
     "verified": true,
     "source_note": "tribosport.sk, tektro.com, jonnysprockets.au"
   },
@@ -403,7 +403,7 @@
     "one_finger_lever": false,
     "lever_features": "Reach adjust (tool), I-Spec II / Matchmaker",
     "intended_use": "Trail / Enduro / eMTB",
-    "honest_take": null,
+    "honest_take": "The Tektro brake that quietly out-performs its price tag and reputation. Orion delivers four-piston stopping power, decent fade resistance, and the kind of \"wait, this is Tektro?\" moment most riders aren't expecting. Cosmetics are basic and the lever isn't winning any beauty contests, but the actual job — stopping a heavy bike on a long descent — it handles surprisingly well.",
     "verified": true,
     "source_note": "koloneto.cz, tektro.com, mtbdirect.com.au"
   },
@@ -427,7 +427,7 @@
     "one_finger_lever": true,
     "lever_features": "Reach adjust (tool-less), I-Spec II / Matchmaker, hinged clamp",
     "intended_use": "Trail / Enduro / eMTB",
-    "honest_take": null,
+    "honest_take": "TRP is Tektro's racing-grade brand, and Slate EVO is the brake that earned them genuine credibility outside the OEM aisle. Four pistons, tool-less reach adjust, hinged clamp for easier installation, and modulation that enduro riders consistently rate alongside XT. The brake for people who've done their homework and don't need a famous logo to feel confident — the price-to-performance pick that most riders haven't heard of yet.",
     "verified": true,
     "source_note": "bike24.com, trpcycling.com, singletracks.com, nsmb.com"
   }
