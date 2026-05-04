@@ -84,11 +84,34 @@
     <main class="site-main">
       <section class="page-intro">
         <p class="page-breadcrumb"><a href="/">← Back to tools</a></p>
-        <h1 class="page-title">Compare groupsets</h1>
-        <p class="page-subtitle">Pick 2–3 groupsets, see real differences.</p>
+        <h1 class="page-title" id="page-title">Compare groupsets</h1>
+        <p class="page-subtitle" id="page-subtitle">
+          Pick 2–3 groupsets, see real differences.
+        </p>
       </section>
 
       <section class="comparator" aria-label="Groupset comparator">
+        <div class="type-toggle" role="tablist" aria-label="Component type">
+          <button
+            class="type-toggle-btn type-toggle-btn--active"
+            type="button"
+            role="tab"
+            data-type="drivetrains"
+            aria-selected="true"
+          >
+            Drivetrains
+          </button>
+          <button
+            class="type-toggle-btn"
+            type="button"
+            role="tab"
+            data-type="brakes"
+            aria-selected="false"
+          >
+            Brakes
+          </button>
+        </div>
+
         <div
           class="chips"
           id="chips"
@@ -116,7 +139,9 @@
         </div>
 
         <div class="empty-state" id="empty-state" hidden>
-          <p class="empty-state-text">Start by adding a groupset to compare.</p>
+          <p class="empty-state-text" id="empty-state-text">
+            Start by adding a groupset to compare.
+          </p>
         </div>
 
         <div class="compare-table-wrapper">
@@ -130,12 +155,14 @@
           </table>
         </div>
 
-        <p class="compare-legend">
+        <p class="compare-legend" id="compare-legend">
           *The price covers the drivetrain (shifter, derailleur, cassette,
           chain, crankset). Brakes, wheels, and other bits are not part of it.
           Price and weight shown as market ranges. Difference badges are
           calculated from the midpoint of each range.
         </p>
+
+        <p class="missing-brands" id="missing-brands"></p>
 
         <div class="honest-takes" id="honest-takes" aria-label="Honest takes">
           <!-- Honest takes rendered by JS -->

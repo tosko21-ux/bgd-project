@@ -2,15 +2,27 @@
 
 // BGD Comparator — Phase B
 // Session 6: adapted for 31-record dataset with range values
+// Session 16: added Drivetrains | Brakes toggle
 
 const MIN_SELECTED = 0;
 const MAX_SELECTED = 3;
 
+const VALID_TYPES = ["drivetrains", "brakes"];
+const DEFAULT_TYPE = "drivetrains";
+
+let currentType = DEFAULT_TYPE;
 let selectedIds = [];
-let allGroupsets = [];
+let allItems = [];
 
 // ---------- URL params ----------
-// Reads selected groupset IDs from ?ids=id1,id2,id3
+// Reads ?type=brakes (defaults to drivetrains)
+function readTypeFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const type = params.get("type");
+  return VALID_TYPES.includes(type) ? type : DEFAULT_TYPE;
+}
+
+// Reads selected IDs from ?ids=id1,id2,id3
 function readIdsFromUrl() {
   const params = new URLSearchParams(window.location.search);
   const ids = params.get("ids");
@@ -21,9 +33,17 @@ function readIdsFromUrl() {
     .filter(Boolean);
 }
 
-// Updates the URL to reflect the current selection without reloading
+// Updates the URL to reflect the current type and selection without reloading
 function updateUrl() {
   const params = new URLSearchParams(window.location.search);
+
+  // Type: only set when not default (cleaner shareable links for drivetrains)
+  if (currentType !== DEFAULT_TYPE) {
+    params.set("type", currentType);
+  } else {
+    params.delete("type");
+  }
+
   if (selectedIds.length > 0) {
     params.set("ids", selectedIds.join(","));
   } else {
@@ -55,7 +75,7 @@ function formatGearRange(v) {
 
 // ---------- Table config ----------
 
-const tableRows = [
+const tableRowsDrivetrains = [
   {
     key: "speeds",
     label: "Speeds",
@@ -100,20 +120,70 @@ const tableRows = [
   { key: "year_introduced", label: "Year" },
 ];
 
+const tableRowsBrakes = [
+  {
+    key: "pistons",
+    label: "Pistons",
+    diff: { type: "rank", lowerIsBetter: false },
+  },
+  {
+    key: "weight_g_approx",
+    label: "Weight (g)",
+    diff: {
+      type: "number",
+      lowerIsBetter: true,
+      unit: "g",
+      suffix: true,
+      parse: parseNumeric,
+    },
+  },
+  {
+    key: "price_eur_approx",
+    label: "Price (€)*",
+    diff: {
+      type: "number",
+      lowerIsBetter: true,
+      unit: "€",
+      suffix: false,
+      parse: parseNumeric,
+    },
+  },
+  { key: "mount_type", label: "Mount" },
+  { key: "rotor_compat", label: "Rotor size" },
+  { key: "oil_type", label: "Oil" },
+  {
+    key: "one_finger_lever",
+    label: "1-finger lever",
+    format: (v) => (v === true ? "Yes" : v === false ? "No" : "—"),
+  },
+  { key: "intended_use", label: "Use" },
+  {
+    key: "league",
+    label: "League",
+    format: (v, g) => g.league_label,
+    diff: { type: "rank", lowerIsBetter: false },
+  },
+];
+
+function getTableRows() {
+  return currentType === "brakes" ? tableRowsBrakes : tableRowsDrivetrains;
+}
+
 // ---------- Data loading ----------
-async function loadGroupsets() {
+async function loadDataset(type) {
+  const file = type === "brakes" ? "brakes.json" : "groupsets.json";
   try {
-    const response = await fetch("data/groupsets.json");
+    const response = await fetch(`data/${file}`);
     return await response.json();
   } catch (error) {
-    console.error("Failed to load groupsets:", error);
+    console.error(`Failed to load ${file}:`, error);
     return [];
   }
 }
 
 // ---------- Selection helpers ----------
 function getById(id) {
-  return allGroupsets.find((g) => g.id === id);
+  return allItems.find((g) => g.id === id);
 }
 
 function getSelected() {
@@ -216,7 +286,7 @@ function renderTable() {
       ${headerCells}
     </tr>`;
 
-  const tbodyHTML = tableRows
+  const tbodyHTML = getTableRows()
     .map((row) => {
       // If diff config has a parser, use it to produce numeric values for diff.
       // Cells still show the raw (or formatted) value.
@@ -269,6 +339,12 @@ function renderProsCons() {
   const container = document.getElementById("proscons");
   const selected = getSelected();
 
+  // Brakes: no pros/cons engine yet (rules added in session 17)
+  if (currentType === "brakes") {
+    container.innerHTML = "";
+    return;
+  }
+
   // Generate dynamic pros/cons from rules engine
   const prosConsByGroupset = generateProsCons(selected);
 
@@ -313,7 +389,7 @@ function renderSearchResults(query) {
     return;
   }
 
-  const matches = allGroupsets.filter((g) => {
+  const matches = allItems.filter((g) => {
     if (selectedIds.includes(g.id)) return false;
     const haystack = `${g.brand} ${g.family} ${g.series}`.toLowerCase();
     return haystack.includes(trimmed);
@@ -360,11 +436,88 @@ function removeGroupset(id) {
   renderAll();
 }
 
+// ---------- Type switching ----------
+
+// Updates static UI elements (title, subtitle, placeholder, legend, empty state)
+// based on the current type. Called once on init and on every toggle switch.
+function applyTypeUI() {
+  const isBrakes = currentType === "brakes";
+
+  // Page title + subtitle
+  document.getElementById("page-title").textContent = isBrakes
+    ? "Compare brakes"
+    : "Compare groupsets";
+  document.getElementById("page-subtitle").textContent = isBrakes
+    ? "Pick 2–3 brake sets, see real differences."
+    : "Pick 2–3 groupsets, see real differences.";
+
+  // Browser tab title
+  document.title = isBrakes
+    ? "Compare brakes — BGD"
+    : "Compare groupsets — BGD";
+
+  // Search placeholder
+  const searchInput = document.getElementById("search-input");
+  searchInput.placeholder = isBrakes
+    ? "Search a brake set to compare…"
+    : "Search a groupset to compare…";
+  searchInput.setAttribute(
+    "aria-label",
+    isBrakes ? "Search brake sets" : "Search groupsets",
+  );
+
+  // Empty state text
+  document.getElementById("empty-state-text").textContent = isBrakes
+    ? "Start by adding a brake set to compare."
+    : "Start by adding a groupset to compare.";
+
+  // Legend
+  document.getElementById("compare-legend").textContent = isBrakes
+    ? "*The price covers the brake set (lever + caliper, front + rear pair). Rotors and adapters are not included. Price and weight shown as market ranges. Difference badges are calculated from the midpoint of each range."
+    : "*The price covers the drivetrain (shifter, derailleur, cassette, chain, crankset). Brakes, wheels, and other bits are not part of it. Price and weight shown as market ranges. Difference badges are calculated from the midpoint of each range.";
+
+  // Missing brands note
+  document.getElementById("missing-brands").textContent = isBrakes
+    ? "Magura, Hope, Formula — if you own these, you didn't buy them by accident. BGD is for the rest of us."
+    : "No Microshift, Box or Campagnolo Ekar yet. They're all on the list. Microshift quietly runs half the entry-level bikes out there — it deserves its own spot soon.";
+
+  // Toggle button active states
+  const buttons = document.querySelectorAll(".type-toggle-btn");
+  buttons.forEach((btn) => {
+    const isActive = btn.dataset.type === currentType;
+    btn.classList.toggle("type-toggle-btn--active", isActive);
+    btn.setAttribute("aria-selected", isActive ? "true" : "false");
+  });
+
+  // Section aria-label
+  document
+    .querySelector(".comparator")
+    .setAttribute(
+      "aria-label",
+      isBrakes ? "Brake comparator" : "Groupset comparator",
+    );
+}
+
+// Switches between drivetrains and brakes. Resets selection.
+async function switchType(newType) {
+  if (!VALID_TYPES.includes(newType)) return;
+  if (newType === currentType) return;
+
+  currentType = newType;
+  selectedIds = [];
+  allItems = await loadDataset(currentType);
+
+  applyTypeUI();
+  clearSearch();
+  renderAll();
+}
+
 function renderAll() {
   const isEmpty = selectedIds.length === 0;
   document.getElementById("empty-state").hidden = !isEmpty;
   document.querySelector(".compare-table-wrapper").hidden = isEmpty;
   document.querySelector(".compare-legend").hidden = isEmpty;
+  document.getElementById("missing-brands").hidden = isEmpty;
   document.getElementById("honest-takes").hidden = isEmpty;
   document.getElementById("proscons").hidden = isEmpty;
 
@@ -411,18 +564,27 @@ function setupEvents() {
       dropdown.hidden = true;
     }
   });
+
+  // Type toggle (Drivetrains | Brakes)
+  document.querySelectorAll(".type-toggle-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      switchType(btn.dataset.type);
+    });
+  });
 }
 
 // ---------- Init ----------
 async function init() {
-  allGroupsets = await loadGroupsets();
+  currentType = readTypeFromUrl();
+  allItems = await loadDataset(currentType);
 
   const urlIds = readIdsFromUrl();
-  const validIds = allGroupsets.map((g) => g.id);
+  const validIds = allItems.map((g) => g.id);
   selectedIds = urlIds
     .filter((id) => validIds.includes(id))
     .slice(0, MAX_SELECTED);
 
+  applyTypeUI();
   setupEvents();
   renderAll();
 }
