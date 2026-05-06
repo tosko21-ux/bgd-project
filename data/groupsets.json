@@ -1363,28 +1363,28 @@
     "components": {
       "shifter": {
         "model": "SRAM NX Eagle trigger",
-        "price_min": 15.78,
-        "price_max": 19.99
+        "price_min_eur": 15.78,
+        "price_max_eur": 19.99
       },
       "rear_derailleur": {
         "model": "SRAM NX Eagle",
-        "price_min": 62.67,
-        "price_max": 91.99
+        "price_min_eur": 62.67,
+        "price_max_eur": 91.99
       },
       "crankset": {
         "model": "SRAM NX Eagle DUB",
-        "price_min": 63.55,
-        "price_max": 87.99
+        "price_min_eur": 63.55,
+        "price_max_eur": 87.99
       },
       "cassette": {
         "model": "SRAM PG-1230 (11-50t, HG driver)",
-        "price_min": 76.99,
-        "price_max": 87.99
+        "price_min_eur": 76.99,
+        "price_max_eur": 87.99
       },
       "chain": {
         "model": "SRAM NX Eagle / PC-1110",
-        "price_min": 17.99,
-        "price_max": 19.88
+        "price_min_eur": 17.99,
+        "price_max_eur": 19.88
       }
     },
     "components_verified_at": "2026-05-06",
@@ -1419,28 +1419,28 @@
     "components": {
       "shifter": {
         "model": "SRAM GX Eagle trigger",
-        "price_min": 25.69,
-        "price_max": 35.99
+        "price_min_eur": 25.69,
+        "price_max_eur": 35.99
       },
       "rear_derailleur": {
         "model": "SRAM GX Eagle",
-        "price_min": 97.53,
-        "price_max": 109.0
+        "price_min_eur": 97.53,
+        "price_max_eur": 109.0
       },
       "crankset": {
         "model": "SRAM GX Eagle DUB",
-        "price_min": 84.99,
-        "price_max": 139.0
+        "price_min_eur": 84.99,
+        "price_max_eur": 139.0
       },
       "cassette": {
         "model": "SRAM XG-1275 (10-52t, XD driver)",
-        "price_min": 149.99,
-        "price_max": 179.0
+        "price_min_eur": 149.99,
+        "price_max_eur": 179.0
       },
       "chain": {
         "model": "SRAM GX Eagle",
-        "price_min": 22.7,
-        "price_max": 41.35
+        "price_min_eur": 22.7,
+        "price_max_eur": 41.35
       }
     },
     "components_verified_at": "2026-05-06",
@@ -1475,28 +1475,28 @@
     "components": {
       "shifter": {
         "model": "SRAM X01 Eagle trigger",
-        "price_min": 70.99,
-        "price_max": 119.0
+        "price_min_eur": 70.99,
+        "price_max_eur": 119.0
       },
       "rear_derailleur": {
         "model": "SRAM X01 Eagle (carbon cage)",
-        "price_min": 181.49,
-        "price_max": 202.0
+        "price_min_eur": 181.49,
+        "price_max_eur": 202.0
       },
       "crankset": {
         "model": "SRAM X01 Eagle DUB (carbon arms)",
-        "price_min": 267.0,
-        "price_max": 309.0
+        "price_min_eur": 267.0,
+        "price_max_eur": 309.0
       },
       "cassette": {
         "model": "SRAM XG-1295 (10-52t, XD driver)",
-        "price_min": 299.0,
-        "price_max": 309.0
+        "price_min_eur": 299.0,
+        "price_max_eur": 309.0
       },
       "chain": {
         "model": "SRAM X01 Eagle (hollow pin, hardchrome)",
-        "price_min": 39.96,
-        "price_max": 57.99
+        "price_min_eur": 39.96,
+        "price_max_eur": 57.99
       }
     },
     "components_verified_at": "2026-05-06",
@@ -1531,28 +1531,28 @@
     "components": {
       "shifter": {
         "model": "SRAM XX1 Eagle trigger",
-        "price_min": 105.0,
-        "price_max": 177.0
+        "price_min_eur": 105.0,
+        "price_max_eur": 177.0
       },
       "rear_derailleur": {
         "model": "SRAM XX1 Eagle (carbon cage)",
-        "price_min": 219.99,
-        "price_max": 275.0
+        "price_min_eur": 219.99,
+        "price_max_eur": 275.0
       },
       "crankset": {
         "model": "SRAM XX1 Eagle DUB (carbon arms)",
-        "price_min": 254.0,
-        "price_max": 359.0
+        "price_min_eur": 254.0,
+        "price_max_eur": 359.0
       },
       "cassette": {
         "model": "SRAM XG-1299 (10-52t, XD driver)",
-        "price_min": 349.0,
-        "price_max": 379.0
+        "price_min_eur": 349.0,
+        "price_max_eur": 379.0
       },
       "chain": {
         "model": "SRAM XX1 Eagle (hollow pin, gold/rainbow hardchrome)",
-        "price_min": 59.99,
-        "price_max": 65.99
+        "price_min_eur": 59.99,
+        "price_max_eur": 65.99
       }
     },
     "components_verified_at": "2026-05-06",
@@ -1587,33 +1587,33 @@
     "components": {
       "controller": {
         "model": "SRAM GX Eagle AXS controller (rocker paddle)",
-        "price_min": 119.0,
-        "price_max": 129.0
+        "price_min_eur": 119.0,
+        "price_max_eur": 129.0
       },
       "rear_derailleur": {
         "model": "SRAM GX Eagle AXS (RD only, battery sold separately)",
-        "price_min": 286.0,
-        "price_max": 289.0
+        "price_min_eur": 286.0,
+        "price_max_eur": 289.0
       },
       "crankset": {
         "model": "SRAM GX Eagle DUB",
-        "price_min": 84.99,
-        "price_max": 139.0
+        "price_min_eur": 84.99,
+        "price_max_eur": 139.0
       },
       "cassette": {
         "model": "SRAM XG-1275 (10-52t, XD driver)",
-        "price_min": 149.99,
-        "price_max": 179.0
+        "price_min_eur": 149.99,
+        "price_max_eur": 179.0
       },
       "chain": {
         "model": "SRAM GX Eagle",
-        "price_min": 22.7,
-        "price_max": 41.35
+        "price_min_eur": 22.7,
+        "price_max_eur": 41.35
       },
       "battery": {
         "model": "SRAM AXS Battery",
-        "price_min": 46.5,
-        "price_max": 47.07
+        "price_min_eur": 46.5,
+        "price_max_eur": 47.07
       }
     },
     "components_verified_at": "2026-05-06",
@@ -1648,33 +1648,33 @@
     "components": {
       "controller": {
         "model": "SRAM GX Eagle AXS controller (X01 AXS shipped with GX paddle — no dedicated X01 controller exists)",
-        "price_min": 119.0,
-        "price_max": 129.0
+        "price_min_eur": 119.0,
+        "price_max_eur": 129.0
       },
       "rear_derailleur": {
         "model": "SRAM X01 Eagle AXS (carbon cage, Overload Clutch, RD only)",
-        "price_min": 403.0,
-        "price_max": 492.0
+        "price_min_eur": 403.0,
+        "price_max_eur": 492.0
       },
       "crankset": {
         "model": "SRAM X01 Eagle DUB (carbon arms)",
-        "price_min": 267.0,
-        "price_max": 309.0
+        "price_min_eur": 267.0,
+        "price_max_eur": 309.0
       },
       "cassette": {
         "model": "SRAM XG-1295 (10-52t, XD driver)",
-        "price_min": 299.0,
-        "price_max": 309.0
+        "price_min_eur": 299.0,
+        "price_max_eur": 309.0
       },
       "chain": {
         "model": "SRAM X01 Eagle (hollow pin, hardchrome)",
-        "price_min": 39.96,
-        "price_max": 57.99
+        "price_min_eur": 39.96,
+        "price_max_eur": 57.99
       },
       "battery": {
         "model": "SRAM AXS Battery",
-        "price_min": 46.5,
-        "price_max": 47.07
+        "price_min_eur": 46.5,
+        "price_max_eur": 47.07
       }
     },
     "components_verified_at": "2026-05-06",
@@ -1709,33 +1709,33 @@
     "components": {
       "controller": {
         "model": "SRAM XX1 Eagle AXS controller (premium rocker paddle, carbon, rainbow)",
-        "price_min": 141.0,
-        "price_max": 147.0
+        "price_min_eur": 141.0,
+        "price_max_eur": 147.0
       },
       "rear_derailleur": {
         "model": "SRAM XX1 Eagle AXS (carbon cage, Overload Clutch, rainbow finish, RD only)",
-        "price_min": 539.0,
-        "price_max": 559.0
+        "price_min_eur": 539.0,
+        "price_max_eur": 559.0
       },
       "crankset": {
         "model": "SRAM XX1 Eagle DUB (carbon arms)",
-        "price_min": 254.0,
-        "price_max": 359.0
+        "price_min_eur": 254.0,
+        "price_max_eur": 359.0
       },
       "cassette": {
         "model": "SRAM XG-1299 (10-52t, XD driver)",
-        "price_min": 349.0,
-        "price_max": 379.0
+        "price_min_eur": 349.0,
+        "price_max_eur": 379.0
       },
       "chain": {
         "model": "SRAM XX1 Eagle (hollow pin, gold/rainbow hardchrome)",
-        "price_min": 59.99,
-        "price_max": 65.99
+        "price_min_eur": 59.99,
+        "price_max_eur": 65.99
       },
       "battery": {
         "model": "SRAM AXS Battery",
-        "price_min": 46.5,
-        "price_max": 47.07
+        "price_min_eur": 46.5,
+        "price_max_eur": 47.07
       }
     },
     "components_verified_at": "2026-05-06",
@@ -1770,33 +1770,33 @@
     "components": {
       "controller": {
         "model": "SRAM Eagle AXS POD Controller (POD D1, Pro variant)",
-        "price_min": 128.0,
-        "price_max": 129.0
+        "price_min_eur": 128.0,
+        "price_max_eur": 129.0
       },
       "rear_derailleur": {
         "model": "SRAM GX Eagle Transmission (T-Type, direct-mount, RD only)",
-        "price_min": 349.0,
-        "price_max": 352.0
+        "price_min_eur": 349.0,
+        "price_max_eur": 352.0
       },
       "crankset": {
         "model": "SRAM GX Eagle Transmission DUB (T-Type, direct-mount chainring)",
-        "price_min": 139.99,
-        "price_max": 142.0
+        "price_min_eur": 139.99,
+        "price_max_eur": 142.0
       },
       "cassette": {
         "model": "SRAM XS-1275 (10-52t, XD, T-Type with shift ramps)",
-        "price_min": 206.0,
-        "price_max": 229.0
+        "price_min_eur": 206.0,
+        "price_max_eur": 229.0
       },
       "chain": {
         "model": "SRAM GX Eagle T-Type Flattop",
-        "price_min": 38.23,
-        "price_max": 41.99
+        "price_min_eur": 38.23,
+        "price_max_eur": 41.99
       },
       "battery": {
         "model": "SRAM AXS Battery",
-        "price_min": 46.5,
-        "price_max": 47.07
+        "price_min_eur": 46.5,
+        "price_max_eur": 47.07
       }
     },
     "components_verified_at": "2026-05-06",
@@ -1831,33 +1831,33 @@
     "components": {
       "controller": {
         "model": "SRAM Eagle AXS POD Ultimate (D1)",
-        "price_min": 177.0,
-        "price_max": 199.0
+        "price_min_eur": 177.0,
+        "price_max_eur": 199.0
       },
       "rear_derailleur": {
         "model": "SRAM X0 Eagle Transmission (T-Type, carbon outer link + skid plate, RD only)",
-        "price_min": 500.0,
-        "price_max": 519.0
+        "price_min_eur": 500.0,
+        "price_max_eur": 519.0
       },
       "crankset": {
         "model": "SRAM X0 Eagle Transmission DUB (carbon arms, T-Type direct-mount)",
-        "price_min": 309.0,
-        "price_max": 309.0
+        "price_min_eur": 309.0,
+        "price_max_eur": 309.0
       },
       "cassette": {
         "model": "SRAM XS-1295 (10-52t, XD, T-Type)",
-        "price_min": 299.0,
-        "price_max": 358.0
+        "price_min_eur": 299.0,
+        "price_max_eur": 358.0
       },
       "chain": {
         "model": "SRAM X0 Eagle T-Type Flattop (hardchrome, hollow pin)",
-        "price_min": 67.99,
-        "price_max": 76.99
+        "price_min_eur": 67.99,
+        "price_max_eur": 76.99
       },
       "battery": {
         "model": "SRAM AXS Battery",
-        "price_min": 46.5,
-        "price_max": 47.07
+        "price_min_eur": 46.5,
+        "price_max_eur": 47.07
       }
     },
     "components_verified_at": "2026-05-06",
@@ -1892,33 +1892,33 @@
     "components": {
       "controller": {
         "model": "SRAM Eagle AXS POD Ultimate (D1)",
-        "price_min": 177.0,
-        "price_max": 199.0
+        "price_min_eur": 177.0,
+        "price_max_eur": 199.0
       },
       "rear_derailleur": {
         "model": "SRAM XX Eagle Transmission (T-Type, full carbon cage, Magic Wheel pulley, RD only)",
-        "price_min": 539.0,
-        "price_max": 559.0
+        "price_min_eur": 539.0,
+        "price_max_eur": 559.0
       },
       "crankset": {
         "model": "SRAM XX Eagle Transmission DUB (carbon arms, T-Type direct-mount, no power meter)",
-        "price_min": 459.0,
-        "price_max": 520.0
+        "price_min_eur": 459.0,
+        "price_max_eur": 520.0
       },
       "cassette": {
         "model": "SRAM XS-1297 (10-52t, XD, T-Type, alu/steel hybrid)",
-        "price_min": 439.0,
-        "price_max": 479.0
+        "price_min_eur": 439.0,
+        "price_max_eur": 479.0
       },
       "chain": {
         "model": "SRAM XX Eagle T-Type Flattop (premium hardchrome)",
-        "price_min": 76.75,
-        "price_max": 109.0
+        "price_min_eur": 76.75,
+        "price_max_eur": 109.0
       },
       "battery": {
         "model": "SRAM AXS Battery",
-        "price_min": 46.5,
-        "price_max": 47.07
+        "price_min_eur": 46.5,
+        "price_max_eur": 47.07
       }
     },
     "components_verified_at": "2026-05-06",
@@ -1953,33 +1953,33 @@
     "components": {
       "controller": {
         "model": "SRAM Eagle AXS POD Ultimate (D1)",
-        "price_min": 177.0,
-        "price_max": 199.0
+        "price_min_eur": 177.0,
+        "price_max_eur": 199.0
       },
       "rear_derailleur": {
         "model": "SRAM XX SL Eagle Transmission (T-Type, carbon cage + carbon skid plate, Magic Wheel pulley, RD only)",
-        "price_min": 539.0,
-        "price_max": 598.0
+        "price_min_eur": 539.0,
+        "price_max_eur": 598.0
       },
       "crankset": {
         "model": "SRAM XX SL Eagle Transmission DUB (ultra-light carbon arms, T-Type direct-mount, no power meter)",
-        "price_min": 425.0,
-        "price_max": 567.3
+        "price_min_eur": 425.0,
+        "price_max_eur": 567.3
       },
       "cassette": {
         "model": "SRAM XS-1299 (10-52t, XD, T-Type, machined alu + steel construction)",
-        "price_min": 329.0,
-        "price_max": 379.0
+        "price_min_eur": 329.0,
+        "price_max_eur": 379.0
       },
       "chain": {
         "model": "SRAM XX SL Eagle T-Type Flattop (shared SKU with XX)",
-        "price_min": 76.75,
-        "price_max": 109.0
+        "price_min_eur": 76.75,
+        "price_max_eur": 109.0
       },
       "battery": {
         "model": "SRAM AXS Battery",
-        "price_min": 46.5,
-        "price_max": 47.07
+        "price_min_eur": 46.5,
+        "price_max_eur": 47.07
       }
     },
     "components_verified_at": "2026-05-06",
