@@ -6,14 +6,14 @@
     "series": "TX800",
     "discipline": "mtb",
     "technology": "mechanical",
-    "speeds": 7,
+    "speeds": 8,
     "freehub": "HG (Hyperglide)",
     "brand_tier": 1,
     "brand_tier_total": 8,
     "league": 1,
     "league_label": "Beginner",
     "year_introduced": 2017,
-    "price_eur_approx": "85 - 105",
+    "price_eur_approx": "65 - 105",
     "weight_g_approx": "2450",
     "gear_range_percent": 5.84,
     "cassette_range": "11 - 34t",
@@ -22,10 +22,51 @@
     "requires_charger": null,
     "compatible_chains": "HG 6/7/8 - Speed",
     "cross_brand_equivalent": "(none)",
-    "honest_take": "This is the baseline of modern biking, found on machines meant more for grocery runs than rock gardens. It uses an 7-speed system that works until you look at a steep hill. It is strictly for those who consider \"off-road\" to be a well-manicured gravel driveway.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This is the baseline of modern biking, found on machines meant more for grocery runs than rock gardens. It uses an 8-speed system that works until you look at a steep hill. It is strictly for those who consider \"off-road\" to be a well-manicured gravel driveway.",
+    "verified": true,
+    "source_note": "bike-discount.de, bike24.com, alltricks.com, velonova.lt",
+    "components": {
+      "shifter": {
+        "model": "SL-TX50",
+        "tier": "Tourney TX",
+        "price_min_eur": 7,
+        "price_max_eur": 12
+      },
+      "rear_derailleur": {
+        "model": "RD-TX800",
+        "tier": "Tourney TX",
+        "price_min_eur": 11,
+        "price_max_eur": 19
+      },
+      "front_derailleur": {
+        "model": "FD-TX800",
+        "tier": "Tourney TX",
+        "price_min_eur": 9,
+        "price_max_eur": 14
+      },
+      "crankset": {
+        "model": "FC-TX801 (42-32-22T)",
+        "tier": "Tourney TX",
+        "price_min_eur": 20,
+        "price_max_eur": 28
+      },
+      "cassette": {
+        "model": "CS-HG31-8 (11-32T)",
+        "tier": "Altus",
+        "price_min_eur": 10,
+        "price_max_eur": 17,
+        "note": "No native 8-speed Tourney cassette; Altus-tier substitute"
+      },
+      "chain": {
+        "model": "CN-HG40",
+        "tier": "Tourney/HG",
+        "price_min_eur": 8,
+        "price_max_eur": 14
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
+
   {
     "id": "shimano-altus-m2000",
     "brand": "Shimano",
@@ -40,7 +81,7 @@
     "league": 1,
     "league_label": "Beginner",
     "year_introduced": 2018,
-    "price_eur_approx": "110 - 135",
+    "price_eur_approx": "100 - 136",
     "weight_g_approx": "2280",
     "gear_range_percent": 5.94,
     "cassette_range": "11 - 36t",
@@ -49,9 +90,50 @@
     "requires_charger": null,
     "compatible_chains": "HG 9 - Speed",
     "cross_brand_equivalent": "(none)",
-    "honest_take": "This 9-speed groupset is for people who want a mountain bike but mostly use it to fetch bread. It’s significantly heavier than enthusiast gear, but it shifts gears without exploding. Ideal if your idea of \"shredding\" is accidentally hitting a curb on the way to the pub.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This 9-speed groupset is for people who want a mountain bike but mostly use it to fetch bread. It's significantly heavier than enthusiast gear, but it shifts gears without exploding. Ideal if your idea of \"shredding\" is accidentally hitting a curb on the way to the pub.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, bikepodium.sk, axit.sk, green-bike.sk, Alza, Allegro, megaknihy.sk, bikestacja.pl, Suncycle.sk, TIBORSPORT",
+    "components": {
+      "shifter": {
+        "model": "SL-M2000",
+        "tier": "Altus",
+        "price_min_eur": 25,
+        "price_max_eur": 35,
+        "note": "Set price (left + right pair); singles available ~13-16€"
+      },
+      "rear_derailleur": {
+        "model": "RD-M2000",
+        "tier": "Altus",
+        "price_min_eur": 15,
+        "price_max_eur": 20
+      },
+      "front_derailleur": {
+        "model": "FD-M2000",
+        "tier": "Altus",
+        "price_min_eur": 14,
+        "price_max_eur": 18
+      },
+      "crankset": {
+        "model": "FC-M2000 (40-30-22T)",
+        "tier": "Altus",
+        "price_min_eur": 22,
+        "price_max_eur": 28,
+        "note": "Increasingly hard to find — Altus M2000 series phasing out"
+      },
+      "cassette": {
+        "model": "CS-HG200-9 (11-36T)",
+        "tier": "Altus",
+        "price_min_eur": 11,
+        "price_max_eur": 16
+      },
+      "chain": {
+        "model": "CN-HG53",
+        "tier": "HG/Alivio",
+        "price_min_eur": 13,
+        "price_max_eur": 19
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-acera-m3000",
@@ -67,7 +149,7 @@
     "league": 2,
     "league_label": "Recreational",
     "year_introduced": 2014,
-    "price_eur_approx": "135 - 160",
+    "price_eur_approx": "156 - 195",
     "weight_g_approx": "2180",
     "gear_range_percent": 5.94,
     "cassette_range": "11 - 36t",
@@ -77,8 +159,48 @@
     "compatible_chains": "HG 9 - Speed",
     "cross_brand_equivalent": "(none)",
     "honest_take": "This 9-speed system is built for the casual rider who enjoys having way too many gear combinations to manage. It features a triple chainring at the front, ensuring you have the right gear for every hill and at least five overlapping ones you will never use. It is a workhorse for people who prioritize saving money over saving grams.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "MTBIKER.shop, holokolo.sk, cyklonovak.cz, koloshop.sk, green-bike.sk, axit.sk, mammothbikes.com, heureka.sk, Alza, megaknihy.sk",
+    "components": {
+      "shifter": {
+        "model": "SL-M3000",
+        "tier": "Acera",
+        "price_min_eur": 40,
+        "price_max_eur": 50,
+        "note": "Set price (left + right pair); singles available ~20-22€"
+      },
+      "rear_derailleur": {
+        "model": "RD-M3000",
+        "tier": "Acera",
+        "price_min_eur": 31,
+        "price_max_eur": 37
+      },
+      "front_derailleur": {
+        "model": "FD-M3000",
+        "tier": "Acera",
+        "price_min_eur": 17,
+        "price_max_eur": 23
+      },
+      "crankset": {
+        "model": "FC-M3000 (40-30-22T)",
+        "tier": "Acera",
+        "price_min_eur": 40,
+        "price_max_eur": 46
+      },
+      "cassette": {
+        "model": "CS-HG201-9 (11-32T)",
+        "tier": "Acera/HG",
+        "price_min_eur": 15,
+        "price_max_eur": 20
+      },
+      "chain": {
+        "model": "CN-HG53",
+        "tier": "HG/Alivio",
+        "price_min_eur": 13,
+        "price_max_eur": 19
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-acera-m3100",
@@ -94,7 +216,7 @@
     "league": 2,
     "league_label": "Recreational",
     "year_introduced": 2019,
-    "price_eur_approx": "145 - 175",
+    "price_eur_approx": "133 - 191",
     "weight_g_approx": "2150",
     "gear_range_percent": 5.94,
     "cassette_range": "11 - 36t",
@@ -104,8 +226,50 @@
     "compatible_chains": "HG 9 - Speed",
     "cross_brand_equivalent": "(none)",
     "honest_take": "This 9-speed drivetrain is for the budget-conscious cyclist who finds the silence of nature overrated. It lacks a clutch, so the chain will slap your frame like a wet noodle every time you hit a pebble. It works, but your bike will sound like a bag of loose silverware going downstairs.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "MTBIKER.shop, Exisport, Bike-Discount, megaknihy.sk, TRIBOSPORT, axit.sk, Allegro, Alza",
+    "components": {
+      "shifter": {
+        "model": "SL-M3100",
+        "tier": "Acera",
+        "price_min_eur": 24,
+        "price_max_eur": 32,
+        "note": "Set price (left + right pair); singles available ~12-16€"
+      },
+      "rear_derailleur": {
+        "model": "RD-M3100",
+        "tier": "Acera",
+        "price_min_eur": 22,
+        "price_max_eur": 24
+      },
+      "front_derailleur": {
+        "model": "FD-M3100",
+        "tier": "Acera",
+        "price_min_eur": 19,
+        "price_max_eur": 32,
+        "note": "Wide retail spread between EU shops"
+      },
+      "crankset": {
+        "model": "FC-MT210 (40-30-22T) / FC-M4050 Alivio substitute",
+        "tier": "Acera / Alivio",
+        "price_min_eur": 40,
+        "price_max_eur": 65,
+        "note": "FC-MT210 is the native Acera M3100 crankset, often unavailable in EU retail; Alivio FC-M4050 is the typical substitute"
+      },
+      "cassette": {
+        "model": "CS-HG201-9 (11-36T)",
+        "tier": "Acera/HG",
+        "price_min_eur": 15,
+        "price_max_eur": 19
+      },
+      "chain": {
+        "model": "CN-HG53",
+        "tier": "HG/Alivio",
+        "price_min_eur": 13,
+        "price_max_eur": 19
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-alivio-m3100",
@@ -121,7 +285,7 @@
     "league": 2,
     "league_label": "Recreational",
     "year_introduced": 2019,
-    "price_eur_approx": "155 - 195",
+    "price_eur_approx": "158 - 208",
     "weight_g_approx": "2100",
     "gear_range_percent": 5.94,
     "cassette_range": "11 - 36t",
@@ -130,9 +294,52 @@
     "requires_charger": null,
     "compatible_chains": "HG 9 - Speed",
     "cross_brand_equivalent": "(none)",
-    "honest_take": "This is the 9-speed drivetrain for the person who doesn't know what \"indexing\" is and frankly, doesn't want to know. It’s the \"Toyota Corolla\" of bike parts—it’s not fast, it’s not sexy, and nobody is taking photos of it for Instagram, but it will probably still be shifting (vaguely) when the sun expands and swallows the earth.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This is the 9-speed drivetrain for the person who doesn't know what \"indexing\" is and frankly, doesn't want to know. It's the \"Toyota Corolla\" of bike parts—it's not fast, it's not sexy, and nobody is taking photos of it for Instagram, but it will probably still be shifting (vaguely) when the sun expands and swallows the earth.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, Bike-Discount, koloshop.sk, Exisport, megaknihy.sk, Decathlon, TRIBOSPORT, axit.sk, cshop.sk, procycling.sk, Allegro, Alza",
+    "components": {
+      "shifter": {
+        "model": "SL-M3100",
+        "tier": "Acera/Alivio",
+        "price_min_eur": 29,
+        "price_max_eur": 35,
+        "note": "Shared with Acera M3100; set price (left + right pair); singles ~14-17€"
+      },
+      "rear_derailleur": {
+        "model": "RD-M3100",
+        "tier": "Acera/Alivio",
+        "price_min_eur": 22,
+        "price_max_eur": 31,
+        "note": "Shared with Acera M3100"
+      },
+      "front_derailleur": {
+        "model": "FD-M3100",
+        "tier": "Acera/Alivio",
+        "price_min_eur": 19,
+        "price_max_eur": 32,
+        "note": "Shared with Acera M3100; limited EU availability"
+      },
+      "crankset": {
+        "model": "FC-M4050 (40-30-22T)",
+        "tier": "Alivio",
+        "price_min_eur": 60,
+        "price_max_eur": 72,
+        "note": "Native Alivio M3100 crankset; widely sold-out across EU retailers — Alivio M3100 line is in EOL phase as Shimano migrates 3x9 to CUES line"
+      },
+      "cassette": {
+        "model": "CS-HG201-9 (11-36T)",
+        "tier": "Acera/HG",
+        "price_min_eur": 15,
+        "price_max_eur": 19
+      },
+      "chain": {
+        "model": "CN-HG53",
+        "tier": "HG/Alivio",
+        "price_min_eur": 13,
+        "price_max_eur": 19
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-deore-m4100",
@@ -148,7 +355,7 @@
     "league": 3,
     "league_label": "Enthusiast",
     "year_introduced": 2020,
-    "price_eur_approx": "180 - 220",
+    "price_eur_approx": "129 - 147",
     "weight_g_approx": "1980",
     "gear_range_percent": 4.18,
     "cassette_range": "11 - 46t",
@@ -158,8 +365,42 @@
     "compatible_chains": "HG 10/11 - Speed",
     "cross_brand_equivalent": "SRAM GX",
     "honest_take": "This is the cheapest way to put 'Deore' on your bike. It does the job, but without a clutch on the rear derailleur, your chain will sound like loose change in a tumble dryer on rough trails. The price difference goes straight into your beer fund.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, bikepodium.sk, mojekolo.sk, Allegro",
+    "components": {
+      "shifter": {
+        "model": "SL-M4100",
+        "tier": "Deore",
+        "price_min_eur": 17,
+        "price_max_eur": 20,
+        "note": "1x setup — single right shifter only"
+      },
+      "rear_derailleur": {
+        "model": "RD-M4120",
+        "tier": "Deore",
+        "price_min_eur": 24,
+        "price_max_eur": 28
+      },
+      "crankset": {
+        "model": "FC-M4100-1 (single chainring)",
+        "tier": "Deore",
+        "price_min_eur": 43,
+        "price_max_eur": 47
+      },
+      "cassette": {
+        "model": "CS-M4100-10 (11-46T)",
+        "tier": "Deore",
+        "price_min_eur": 32,
+        "price_max_eur": 37
+      },
+      "chain": {
+        "model": "CN-HG54",
+        "tier": "Deore/HG",
+        "price_min_eur": 13,
+        "price_max_eur": 15
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-deore-m4120",
@@ -175,7 +416,7 @@
     "league": 3,
     "league_label": "Enthusiast",
     "year_introduced": 2020,
-    "price_eur_approx": "200 - 240",
+    "price_eur_approx": "164 - 198",
     "weight_g_approx": "2250",
     "gear_range_percent": 5.29,
     "cassette_range": "11 - 42t",
@@ -184,9 +425,58 @@
     "requires_charger": null,
     "compatible_chains": "HG 10/11 - Speed",
     "cross_brand_equivalent": "SRAM GX 10sp / NX 11sp",
-    "honest_take": "This 10 or 11-speed drivetrain is the choice for riders who want the Deore name without the clutter of a modern clutch. It’s significantly cheaper than enthusiast options but leaves your chain free to dance against the frame on every bump. Great for people who find a quiet bike suspicious.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This 10 or 11-speed drivetrain is the choice for riders who want the Deore name without the clutter of a modern clutch. It's significantly cheaper than enthusiast options but leaves your chain free to dance against the frame on every bump. Great for people who find a quiet bike suspicious.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, bikepodium.sk, mojekolo.sk, Allegro",
+    "components": {
+      "shifter_right": {
+        "model": "SL-M4100-R",
+        "tier": "Deore",
+        "price_min_eur": 17,
+        "price_max_eur": 20,
+        "note": "10-speed right shifter"
+      },
+      "shifter_left": {
+        "model": "SL-M5100-L",
+        "tier": "Deore",
+        "price_min_eur": 15,
+        "price_max_eur": 17,
+        "note": "2-speed left shifter for FD"
+      },
+      "rear_derailleur": {
+        "model": "RD-M4120",
+        "tier": "Deore",
+        "price_min_eur": 24,
+        "price_max_eur": 28
+      },
+      "front_derailleur": {
+        "model": "FD-M4100",
+        "tier": "Deore",
+        "price_min_eur": 19,
+        "price_max_eur": 21,
+        "note": "Side Swing 2x10"
+      },
+      "crankset": {
+        "model": "FC-M4100-2 (36-26T)",
+        "tier": "Deore",
+        "price_min_eur": 44,
+        "price_max_eur": 60,
+        "note": "Double chainring"
+      },
+      "cassette": {
+        "model": "CS-M4100-10 (11-42T)",
+        "tier": "Deore",
+        "price_min_eur": 32,
+        "price_max_eur": 37
+      },
+      "chain": {
+        "model": "CN-HG54",
+        "tier": "Deore/HG",
+        "price_min_eur": 13,
+        "price_max_eur": 15
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-deore-m5100",
@@ -202,7 +492,7 @@
     "league": 3,
     "league_label": "Enthusiast",
     "year_introduced": 2020,
-    "price_eur_approx": "210 - 250",
+    "price_eur_approx": "146 - 178",
     "weight_g_approx": "2040",
     "gear_range_percent": 4.63,
     "cassette_range": "11 - 51t",
@@ -211,9 +501,44 @@
     "requires_charger": null,
     "compatible_chains": "HG 11 - Speed",
     "cross_brand_equivalent": "SRAM NX Eagle",
-    "honest_take": "This 11-speed system is for the hobbyist who wants to conquer mountains but still likes having money for pizza. It features a clutch to keep things quiet and a gear range so wide it almost hides the fact that you haven't been to the gym in months. It’s the ultimate \"no-shame\" workhorse.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This 11-speed system is for the hobbyist who wants to conquer mountains but still likes having money for pizza. It features a clutch to keep things quiet and a gear range so wide it almost hides the fact that you haven't been to the gym in months. It's the ultimate \"no-shame\" workhorse.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, megaknihy.sk, mojekolo.sk, spoke-store.sk, Heureka, Allegro",
+    "components": {
+      "shifter": {
+        "model": "SL-M5100-R",
+        "tier": "Deore",
+        "price_min_eur": 15,
+        "price_max_eur": 17,
+        "note": "1x setup — single right shifter only; OEM versions ~13€"
+      },
+      "rear_derailleur": {
+        "model": "RD-M5100-SGS",
+        "tier": "Deore",
+        "price_min_eur": 27,
+        "price_max_eur": 30
+      },
+      "crankset": {
+        "model": "FC-M5100-1 (single chainring)",
+        "tier": "Deore",
+        "price_min_eur": 45,
+        "price_max_eur": 58
+      },
+      "cassette": {
+        "model": "CS-M5100-11 (11-51T)",
+        "tier": "Deore",
+        "price_min_eur": 42,
+        "price_max_eur": 51,
+        "note": "Wide-range 11-speed; competitive with SRAM Eagle gear range"
+      },
+      "chain": {
+        "model": "CN-HG601-11",
+        "tier": "Deore/HG",
+        "price_min_eur": 17,
+        "price_max_eur": 22
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-deore-m6100",
@@ -229,7 +554,7 @@
     "league": 3,
     "league_label": "Enthusiast",
     "year_introduced": 2020,
-    "price_eur_approx": "240 - 290",
+    "price_eur_approx": "171 - 212",
     "weight_g_approx": "2020",
     "gear_range_percent": 5.1,
     "cassette_range": "10 - 51t",
@@ -238,9 +563,47 @@
     "requires_charger": null,
     "compatible_chains": "HG 12 - Speed",
     "cross_brand_equivalent": "SRAM Eagle",
-    "honest_take": "This is the cheapest way to get 12 speeds and a clutch that actually keeps your chain on the bike. You’ll need a specific Microspline rear wheel to use it, which is a great excuse to tell your partner why you \"absolutely had to\" buy new parts. It’s heavy, unpretentious, and works better than your fitness level deserves.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This is the cheapest way to get 12 speeds and a clutch that actually keeps your chain on the bike. You'll need a specific Microspline rear wheel to use it, which is a great excuse to tell your partner why you \"absolutely had to\" buy new parts. It's heavy, unpretentious, and works better than your fitness level deserves.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, bikepodium.sk, tsbohemia.sk, spoke-store.sk, Allegro",
+    "components": {
+      "shifter": {
+        "model": "SL-M6100-R",
+        "tier": "Deore",
+        "price_min_eur": 10,
+        "price_max_eur": 22,
+        "note": "1x setup — single right shifter only; wide retail spread (clearance/OEM ~10-12€, mainstream retail 19-22€)"
+      },
+      "rear_derailleur": {
+        "model": "RD-M6100-SGS",
+        "tier": "Deore",
+        "price_min_eur": 30,
+        "price_max_eur": 35,
+        "note": "Shadow Plus design with clutch"
+      },
+      "crankset": {
+        "model": "FC-M6100 (single chainring 30T/32T)",
+        "tier": "Deore",
+        "price_min_eur": 55,
+        "price_max_eur": 74,
+        "note": "Price varies by chainring tooth count and HTII configuration"
+      },
+      "cassette": {
+        "model": "CS-M6100-12 (10-51T)",
+        "tier": "Deore",
+        "price_min_eur": 60,
+        "price_max_eur": 62,
+        "note": "Requires Microspline freehub — not compatible with HG wheelsets"
+      },
+      "chain": {
+        "model": "CN-M6100",
+        "tier": "Deore",
+        "price_min_eur": 16,
+        "price_max_eur": 19,
+        "note": "Hyperglide+ allows shifting under load"
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-slx-m7000",
@@ -256,7 +619,7 @@
     "league": 3,
     "league_label": "Enthusiast",
     "year_introduced": 2016,
-    "price_eur_approx": "230 - 270",
+    "price_eur_approx": "213 - 282",
     "weight_g_approx": "1880",
     "gear_range_percent": 4.18,
     "cassette_range": "11 - 46t",
@@ -265,9 +628,47 @@
     "requires_charger": null,
     "compatible_chains": "HG 11 - Speed",
     "cross_brand_equivalent": "SRAM NX/GX",
-    "honest_take": "This 11-speed groupset is the blue-collar hero of the trail, offering crisp shifting without requiring a second mortgage. It’s light enough to feel \"real\" and tough enough to survive your inevitable low-speed tip-overs. It is the perfect choice for riders who prefer riding their bikes to talking about them.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This 11-speed groupset is the blue-collar hero of the trail, offering crisp shifting without requiring a second mortgage. It's light enough to feel \"real\" and tough enough to survive your inevitable low-speed tip-overs. It is the perfect choice for riders who prefer riding their bikes to talking about them.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, axit.cz, procycling.sk, Allegro, Alza",
+    "components": {
+      "shifter": {
+        "model": "SL-M7000-R",
+        "tier": "SLX",
+        "price_min_eur": 21,
+        "price_max_eur": 25,
+        "note": "1x setup — single right shifter; band-on (with clamp) version; I-Spec II variants priced separately"
+      },
+      "rear_derailleur": {
+        "model": "RD-M7000-SGS",
+        "tier": "SLX",
+        "price_min_eur": 47,
+        "price_max_eur": 50,
+        "note": "Shadow Plus design with clutch ON/OFF switch"
+      },
+      "crankset": {
+        "model": "FC-M7000-1 (single chainring)",
+        "tier": "SLX",
+        "price_min_eur": 78,
+        "price_max_eur": 111,
+        "note": "Price varies by chainring tooth count (30T/32T/34T) and crank arm length"
+      },
+      "cassette": {
+        "model": "CS-M7000-11",
+        "tier": "SLX",
+        "price_min_eur": 50,
+        "price_max_eur": 74,
+        "note": "Price varies by gear range (11-40T/11-42T/11-46T)"
+      },
+      "chain": {
+        "model": "CN-HG601-11",
+        "tier": "Deore/HG",
+        "price_min_eur": 17,
+        "price_max_eur": 22,
+        "note": "Shared with Deore M5100"
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-slx-m7100",
@@ -283,7 +684,7 @@
     "league": 4,
     "league_label": "Performance",
     "year_introduced": 2019,
-    "price_eur_approx": "280 - 330",
+    "price_eur_approx": "224 - 266",
     "weight_g_approx": "1850",
     "gear_range_percent": 5.1,
     "cassette_range": "10 - 51t",
@@ -292,9 +693,46 @@
     "requires_charger": null,
     "compatible_chains": "HG 12 - Speed",
     "cross_brand_equivalent": "SRAM Eagle",
-    "honest_take": "This is essentially the high-end stuff with a heavier coat of paint and significantly less carbon fiber. It offers the full 10-51T range to help you crawl up inclines that would otherwise require a winch. It’s the perfect kit for anyone who realizes that the extra weight of SLX is still lighter than the three beers they had the night before.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This is essentially the high-end stuff with a heavier coat of paint and significantly less carbon fiber. It offers the full 10-51T range to help you crawl up inclines that would otherwise require a winch. It's the perfect kit for anyone who realizes that the extra weight of SLX is still lighter than the three beers they had the night before.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, bikepodium.sk, gravityshop, megaknihy.sk",
+    "components": {
+      "shifter": {
+        "model": "SL-M7100-R",
+        "tier": "SLX",
+        "price_min_eur": 18,
+        "price_max_eur": 20,
+        "note": "1x setup — single right shifter; band-on (with clamp) version; I-Spec EV variants priced ~25-26€"
+      },
+      "rear_derailleur": {
+        "model": "RD-M7100-SGS",
+        "tier": "SLX",
+        "price_min_eur": 42,
+        "price_max_eur": 55,
+        "note": "Shadow Plus design with clutch"
+      },
+      "crankset": {
+        "model": "FC-M7100 (single chainring 30T/32T)",
+        "tier": "SLX",
+        "price_min_eur": 78,
+        "price_max_eur": 80
+      },
+      "cassette": {
+        "model": "CS-M7100-12 (10-51T)",
+        "tier": "SLX",
+        "price_min_eur": 70,
+        "price_max_eur": 88,
+        "note": "Requires Microspline freehub — not compatible with HG wheelsets"
+      },
+      "chain": {
+        "model": "CN-M7100",
+        "tier": "SLX",
+        "price_min_eur": 16,
+        "price_max_eur": 23,
+        "note": "Hyperglide+ allows shifting under load"
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-xt-m8000",
@@ -310,7 +748,7 @@
     "league": 4,
     "league_label": "Performance",
     "year_introduced": 2015,
-    "price_eur_approx": "290 - 300",
+    "price_eur_approx": "297 - 365",
     "weight_g_approx": "1780",
     "gear_range_percent": 4.18,
     "cassette_range": "11 - 46t",
@@ -320,8 +758,45 @@
     "compatible_chains": "HG 11 - Speed",
     "cross_brand_equivalent": "SRAM X1/X01",
     "honest_take": "This is the drivetrain that made \"one-by\" conversions mainstream for the rest of us. It shifts with a satisfying, metallic \"clunk\" that screams quality, even when you're cross-chaining like an amateur. It is the perfect choice for the rider who wants a bike that is objectively better than their actual skill level.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, bikepodium.sk, mojekolo.sk",
+    "components": {
+      "shifter": {
+        "model": "SL-M8000-R",
+        "tier": "XT",
+        "price_min_eur": 28,
+        "price_max_eur": 40,
+        "note": "1x setup — single right shifter; OEM/clearance pricing ~28€, mainstream retail ~40€"
+      },
+      "rear_derailleur": {
+        "model": "RD-M8000-SGS",
+        "tier": "XT",
+        "price_min_eur": 55,
+        "price_max_eur": 68,
+        "note": "Shadow Plus design with clutch ON/OFF switch"
+      },
+      "crankset": {
+        "model": "FC-M8000-1 (single chainring)",
+        "tier": "XT",
+        "price_min_eur": 120,
+        "price_max_eur": 145,
+        "note": "Single source verified; range estimated"
+      },
+      "cassette": {
+        "model": "CS-M8000 (11-46T)",
+        "tier": "XT",
+        "price_min_eur": 77,
+        "price_max_eur": 87
+      },
+      "chain": {
+        "model": "CN-HG701-11",
+        "tier": "XT",
+        "price_min_eur": 24,
+        "price_max_eur": 27,
+        "note": "XT-tier 11-speed chain"
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-xt-m8100",
@@ -337,7 +812,7 @@
     "league": 4,
     "league_label": "Performance",
     "year_introduced": 2019,
-    "price_eur_approx": "380 - 450",
+    "price_eur_approx": "329 - 405",
     "weight_g_approx": "1760",
     "gear_range_percent": 5.1,
     "cassette_range": "10 - 51t",
@@ -347,8 +822,45 @@
     "compatible_chains": "HG 12 - Speed",
     "cross_brand_equivalent": "SRAM GX Eagle/ X01 Eagle",
     "honest_take": "This 12-speed powerhouse is the benchmark for performance that doesn't require a professional sponsorship. It features Hyperglide+ technology, which allows you to shift gears while pedaling like a maniac, without the drivetrain sounding like a car crash. It is the perfect choice for riders who want to win races but still have to pay for their own tires.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, bikepodium.sk, gravityshop, mtbstupak, megaknihy.sk, mojekolo.sk",
+    "components": {
+      "shifter": {
+        "model": "SL-M8100-R",
+        "tier": "XT",
+        "price_min_eur": 40,
+        "price_max_eur": 50,
+        "note": "1x setup — single right shifter; band-on (with clamp) version"
+      },
+      "rear_derailleur": {
+        "model": "RD-M8100-SGS",
+        "tier": "XT",
+        "price_min_eur": 74,
+        "price_max_eur": 80,
+        "note": "Shadow Plus design with clutch"
+      },
+      "crankset": {
+        "model": "FC-M8100 (single chainring 30T/32T/34T)",
+        "tier": "XT",
+        "price_min_eur": 95,
+        "price_max_eur": 117
+      },
+      "cassette": {
+        "model": "CS-M8100-12 (10-51T)",
+        "tier": "XT",
+        "price_min_eur": 92,
+        "price_max_eur": 129,
+        "note": "Requires Microspline freehub — not compatible with HG wheelsets"
+      },
+      "chain": {
+        "model": "CN-M8100",
+        "tier": "XT",
+        "price_min_eur": 28,
+        "price_max_eur": 29,
+        "note": "Hyperglide+ XT chain"
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-xtr-m9000",
@@ -364,7 +876,7 @@
     "league": 5,
     "league_label": "Elite",
     "year_introduced": 2014,
-    "price_eur_approx": "750 - 900",
+    "price_eur_approx": "785 - 1210",
     "weight_g_approx": "1580",
     "gear_range_percent": 3.63,
     "cassette_range": "11 - 40t",
@@ -373,9 +885,47 @@
     "requires_charger": null,
     "compatible_chains": "HG 11 - Speed",
     "cross_brand_equivalent": "SRAM XX1 11 - Speed",
-    "honest_take": "This 11-speed masterpiece was Shimano's last stand against the 1x revolution. It’s built with magnesium, carbon, and titanium—basically all the stuff they use to build fighter jets—just so you can shave off the weight of a single granola bar. It shifts with the precision of a Swiss watch, assuming you have the mechanical skills of a Swiss watchmaker to keep it indexed.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This 11-speed masterpiece was Shimano's last stand against the 1x revolution. It's built with magnesium, carbon, and titanium—basically all the stuff they use to build fighter jets—just so you can shave off the weight of a single granola bar. It shifts with the precision of a Swiss watch, assuming you have the mechanical skills of a Swiss watchmaker to keep it indexed.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, bikepodium.sk, spoke-store.sk, soof s.r.o., bikecentrumpresov.sk, mojekolo.sk, koloshop.sk, cyklocentrum.eu, sportokay.com",
+    "components": {
+      "shifter": {
+        "model": "SL-M9000-R",
+        "tier": "XTR",
+        "price_min_eur": 85,
+        "price_max_eur": 99,
+        "note": "1x setup — single right shifter; XTR premium pricing"
+      },
+      "rear_derailleur": {
+        "model": "RD-M9000-SGS",
+        "tier": "XTR",
+        "price_min_eur": 138,
+        "price_max_eur": 259,
+        "note": "Wide retail spread between EU shops; widely sold-out at higher prices"
+      },
+      "crankset": {
+        "model": "FC-M9000-1 (single chainring)",
+        "tier": "XTR",
+        "price_min_eur": 301,
+        "price_max_eur": 449,
+        "note": "Carbon/magnesium/titanium construction; widely sold-out at premium retailers (MTBIKER 449€ unavailable)"
+      },
+      "cassette": {
+        "model": "CS-M9000-11 (11-40T)",
+        "tier": "XTR",
+        "price_min_eur": 225,
+        "price_max_eur": 339,
+        "note": "Titanium/aluminum spider; XTR-tier 11-speed"
+      },
+      "chain": {
+        "model": "CN-HG900-11",
+        "tier": "XTR",
+        "price_min_eur": 36,
+        "price_max_eur": 64,
+        "note": "XTR-tier chain"
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-xtr-m9100",
@@ -391,7 +941,7 @@
     "league": 5,
     "league_label": "Elite",
     "year_introduced": 2018,
-    "price_eur_approx": "950 - 1150",
+    "price_eur_approx": "810 - 932",
     "weight_g_approx": "1510",
     "gear_range_percent": 5.1,
     "cassette_range": "10 - 51t",
@@ -401,8 +951,46 @@
     "compatible_chains": "HG 12 - Speed",
     "cross_brand_equivalent": "SRAM XX1 Eagle",
     "honest_take": "The XTR M9100 is for the cyclist who has reached financial enlightenment and decided that spending hundreds of euros to save the weight of a half-eaten banana is a sound investment. It is silent, flawless, and incredibly beautiful—a perfect contrast to the heavy breathing and grunting of the person actually riding it.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, spoke-store.sk, gravityshop, koloshop.sk, mtbstupak, heureka, bicyklom.sk",
+    "components": {
+      "shifter": {
+        "model": "SL-M9100-R",
+        "tier": "XTR",
+        "price_min_eur": 100,
+        "price_max_eur": 110,
+        "note": "1x setup — single right shifter; XTR 12-speed"
+      },
+      "rear_derailleur": {
+        "model": "RD-M9100-SGS",
+        "tier": "XTR",
+        "price_min_eur": 178,
+        "price_max_eur": 189,
+        "note": "Shadow Plus design with clutch"
+      },
+      "crankset": {
+        "model": "FC-M9100-1 (single chainring)",
+        "tier": "XTR",
+        "price_min_eur": 239,
+        "price_max_eur": 269,
+        "note": "Carbon/titanium construction"
+      },
+      "cassette": {
+        "model": "CS-M9100-12 (10-51T)",
+        "tier": "XTR",
+        "price_min_eur": 249,
+        "price_max_eur": 319,
+        "note": "Requires Microspline freehub — not compatible with HG wheelsets"
+      },
+      "chain": {
+        "model": "CN-M9100",
+        "tier": "XTR",
+        "price_min_eur": 44,
+        "price_max_eur": 45,
+        "note": "XTR Hyperglide+ chain"
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "shimano-xtr-m9050-di2",
@@ -418,7 +1006,7 @@
     "league": 5,
     "league_label": "Elite",
     "year_introduced": 2014,
-    "price_eur_approx": "1100 - 1300",
+    "price_eur_approx": "1267 - 1753",
     "weight_g_approx": "1580",
     "gear_range_percent": 3.64,
     "cassette_range": "11 - 40t",
@@ -427,9 +1015,55 @@
     "requires_charger": "Yes",
     "compatible_chains": "HG X11 - Speed",
     "cross_brand_equivalent": "SRAM XX1 Eagle AXS",
-    "honest_take": "The M9050 Di2 is for the cyclist who wants the world to know they have reached \"Peak Tech.\" It’s an incredibly precise system that eliminates human error, meaning the only reason you’re still in the wrong gear is your own brain's failure to process the incline. It is beautiful, expensive, and a great way to experience the unique panic of realizing you forgot to charge your bike before a race.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "The M9050 Di2 is for the cyclist who wants the world to know they have reached \"Peak Tech.\" It's an incredibly precise system that eliminates human error, meaning the only reason you're still in the wrong gear is your own brain's failure to process the incline. It is beautiful, expensive, and a great way to experience the unique panic of realizing you forgot to charge your bike before a race.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, axit.cz, 123kolo.cz, koloshop.sk, mojekolo.sk, bikeinn.com, Allegro",
+    "components": {
+      "shifter": {
+        "model": "SW-M9050",
+        "tier": "XTR Di2",
+        "price_min_eur": 142,
+        "price_max_eur": 152,
+        "note": "Wired Di2 electronic switch (not traditional Rapidfire)"
+      },
+      "rear_derailleur": {
+        "model": "RD-M9050",
+        "tier": "XTR Di2",
+        "price_min_eur": 434,
+        "price_max_eur": 569,
+        "note": "Wired Di2 servo motor derailleur"
+      },
+      "crankset": {
+        "model": "FC-M9000-1 (single chainring)",
+        "tier": "XTR",
+        "price_min_eur": 301,
+        "price_max_eur": 449,
+        "note": "Shared with XTR M9000 mech; widely sold-out at premium retailers"
+      },
+      "cassette": {
+        "model": "CS-M9000-11 (11-40T)",
+        "tier": "XTR",
+        "price_min_eur": 225,
+        "price_max_eur": 339,
+        "note": "Shared with XTR M9000 mech; titanium/aluminum spider"
+      },
+      "chain": {
+        "model": "CN-HG900-11",
+        "tier": "XTR",
+        "price_min_eur": 36,
+        "price_max_eur": 64,
+        "note": "Shared with XTR M9000 mech"
+      },
+      "battery": {
+        "model": "BT-DN110 / BT-DN100",
+        "tier": "Di2",
+        "price_min_eur": 129,
+        "price_max_eur": 180,
+        "note": "Internal Di2 battery; non-substitutable"
+      }
+    },
+    "components_verified_at": "2026-05-04",
+    "components_extras_note": "Plus junction box (SM-JC41) + cables (EW-SD50) ~80-100€, charger (SM-PCE02) ~50€ if not owned. Cabling cost varies by frame routing and existing Di2 setup."
   },
   {
     "id": "shimano-xtr-m9250-di2",
@@ -445,7 +1079,7 @@
     "league": 5,
     "league_label": "Elite",
     "year_introduced": 2024,
-    "price_eur_approx": "1500 - 1700",
+    "price_eur_approx": "1288 - 1470",
     "weight_g_approx": "1480",
     "gear_range_percent": 5.1,
     "cassette_range": "10 - 51t",
@@ -454,9 +1088,55 @@
     "requires_charger": "Yes",
     "compatible_chains": "HG 12 - Speed",
     "cross_brand_equivalent": "SRAM XX1 Eagle AXS",
-    "honest_take": "This 12-speed electronic marvel is for the rider who finds the physical effort of pushing a lever \"too taxing.\" It offers shifting so fast and precise that you’ll run out of excuses for being in the wrong gear before you even realize the hill has started. It’s the ultimate way to spend a fortune to ensure your bike has a better battery life than your phone.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This 12-speed electronic marvel is for the rider who finds the physical effort of pushing a lever \"too taxing.\" It offers shifting so fast and precise that you'll run out of excuses for being in the wrong gear before you even realize the hill has started. It's the ultimate way to spend a fortune to ensure your bike has a better battery life than your phone.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, mojekolo.sk",
+    "components": {
+      "shifter": {
+        "model": "SW-M9250-R",
+        "tier": "XTR Di2 wireless",
+        "price_min_eur": 159,
+        "price_max_eur": 169,
+        "note": "Wireless electronic switch with CR2032 battery (~2 year life)"
+      },
+      "rear_derailleur": {
+        "model": "RD-M9250-SGS",
+        "tier": "XTR Di2 wireless",
+        "price_min_eur": 489,
+        "price_max_eur": 529,
+        "note": "Wireless Di2 servo motor; battery integrated in RD"
+      },
+      "crankset": {
+        "model": "FC-M9100-1 (single chainring)",
+        "tier": "XTR",
+        "price_min_eur": 239,
+        "price_max_eur": 269,
+        "note": "Shared with XTR M9100 mech; carbon/titanium construction"
+      },
+      "cassette": {
+        "model": "CS-M9100-12 (10-51T)",
+        "tier": "XTR",
+        "price_min_eur": 249,
+        "price_max_eur": 319,
+        "note": "Shared with XTR M9100 mech; Microspline freehub required"
+      },
+      "chain": {
+        "model": "CN-M9100",
+        "tier": "XTR",
+        "price_min_eur": 44,
+        "price_max_eur": 45,
+        "note": "Shared with XTR M9100 mech; Hyperglide+"
+      },
+      "battery": {
+        "model": "BT-DN300-A",
+        "tier": "Di2 wireless",
+        "price_min_eur": 108,
+        "price_max_eur": 139,
+        "note": "Wireless integrated Di2 battery; rechargeable in RD"
+      }
+    },
+    "components_verified_at": "2026-05-04",
+    "components_extras_note": "Wireless system — no junction box or wired cables required. Charger SM-BCR2 ~40-50€ if not owned. Optional bar-mounted display (SC-MT800) sold separately."
   },
   {
     "id": "shimano-xt-m8150-di2",
@@ -472,18 +1152,50 @@
     "league": 4,
     "league_label": "Performance",
     "year_introduced": 2024,
-    "price_eur_approx": "850 - 1050",
+    "price_eur_approx": "518 - 652",
     "weight_g_approx": "1850",
     "gear_range_percent": 5.1,
     "cassette_range": "10 - 51t",
     "drivetrain_type": "1x12",
     "battery_life_approx": "Depends on eBike battery capacity",
-    "requires_charger": "Yes",
+    "requires_charger": "Yes (eBike main battery)",
     "compatible_chains": "HG 12 - Speed",
     "cross_brand_equivalent": "SRAM XX1 Eagle AXS",
-    "honest_take": "This eMTB only setup is the gateway to the FREE SHIFT and AUTO SHIFT lifestyle. It’s for the rider who wants to be a passenger on their own bicycle, letting the CPU decide which gear is best for their current level of exhaustion. It’s incredibly smart, which is great, because it can finally compensate for your questionable gear choices on steep climbs.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This eMTB only setup is the gateway to the FREE SHIFT and AUTO SHIFT lifestyle. It's for the rider who wants to be a passenger on their own bicycle, letting the CPU decide which gear is best for their current level of exhaustion. It's incredibly smart, which is great, because it can finally compensate for your questionable gear choices on steep climbs.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, bikepodium.sk, tsbohemia.sk",
+    "components": {
+      "shifter": {
+        "model": "SW-M8150-R",
+        "tier": "XT Di2 wireless",
+        "price_min_eur": 148,
+        "price_max_eur": 159,
+        "note": "Wireless electronic switch with CR2032 battery"
+      },
+      "rear_derailleur": {
+        "model": "RD-M8150",
+        "tier": "XT Di2 wireless",
+        "price_min_eur": 250,
+        "price_max_eur": 335,
+        "note": "Wireless Di2 RD with FREE SHIFT and AUTO SHIFT functions"
+      },
+      "cassette": {
+        "model": "CS-M8100-12 (10-51T)",
+        "tier": "XT",
+        "price_min_eur": 92,
+        "price_max_eur": 129,
+        "note": "Shared with XT M8100 mech; Microspline freehub required"
+      },
+      "chain": {
+        "model": "CN-M8100",
+        "tier": "XT",
+        "price_min_eur": 28,
+        "price_max_eur": 29,
+        "note": "Shared with XT M8100 mech"
+      }
+    },
+    "components_verified_at": "2026-05-04",
+    "components_extras_note": "eMTB-only groupset. Crankset NOT included — part of motor unit (Shimano EP8/EP801, sold separately ~600-900€). Direct-mount chainring SM-CRE80 ~30-50€ if upgrading from existing motor. Battery powered from eBike main battery via Steps interface; no separate Di2 battery required. Optional bar-mounted display sold separately."
   },
   {
     "id": "shimano-deore-m6250-di2",
@@ -499,18 +1211,64 @@
     "league": 3,
     "league_label": "Enthusiast",
     "year_introduced": 2025,
-    "price_eur_approx": "450 - 550",
+    "price_eur_approx": "571 - 679",
     "weight_g_approx": "2150",
-    "gear_range_percent": 3.91,
-    "cassette_range": "11 - 43t",
+    "gear_range_percent": 5.1,
+    "cassette_range": "10 - 51t",
     "drivetrain_type": "1x12",
     "battery_life_approx": "~340 km per charge",
     "requires_charger": "Yes",
     "compatible_chains": "HG 12-Speed (Hyperglide+)",
     "cross_brand_equivalent": "SRAM NX Eagle (no wireless equivalent at this price)",
-    "honest_take": "The M6250 Di2 is for the rider who wants a bulletproof, electronic workhorse that can handle the massive torque of a motor without exploding. It’s heavy, it’s robust, and it removes the last remaining requirement of cycling: thinking. It’s a masterclass in making \"difficult\" trails feel like a trip to the grocery store, provided you remembered to charge the whole bike.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "The M6250 Di2 is for the rider who wants a bulletproof, electronic workhorse that can handle the massive torque of a motor without exploding. It's heavy, it's robust, and it removes the last remaining requirement of cycling: thinking. It's a masterclass in making \"difficult\" trails feel like a trip to the grocery store, provided you remembered to charge the whole bike.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, TRIBOSPORT, bikepodium.sk, Bike-Discount, bikeinn.com, Allegro",
+    "components": {
+      "shifter": {
+        "model": "SW-M6200-R",
+        "tier": "Deore Di2 wireless",
+        "price_min_eur": 99,
+        "price_max_eur": 109,
+        "note": "Band-on (clamp) version; I-Spec EV variants ~119€"
+      },
+      "rear_derailleur": {
+        "model": "RD-M6250-SGS",
+        "tier": "Deore Di2 wireless",
+        "price_min_eur": 309,
+        "price_max_eur": 371,
+        "note": "Wireless Di2 with Shadow ES + Automatic Impact Recovery; new 2025 product"
+      },
+      "crankset": {
+        "model": "FC-M6100 (single chainring 30T/32T)",
+        "tier": "Deore",
+        "price_min_eur": 55,
+        "price_max_eur": 74,
+        "note": "Shared with Deore M6100 mech; HTII"
+      },
+      "cassette": {
+        "model": "CS-M6100-12 (10-51T)",
+        "tier": "Deore",
+        "price_min_eur": 60,
+        "price_max_eur": 62,
+        "note": "Shared with Deore M6100 mech; Microspline freehub required"
+      },
+      "chain": {
+        "model": "CN-M6100",
+        "tier": "Deore",
+        "price_min_eur": 16,
+        "price_max_eur": 19,
+        "note": "Shared with Deore M6100 mech; Hyperglide+"
+      },
+      "battery": {
+        "model": "BT-DN320",
+        "tier": "Di2 wireless",
+        "price_min_eur": 32,
+        "price_max_eur": 44,
+        "note": "Wireless integrated battery; shared across M6250/M8250/M9250/RX827 wireless systems"
+      }
+    },
+    "components_verified_at": "2026-05-04",
+    "components_extras_note": "Wireless system — no junction box or wired cables required. Charger EC-EN100 ~40-50€ if not owned. Shifter available in band-on and I-Spec EV mounts. Honest take note: text mentions motor torque, which applies more to eMTB context — Deore Di2 M6250 is designed for regular MTB use (eMTB-specific groupset is XT Di2 M8150)."
   },
   {
     "id": "sram-sx-eagle",
@@ -526,7 +1284,7 @@
     "league": 2,
     "league_label": "Recreational",
     "year_introduced": 2019,
-    "price_eur_approx": "280 - 350",
+    "price_eur_approx": "187 - 260",
     "weight_g_approx": "2320",
     "gear_range_percent": 5.0,
     "cassette_range": "11 - 50t",
@@ -535,9 +1293,46 @@
     "requires_charger": null,
     "compatible_chains": "SRAM Eagle 12-speed",
     "cross_brand_equivalent": "Shimano Deore M6100",
-    "honest_take": "This is the drivetrain for the rider who loves a challenge—specifically the challenge of keeping a derailleur indexed for more than two consecutive rides. It’s heavy, it’s vague, and the shifter feels like a toy from a cereal box. It’s the ideal setup for someone who wants to learn exactly how to replace a derailleur, because they’ll be doing it very soon.",
-    "verified": false,
-    "source_note": null
+    "honest_take": "This is the drivetrain for the rider who loves a challenge—specifically the challenge of keeping a derailleur indexed for more than two consecutive rides. It's heavy, it's vague, and the shifter feels like a toy from a cereal box. It's the ideal setup for someone who wants to learn exactly how to replace a derailleur, because they'll be doing it very soon.",
+    "verified": true,
+    "source_note": "MTBIKER.shop, Bike-Discount, bikeinn.com, axit.sk, mtbstupak, mojekolo.sk",
+    "components": {
+      "shifter": {
+        "model": "SX Eagle trigger",
+        "tier": "SX Eagle",
+        "price_min_eur": 18,
+        "price_max_eur": 29,
+        "note": "1x setup — single right shifter only; wide retail spread"
+      },
+      "rear_derailleur": {
+        "model": "SX Eagle RD",
+        "tier": "SX Eagle",
+        "price_min_eur": 48,
+        "price_max_eur": 65
+      },
+      "crankset": {
+        "model": "SX Eagle (32T DUB)",
+        "tier": "SX Eagle",
+        "price_min_eur": 41,
+        "price_max_eur": 64,
+        "note": "Price varies by crank arm length and chainring teeth count"
+      },
+      "cassette": {
+        "model": "PG-1210 (11-50T)",
+        "tier": "SX Eagle",
+        "price_min_eur": 63,
+        "price_max_eur": 80,
+        "note": "HG freehub compatible (not XD) — key SX Eagle feature for budget builds"
+      },
+      "chain": {
+        "model": "PC-1110 (NX Eagle)",
+        "tier": "NX Eagle",
+        "price_min_eur": 17,
+        "price_max_eur": 22,
+        "note": "No native SX Eagle chain in EU retail; PC-1110 (NX Eagle) is the typical substitute"
+      }
+    },
+    "components_verified_at": "2026-05-04"
   },
   {
     "id": "sram-nx-eagle",
@@ -553,7 +1348,7 @@
     "league": 3,
     "league_label": "Enthusiast",
     "year_introduced": 2018,
-    "price_eur_approx": "380 - 450",
+    "price_eur_approx": "237 - 308",
     "weight_g_approx": "2050",
     "gear_range_percent": 5.0,
     "cassette_range": "11 - 50t",
@@ -563,8 +1358,37 @@
     "compatible_chains": "SRAM Eagle 12-speed",
     "cross_brand_equivalent": "Shimano SLX M7100",
     "honest_take": "This is the drivetrain that finally introduced the \"Eagle\" experience to people who don't want to spend their entire paycheck on a cassette. It uses a standard HG freehub, which is SRAM's way of saying: \"We know your old wheels are trash, but you can keep them for now.\" It shifts okay, but with the subtle finesse of a medieval catapult.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "bike-discount.de, mtbiker.sk, mtbstupak.sk, axit.sk, mojekolo.sk, allegro.pl",
+    "components": {
+      "shifter": {
+        "model": "SRAM NX Eagle trigger",
+        "price_min": 15.78,
+        "price_max": 19.99
+      },
+      "rear_derailleur": {
+        "model": "SRAM NX Eagle",
+        "price_min": 62.67,
+        "price_max": 91.99
+      },
+      "crankset": {
+        "model": "SRAM NX Eagle DUB",
+        "price_min": 63.55,
+        "price_max": 87.99
+      },
+      "cassette": {
+        "model": "SRAM PG-1230 (11-50t, HG driver)",
+        "price_min": 76.99,
+        "price_max": 87.99
+      },
+      "chain": {
+        "model": "SRAM NX Eagle / PC-1110",
+        "price_min": 17.99,
+        "price_max": 19.88
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "Crankset based on 2 price points (Allegro PL low, mojekolo.sk SK high) — typical spread for DUB cranks. Cassette PG-1230 uses HG freehub (NX Eagle exception in Eagle line)."
   },
   {
     "id": "sram-gx-eagle",
@@ -580,7 +1404,7 @@
     "league": 3,
     "league_label": "Enthusiast",
     "year_introduced": 2017,
-    "price_eur_approx": "500 - 600",
+    "price_eur_approx": "381 - 504",
     "weight_g_approx": "1750",
     "gear_range_percent": 5.2,
     "cassette_range": "10 - 52t",
@@ -590,8 +1414,37 @@
     "compatible_chains": "SRAM Eagle 12-speed GX",
     "cross_brand_equivalent": "Shimano XT M8100",
     "honest_take": "This is the drivetrain for the person who realized that Shimano's shifting was \"too smooth\" and missed the aggressive, metallic \"THWACK\" of a gear change that sounds like a gunshot. It features a 520% range, allowing you to climb up vertical walls while your friends with 11-speed setups are busy walking and questioning their life choices.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "mtbiker.sk, mtbstupak.sk, tsbohemia.cz, axit.sk, allegro.pl, sportrysy.sk",
+    "components": {
+      "shifter": {
+        "model": "SRAM GX Eagle trigger",
+        "price_min": 25.69,
+        "price_max": 35.99
+      },
+      "rear_derailleur": {
+        "model": "SRAM GX Eagle",
+        "price_min": 97.53,
+        "price_max": 109.0
+      },
+      "crankset": {
+        "model": "SRAM GX Eagle DUB",
+        "price_min": 84.99,
+        "price_max": 139.0
+      },
+      "cassette": {
+        "model": "SRAM XG-1275 (10-52t, XD driver)",
+        "price_min": 149.99,
+        "price_max": 179.0
+      },
+      "chain": {
+        "model": "SRAM GX Eagle",
+        "price_min": 22.7,
+        "price_max": 41.35
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "Wide crankset price spread (Allegro PL low at 85€, mtbiker high at 139€) — typical for DUB cranks across PL/SK markets. Chain shows similar range (sportrysy 41€ appears outlier vs. axit/mtbiker 23-27€)."
   },
   {
     "id": "sram-x01-eagle",
@@ -607,7 +1460,7 @@
     "league": 4,
     "league_label": "Performance",
     "year_introduced": 2016,
-    "price_eur_approx": "1100 - 1300",
+    "price_eur_approx": "858 - 997",
     "weight_g_approx": "1540 - 1680",
     "gear_range_percent": 5.2,
     "cassette_range": "10 - 52t",
@@ -617,8 +1470,37 @@
     "compatible_chains": "SRAM Eagle 12-speed X01",
     "cross_brand_equivalent": "Shimano XTR 9100",
     "honest_take": "This 12-speed beauty is for the rider who decided that their bike deserved to be more expensive than their first apartment. It features a carbon cage and a CNC-machined cassette that belongs in a jewelry store window rather than a muddy forest. It’s the perfect choice for the \"Enduro Bro\" who wants everyone to know they have a high-interest credit card and zero fear of rock strikes.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "mtbiker.sk, axit.sk, bikeinn.com, mammothbikes.com, allegro.pl, heureka.sk",
+    "components": {
+      "shifter": {
+        "model": "SRAM X01 Eagle trigger",
+        "price_min": 70.99,
+        "price_max": 119.0
+      },
+      "rear_derailleur": {
+        "model": "SRAM X01 Eagle (carbon cage)",
+        "price_min": 181.49,
+        "price_max": 202.0
+      },
+      "crankset": {
+        "model": "SRAM X01 Eagle DUB (carbon arms)",
+        "price_min": 267.0,
+        "price_max": 309.0
+      },
+      "cassette": {
+        "model": "SRAM XG-1295 (10-52t, XD driver)",
+        "price_min": 299.0,
+        "price_max": 309.0
+      },
+      "chain": {
+        "model": "SRAM X01 Eagle (hollow pin, hardchrome)",
+        "price_min": 39.96,
+        "price_max": 57.99
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "Cassette XG-1295 based on 2 price points (axit + mtbiker), tight 299-309€ consensus. Shifter low-end (70-71€) confirmed across multiple shops as standard pricing, not just a discount. Crankset assumed carbon DUB variant (alu OEM-only)."
   },
   {
     "id": "sram-xx1-eagle",
@@ -634,7 +1516,7 @@
     "league": 5,
     "league_label": "Elite",
     "year_introduced": 2016,
-    "price_eur_approx": "1300 - 1500",
+    "price_eur_approx": "988 - 1256",
     "weight_g_approx": "1455",
     "gear_range_percent": 5.2,
     "cassette_range": "10 - 52t",
@@ -644,8 +1526,37 @@
     "compatible_chains": "SRAM Eagle 12-speed XX1",
     "cross_brand_equivalent": "Shimano XTR 9100",
     "honest_take": "This is the drivetrain for the rider who believes that if a component isn't Ti-Nitride coated, it’s basically garbage. It’s so light that the wind might actually change your gears for you, and so expensive that you’ll consider putting a GPS tracker inside the derailleur instead of on the frame. It’s the ultimate way to prove that while you can’t buy fitness, you can certainly buy the loudest and most glittery way to fail a technical climb.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "mtbiker.sk, axit.sk, kolokram.sk, bikeinn.com, tribosport.sk, mtbstupak.sk",
+    "components": {
+      "shifter": {
+        "model": "SRAM XX1 Eagle trigger",
+        "price_min": 105.0,
+        "price_max": 177.0
+      },
+      "rear_derailleur": {
+        "model": "SRAM XX1 Eagle (carbon cage)",
+        "price_min": 219.99,
+        "price_max": 275.0
+      },
+      "crankset": {
+        "model": "SRAM XX1 Eagle DUB (carbon arms)",
+        "price_min": 254.0,
+        "price_max": 359.0
+      },
+      "cassette": {
+        "model": "SRAM XG-1299 (10-52t, XD driver)",
+        "price_min": 349.0,
+        "price_max": 379.0
+      },
+      "chain": {
+        "model": "SRAM XX1 Eagle (hollow pin, gold/rainbow hardchrome)",
+        "price_min": 59.99,
+        "price_max": 65.99
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "Wide shifter spread (kolokram 105€ vs axit 177€) suggests possible discounted color/old stock at low end. Cassette XG-1299 priced unexpectedly close to XG-1295 (X01) — shops may not always differentiate, or XX1 cassette pricing has compressed over time. Crankset bikeinn 254€ low likely reflects older gen or chainring-excluded variant."
   },
   {
     "id": "sram-gx-eagle-axs",
@@ -661,7 +1572,7 @@
     "league": 4,
     "league_label": "Performance",
     "year_introduced": 2021,
-    "price_eur_approx": "850 - 1000",
+    "price_eur_approx": "709 - 824",
     "weight_g_approx": "1860",
     "gear_range_percent": 5.2,
     "cassette_range": "10 - 52t",
@@ -671,8 +1582,42 @@
     "compatible_chains": "SRAM Eagle 12-speed",
     "cross_brand_equivalent": "Shimano XT M8150 Di2",
     "honest_take": "This is the drivetrain for the person who is terrible at mechanical maintenance but great at keeping their gadgets charged. It shifts with perfect consistency every single time, assuming you didn't leave the battery on the kitchen counter. It’s an incredible piece of tech that finally allows you to experience the futuristic joy of your gear shifter having a firmware update.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "mtbiker.sk, mtbstupak.sk, tsbohemia.cz, axit.sk, allegro.pl, sportrysy.sk, tribosport.sk, kolokram.sk, heureka.sk, bike-discount.de",
+    "components": {
+      "controller": {
+        "model": "SRAM GX Eagle AXS controller (rocker paddle)",
+        "price_min": 119.0,
+        "price_max": 129.0
+      },
+      "rear_derailleur": {
+        "model": "SRAM GX Eagle AXS (RD only, battery sold separately)",
+        "price_min": 286.0,
+        "price_max": 289.0
+      },
+      "crankset": {
+        "model": "SRAM GX Eagle DUB",
+        "price_min": 84.99,
+        "price_max": 139.0
+      },
+      "cassette": {
+        "model": "SRAM XG-1275 (10-52t, XD driver)",
+        "price_min": 149.99,
+        "price_max": 179.0
+      },
+      "chain": {
+        "model": "SRAM GX Eagle",
+        "price_min": 22.7,
+        "price_max": 41.35
+      },
+      "battery": {
+        "model": "SRAM AXS Battery",
+        "price_min": 46.5,
+        "price_max": 47.07
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "Drivetrain core (crankset, cassette, chain) shared with GX Eagle mech — prices identical. RD sold without battery (typical at this tier); battery added separately as essential component. Plus AXS charger ~25-35€ if not owned. POD controller battery (CR2032 internal, ~2 years) not included — non-replaceable consumable."
   },
   {
     "id": "sram-x01-eagle-axs",
@@ -688,7 +1633,7 @@
     "league": 5,
     "league_label": "Elite",
     "year_introduced": 2019,
-    "price_eur_approx": "1100 - 1300",
+    "price_eur_approx": "1174 - 1344",
     "weight_g_approx": "1650",
     "gear_range_percent": 5.2,
     "cassette_range": "10 - 52t",
@@ -698,8 +1643,42 @@
     "compatible_chains": "SRAM Eagle 12-speed X01",
     "cross_brand_equivalent": "Shimano XTR M9150 Di2 / XTR M9100",
     "honest_take": "This is for the Enduro rider who wants the ultimate performance and zero cables to snag on branches, but also wants a derailleur that can literally \"overload\" and move out of the way of an impact. It’s a robotic genius that protects itself better than you protect your own shins. It is the perfect choice for someone who wants to experience the peak of mountain bike tech while simultaneously explaining to their partner why the bike parts cost more than the summer vacation.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "mtbiker.sk, axit.sk, bikeinn.com, tsbohemia.cz, allegro.pl, heureka.sk, bike-discount.de, kolokram.sk",
+    "components": {
+      "controller": {
+        "model": "SRAM GX Eagle AXS controller (X01 AXS shipped with GX paddle — no dedicated X01 controller exists)",
+        "price_min": 119.0,
+        "price_max": 129.0
+      },
+      "rear_derailleur": {
+        "model": "SRAM X01 Eagle AXS (carbon cage, Overload Clutch, RD only)",
+        "price_min": 403.0,
+        "price_max": 492.0
+      },
+      "crankset": {
+        "model": "SRAM X01 Eagle DUB (carbon arms)",
+        "price_min": 267.0,
+        "price_max": 309.0
+      },
+      "cassette": {
+        "model": "SRAM XG-1295 (10-52t, XD driver)",
+        "price_min": 299.0,
+        "price_max": 309.0
+      },
+      "chain": {
+        "model": "SRAM X01 Eagle (hollow pin, hardchrome)",
+        "price_min": 39.96,
+        "price_max": 57.99
+      },
+      "battery": {
+        "model": "SRAM AXS Battery",
+        "price_min": 46.5,
+        "price_max": 47.07
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "X01 Eagle AXS has no dedicated controller — SRAM ships GX rocker paddle with X01 upgrade kits and OEM specs. Riders wanting premium controller feel upgrade to XX1 Eagle AXS controller separately. RD priced as 'RD only' (battery sold separately); X01 RD adds Overload Clutch and carbon cage vs GX. Plus AXS charger ~25-35€ if not owned."
   },
   {
     "id": "sram-xx1-eagle-axs",
@@ -715,7 +1694,7 @@
     "league": 5,
     "league_label": "Elite",
     "year_introduced": 2019,
-    "price_eur_approx": "1500 - 1700",
+    "price_eur_approx": "1390 - 1557",
     "weight_g_approx": "1450",
     "gear_range_percent": 5.2,
     "cassette_range": "10 - 52t",
@@ -725,8 +1704,42 @@
     "compatible_chains": "SRAM Eagle 12-speed XX1",
     "cross_brand_equivalent": "Shimano XTR M9150 Di2",
     "honest_take": "This is the ultimate \"I have won at life\" groupset. It features a titanium-nitride rainbow finish that makes the drivetrain look like it was dipped in liquid stardust and dreams. It’s for the rider who wants 100% wireless perfection and doesn't mind that a single crash could cost them more than a high-end gaming PC. It’s not a bike part; it’s a technological flex designed to make everyone else in the starting grid feel poor.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "mtbiker.sk, axit.sk, kolokram.sk, bikeinn.com, tribosport.sk, mtbstupak.sk, koloshop.sk, heureka.sk, bike-discount.de",
+    "components": {
+      "controller": {
+        "model": "SRAM XX1 Eagle AXS controller (premium rocker paddle, carbon, rainbow)",
+        "price_min": 141.0,
+        "price_max": 147.0
+      },
+      "rear_derailleur": {
+        "model": "SRAM XX1 Eagle AXS (carbon cage, Overload Clutch, rainbow finish, RD only)",
+        "price_min": 539.0,
+        "price_max": 559.0
+      },
+      "crankset": {
+        "model": "SRAM XX1 Eagle DUB (carbon arms)",
+        "price_min": 254.0,
+        "price_max": 359.0
+      },
+      "cassette": {
+        "model": "SRAM XG-1299 (10-52t, XD driver)",
+        "price_min": 349.0,
+        "price_max": 379.0
+      },
+      "chain": {
+        "model": "SRAM XX1 Eagle (hollow pin, gold/rainbow hardchrome)",
+        "price_min": 59.99,
+        "price_max": 65.99
+      },
+      "battery": {
+        "model": "SRAM AXS Battery",
+        "price_min": 46.5,
+        "price_max": 47.07
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "XX1 controller has limited availability (often EOL/discontinued as Transmission replaced AXS Eagle line) — based on 2 price points (koloshop, bikeinn) with tight 141-147€ consensus. Drivetrain core (crankset, cassette, chain) shared with XX1 mech. RD priced as 'RD only'; battery sold separately. Plus AXS charger ~25-35€ if not owned. RD is the most expensive single component in the entire dataset (up to 559€)."
   },
   {
     "id": "sram-gx-transmission",
@@ -742,7 +1755,7 @@
     "league": 4,
     "league_label": "Performance",
     "year_introduced": 2023,
-    "price_eur_approx": "1100 - 1300",
+    "price_eur_approx": "907 - 941",
     "weight_g_approx": "2057",
     "gear_range_percent": 5.2,
     "cassette_range": "10 - 52t",
@@ -752,8 +1765,42 @@
     "compatible_chains": "SRAM Eagle Transmission Flattop only",
     "cross_brand_equivalent": "None (direct-mount competition currently doesn't exist)",
     "honest_take": "This is the drivetrain for the person who is tired of \"adjusting\" things. There are no high/low limit screws, because the computer is now the boss of you. It shifts better the harder you pedal, which is SRAM's way of encouraging you to be an animal on the climbs, or just a way to make sure you wear out your cassette faster. It’s a tank-like piece of machinery that makes your bike look like it’s wearing a robotic prosthetic.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "mtbiker.sk, axit.sk, mtbstupak.sk, tribosport.sk, bike-discount.de, heureka.sk",
+    "components": {
+      "controller": {
+        "model": "SRAM Eagle AXS POD Controller (POD D1, Pro variant)",
+        "price_min": 128.0,
+        "price_max": 129.0
+      },
+      "rear_derailleur": {
+        "model": "SRAM GX Eagle Transmission (T-Type, direct-mount, RD only)",
+        "price_min": 349.0,
+        "price_max": 352.0
+      },
+      "crankset": {
+        "model": "SRAM GX Eagle Transmission DUB (T-Type, direct-mount chainring)",
+        "price_min": 139.99,
+        "price_max": 142.0
+      },
+      "cassette": {
+        "model": "SRAM XS-1275 (10-52t, XD, T-Type with shift ramps)",
+        "price_min": 206.0,
+        "price_max": 229.0
+      },
+      "chain": {
+        "model": "SRAM GX Eagle T-Type Flattop",
+        "price_min": 38.23,
+        "price_max": 41.99
+      },
+      "battery": {
+        "model": "SRAM AXS Battery",
+        "price_min": 46.5,
+        "price_max": 47.07
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "GX Transmission ships with POD Pro (D1), not POD Ultimate (X0/XX/XX SL ship with Ultimate). RD priced 'RD only' — typical for SRAM Transmission market (rider already owns AXS battery from previous build or buys separately). Cassette XS-1275 NOT interchangeable with XG-1275 (AXS Eagle) — T-Type uses dedicated shift ramps for under-load shifting. Plus AXS charger ~25-35€ if not owned. Tight 34€ price spread reflects newer product line with fewer discount channels."
   },
   {
     "id": "sram-x0-transmission",
@@ -769,7 +1816,7 @@
     "league": 5,
     "league_label": "Elite",
     "year_introduced": 2023,
-    "price_eur_approx": "1600 - 1900",
+    "price_eur_approx": "1399 - 1509",
     "weight_g_approx": "1870",
     "gear_range_percent": 5.2,
     "cassette_range": "10 - 52t",
@@ -779,8 +1826,42 @@
     "compatible_chains": "SRAM Eagle Transmission Flattop only",
     "cross_brand_equivalent": "None (direct-mount competition currently doesn't exist)",
     "honest_take": "This is the drivetrain for the person who loves \"over-engineering.\" It doesn't just shift; it executes a calculated movement between specifically timed ramps on the cassette, meaning you can shift while pedaling like a maniac and it will still be smoother than your last pick-up line. It is a masterpiece of dark-grey aesthetics, designed for people who want to look professional while they’re actually just struggling to find the trailhead.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "mtbiker.sk, axit.sk, tribosport.sk, tsbohemia.cz, bikeinn.com, bike-discount.de",
+    "components": {
+      "controller": {
+        "model": "SRAM Eagle AXS POD Ultimate (D1)",
+        "price_min": 177.0,
+        "price_max": 199.0
+      },
+      "rear_derailleur": {
+        "model": "SRAM X0 Eagle Transmission (T-Type, carbon outer link + skid plate, RD only)",
+        "price_min": 500.0,
+        "price_max": 519.0
+      },
+      "crankset": {
+        "model": "SRAM X0 Eagle Transmission DUB (carbon arms, T-Type direct-mount)",
+        "price_min": 309.0,
+        "price_max": 309.0
+      },
+      "cassette": {
+        "model": "SRAM XS-1295 (10-52t, XD, T-Type)",
+        "price_min": 299.0,
+        "price_max": 358.0
+      },
+      "chain": {
+        "model": "SRAM X0 Eagle T-Type Flattop (hardchrome, hollow pin)",
+        "price_min": 67.99,
+        "price_max": 76.99
+      },
+      "battery": {
+        "model": "SRAM AXS Battery",
+        "price_min": 46.5,
+        "price_max": 47.07
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "X0 Transmission ships with POD Ultimate (vs GX which uses POD Pro). RD has carbon outer link and skid plate vs aluminum GX RD. Crankset based on single price point (mtbiker 309€) — non-power-meter variant; with Quarq power meter adds ~300-400€. Cassette XS-1295 wide spread (bikeinn high at 358€ likely USD-converted EUR pricing). Plus AXS charger ~25-35€ if not owned."
   },
   {
     "id": "sram-xx-transmission",
@@ -796,7 +1877,7 @@
     "league": 5,
     "league_label": "Elite",
     "year_introduced": 2023,
-    "price_eur_approx": "2200 - 2500",
+    "price_eur_approx": "1737 - 1913",
     "weight_g_approx": "1740",
     "gear_range_percent": 5.2,
     "cassette_range": "10 - 52t",
@@ -806,8 +1887,42 @@
     "compatible_chains": "SRAM Eagle Transmission Flattop only",
     "cross_brand_equivalent": "None (direct-mount competition currently doesn't exist)",
     "honest_take": "This is for the rider who finds the concept of \"replacement parts\" offensive and prefers \"total asset management.\" It features a carbon cage and the Magic Wheel—a pulley wheel that keeps spinning even if a stick gets jammed in it, because SRAM knows you’re too busy looking rich to notice a branch in your drivetrain. It is the perfect choice for the person who wants the world to know they have reached the final level of the cycling RPG.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "mtbiker.sk, axit.sk, heureka.sk, allegro.pl, spoke-store.com, bike-discount.de",
+    "components": {
+      "controller": {
+        "model": "SRAM Eagle AXS POD Ultimate (D1)",
+        "price_min": 177.0,
+        "price_max": 199.0
+      },
+      "rear_derailleur": {
+        "model": "SRAM XX Eagle Transmission (T-Type, full carbon cage, Magic Wheel pulley, RD only)",
+        "price_min": 539.0,
+        "price_max": 559.0
+      },
+      "crankset": {
+        "model": "SRAM XX Eagle Transmission DUB (carbon arms, T-Type direct-mount, no power meter)",
+        "price_min": 459.0,
+        "price_max": 520.0
+      },
+      "cassette": {
+        "model": "SRAM XS-1297 (10-52t, XD, T-Type, alu/steel hybrid)",
+        "price_min": 439.0,
+        "price_max": 479.0
+      },
+      "chain": {
+        "model": "SRAM XX Eagle T-Type Flattop (premium hardchrome)",
+        "price_min": 76.75,
+        "price_max": 109.0
+      },
+      "battery": {
+        "model": "SRAM AXS Battery",
+        "price_min": 46.5,
+        "price_max": 47.07
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "Crankset priced as non-power-meter variant — XX Transmission with Quarq power meter adds ~250-400€. RD priced 'RD only' — battery sold separately. Cassette XS-1297 uses alu/steel hybrid construction (~80g lighter than XS-1295). Chain shows wide PL/SK spread (76-109€). Plus AXS charger ~25-35€ if not owned. Note: XX RD priced same as XX1 Eagle AXS RD (539-559€) — top-tier carbon construction commands consistent pricing across mounting systems."
   },
   {
     "id": "sram-xx-sl-transmission",
@@ -823,7 +1938,7 @@
     "league": 5,
     "league_label": "Elite",
     "year_introduced": 2023,
-    "price_eur_approx": "2600 - 2900",
+    "price_eur_approx": "1593 - 1899",
     "weight_g_approx": "1530",
     "gear_range_percent": 5.2,
     "cassette_range": "10 - 52t",
@@ -833,7 +1948,41 @@
     "compatible_chains": "SRAM Eagle Transmission Flattop only",
     "cross_brand_equivalent": "None (direct-mount competition currently doesn't exist)",
     "honest_take": "This is the drivetrain for the person who has officially completed the \"Mountain Biking\" video game and is now just playing the side quests in the luxury shop. It is a piece of aerospace engineering that exists because someone at SRAM wondered, \"How can we make a derailleur look like a minimalist Italian lamp?\" It’s for the rider who wants to feel the trail through their carbon soles but doesn't want to feel the weight of a single extra bolt. It shifts with the cold, unfeeling precision of an AI writing a break-up text—efficient, heartless, and final. It is the ultimate way to turn a bicycle into a high-performance asset that you are genuinely afraid to park outside a grocery store for more than six seconds.",
-    "verified": false,
-    "source_note": null
+    "verified": true,
+    "source_note": "mtbiker.sk, axit.sk, mtbstupak.sk, tribosport.sk, heureka.sk, allegro.pl, bike-discount.de",
+    "components": {
+      "controller": {
+        "model": "SRAM Eagle AXS POD Ultimate (D1)",
+        "price_min": 177.0,
+        "price_max": 199.0
+      },
+      "rear_derailleur": {
+        "model": "SRAM XX SL Eagle Transmission (T-Type, carbon cage + carbon skid plate, Magic Wheel pulley, RD only)",
+        "price_min": 539.0,
+        "price_max": 598.0
+      },
+      "crankset": {
+        "model": "SRAM XX SL Eagle Transmission DUB (ultra-light carbon arms, T-Type direct-mount, no power meter)",
+        "price_min": 425.0,
+        "price_max": 567.3
+      },
+      "cassette": {
+        "model": "SRAM XS-1299 (10-52t, XD, T-Type, machined alu + steel construction)",
+        "price_min": 329.0,
+        "price_max": 379.0
+      },
+      "chain": {
+        "model": "SRAM XX SL Eagle T-Type Flattop (shared SKU with XX)",
+        "price_min": 76.75,
+        "price_max": 109.0
+      },
+      "battery": {
+        "model": "SRAM AXS Battery",
+        "price_min": 46.5,
+        "price_max": 47.07
+      }
+    },
+    "components_verified_at": "2026-05-06",
+    "components_note": "Crankset priced as non-power-meter variant — XX SL Transmission with Quarq DUB power meter adds ~300-450€. Wide crankset spread (mtbstupak 425€ low likely older gen or chainring-excluded; axit 567€ matches expected flagship carbon pricing). Cassette XS-1299 ANOMALY: priced lower than XS-1297 (XX) in surveyed shops (329-379€ vs XX cassette 439-479€), which contradicts spec hierarchy — possible causes: heureka aggregator low-price (EOL/discount stock), shop SKU mislabeling, or genuine market correction. Chain shares SKU with XX Transmission (no separate XX SL chain code in retail). RD priced 'RD only'. Plus AXS charger ~25-35€ if not owned."
   }
 ]
