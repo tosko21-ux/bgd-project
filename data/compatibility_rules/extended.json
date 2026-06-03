@@ -1,0 +1,391 @@
+[
+  {
+    "id": "sx-eagle-cassette-xd-hub-block",
+    "components": {
+      "cassette": "sram-sx-eagle-pg1210",
+      "wheel_hub": "sram-xd-driver"
+    },
+    "verdict": "block",
+    "reason": "SX (PG-1210) and NX (PG-1230) cassettes are designed for the standard Shimano HG splined freehub. They are physically incompatible with SRAM's XD Driver system.",
+    "alternatives": ["sram-gx-eagle-cassette"],
+    "source": {
+      "type": "third_party_article",
+      "publisher": "Worldwide Cyclery",
+      "reference": "SRAM Eagle Compatibility Guide",
+      "title": "XD vs HG Freehub: Which One Do I Need?",
+      "url": "https://www.worldwidecyclery.com/blogs/worldwide-cyclery-blog/sram-eagle-groupsets-compared",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "sx-eagle-crank-dub-compatibility",
+    "components": {
+      "crankset": "sram-sx-eagle",
+      "bottom_bracket": "sram-dub"
+    },
+    "verdict": "compatible",
+    "reason": "SX Eagle cranks use the DUB spindle standard (28.99mm), making them compatible with any DUB bottom bracket, regardless of the frame standard (BSA, PressFit, etc.).",
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "FC-SX-1-A1",
+      "title": "SX Eagle Crankset",
+      "url": "https://www.sram.com/en/sram/models/fc-sx-1-a1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "nx-eagle-cassette-xd-hub-block",
+    "components": {
+      "cassette": "sram-nx-eagle-pg1230",
+      "wheel_hub": "sram-xd-driver"
+    },
+    "verdict": "block",
+    "reason": "The NX PG-1230 cassette uses a splined HG interface. It cannot be mounted on an XD Driver body, which is required for GX and higher-tier Eagle cassettes.",
+    "alternatives": ["sram-gx-eagle-cassette"],
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "CS-PG-1230-A1",
+      "title": "PG-1230 Eagle Cassette",
+      "url": "https://www.sram.com/en/sram/models/cs-pg-1230-a1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "nx-eagle-crank-dub-bb-compat",
+    "components": {
+      "crankset": "sram-nx-eagle",
+      "bottom_bracket": "sram-dub"
+    },
+    "verdict": "compatible",
+    "reason": "NX Eagle cranks follow the DUB standard. They work with any DUB bottom bracket, ensuring compatibility across different frame BB shells.",
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "FC-NX-1-C1",
+      "title": "NX Eagle Crankset",
+      "url": "https://www.sram.com/en/sram/models/fc-nx-1-c1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "gx-eagle-cassette-hg-hub-block",
+    "components": {
+      "cassette": "sram-gx-eagle-xg1275",
+      "wheel_hub": "shimano-hg-driver"
+    },
+    "verdict": "block",
+    "reason": "The GX Eagle XG-1275 cassette requires a SRAM XD Driver body. It cannot be mounted on the standard Shimano HG splined freehub used by SX and NX cassettes.",
+    "alternatives": ["sram-nx-eagle-pg1230"],
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "XG-1275-A1",
+      "title": "GX Eagle Cassette",
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1275-a1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "x01-eagle-cassette-hg-hub-block",
+    "components": {
+      "cassette": "sram-x01-eagle-xg1295",
+      "wheel_hub": "shimano-hg-driver"
+    },
+    "verdict": "block",
+    "reason": "The X01 Eagle XG-1295 cassette is machined from a single block of steel and uses the SRAM XD Driver interface. It is physically impossible to mount this cassette on a standard Shimano HG splined freehub.",
+    "alternatives": ["sram-nx-eagle-pg1230"],
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "CS-XG-1295-B1",
+      "title": "X01 Eagle Cassette",
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1295-b1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "x01-eagle-crank-chainring-offset-caveat",
+    "components": {
+      "crankset": "sram-x01-eagle-dub",
+      "frame_type": "boost-148"
+    },
+    "verdict": "caveat",
+    "reason": "X01 cranks require a chainring with a specific offset (usually 3mm for Boost). Using a non-boost offset (6mm) will cause the chainring to hit the chainstay or result in poor chainline.",
+    "alternatives": ["none:component-level-issue"],
+    "source": {
+      "type": "manufacturer_pdf",
+      "publisher": "SRAM",
+      "reference": "DUB MTB Crankset and Bottom Bracket",
+      "title": "Chainline and Offset Specifications",
+      "url": "https://www.sram.com/en/service/manuals-and-documentation/user-manuals/eagle-ecosystem",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "xx1-eagle-cassette-hg-hub-block",
+    "components": {
+      "cassette": "sram-xx1-eagle-xg1299",
+      "wheel_hub": "shimano-hg-driver"
+    },
+    "verdict": "block",
+    "reason": "The XX1 Eagle XG-1299 cassette is an XD-only component. It cannot be mounted on a standard Shimano HG splined freehub, which lacks the necessary threading for the X-Dome architecture.",
+    "alternatives": ["sram-nx-eagle-pg1230"],
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "CS-XG-1299-B1",
+      "title": "XX1 Eagle Cassette",
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1299-b1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "xx1-eagle-crank-dub-sl-compat",
+    "components": {
+      "crankset": "sram-xx1-eagle-dub",
+      "bottom_bracket": "sram-dub"
+    },
+    "verdict": "compatible",
+    "reason": "XX1 Eagle cranks use the DUB standard. They are compatible with all DUB bottom brackets, though they are specifically tuned for XC and trail use (lower weight, lower impact resistance than X01).",
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "FC-XX-1-C2",
+      "title": "XX1 Eagle DUB Crankset",
+      "url": "https://www.sram.com/en/sram/models/fc-xx-1-c2",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "gx-axs-clutch-overload-protection",
+    "components": {
+      "rear_derailleur": "sram-gx-eagle-axs",
+      "accessory": "sram-axs-battery"
+    },
+    "verdict": "compatible",
+    "reason": "GX AXS features the Overload Clutch, which disengages the motor upon impact to prevent damage. It resets instantly after the impact, requiring no manual intervention.",
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "RD-GX-1-E-A1",
+      "title": "GX Eagle AXS Technology",
+      "url": "https://www.sram.com/en/sram/models/rd-gx-1-e-a1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "xx1-axs-cassette-hg-hub-block",
+    "components": {
+      "cassette": "sram-xx1-eagle-xg1299",
+      "wheel_hub": "shimano-hg-driver"
+    },
+    "verdict": "block",
+    "reason": "All XX1 Eagle 12-speed cassettes require a SRAM XD Driver. They cannot be mounted on standard Shimano HG freehub bodies.",
+    "alternatives": ["sram-nx-eagle-pg1230"],
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "CS-XG-1299-B1",
+      "title": "XX1 Eagle Cassette",
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1299-b1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "xx1-axs-reverb-pairing-compat",
+    "components": {
+      "shifter": "sram-xx1-eagle-axs-shifter",
+      "seatpost": "rockshox-reverb-axs"
+    },
+    "verdict": "compatible",
+    "reason": "Any AXS button can be assigned to trigger the Reverb AXS dropper post via the AXS mobile app, providing seamless integration in the cockpit.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "SRAM",
+      "reference": "AXS Systems",
+      "title": "AXS Component Compatibility",
+      "url": "https://www.sram.com/en/service/manuals-and-documentation/user-manuals/eagle-ecosystem",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "gx-transmission-udh-frame-block",
+    "components": {
+      "rear_derailleur": "sram-gx-transmission-t-type",
+      "frame_type": "non-udh-frame"
+    },
+    "verdict": "block",
+    "reason": "SRAM Transmission requires a frame with a Universal Derailleur Hanger (UDH) interface. The derailleur mounts directly to the frame's dropout and axle. Without UDH, it is physically impossible to install.",
+    "alternatives": ["shimano-xt-m8100", "sram-gx-eagle"],
+    "source": {
+      "type": "manufacturer_pdf",
+      "publisher": "SRAM",
+      "reference": "Eagle Transmission Manual",
+      "title": "Frame Requirements for T-Type Drivetrains",
+      "url": "https://www.sram.com/en/service/manuals-and-documentation/user-manuals/eagle-transmission-manual",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "gx-transmission-battery-compat",
+    "components": {
+      "rear_derailleur": "sram-gx-transmission-t-type",
+      "battery": "sram-axs-battery"
+    },
+    "verdict": "compatible",
+    "reason": "SRAM maintained the same AXS battery standard for Transmission. All existing AXS batteries will work with any T-Type derailleur.",
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "GX Eagle Transmission",
+      "title": "GX T-Type AXS Rear Derailleur",
+      "url": "https://www.sram.com/en/sram/models/rd-gx-e-b1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "x0-transmission-crank-3-bolt-block",
+    "components": {
+      "crankset": "sram-x0-transmission-t-type",
+      "chainring": "sram-eagle-3-bolt-direct-mount"
+    },
+    "verdict": "block",
+    "reason": "X0 Transmission cranks use the 8-bolt direct mount standard. Older 3-bolt Eagle chainrings are physically incompatible and cannot be mounted.",
+    "alternatives": ["sram-x0-transmission"],
+    "source": {
+      "type": "manufacturer_pdf",
+      "publisher": "SRAM",
+      "reference": "Eagle Transmission Manual",
+      "title": "Crankset and Chainring Mounting",
+      "url": "https://www.sram.com/en/service/manuals-and-documentation/user-manuals/eagle-transmission-manual",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "x0-transmission-magic-wheel-compat",
+    "components": {
+      "rear_derailleur": "sram-x0-transmission-t-type",
+      "accessory": "sram-transmission-magic-wheel"
+    },
+    "verdict": "compatible",
+    "reason": "The X0 Transmission derailleur supports the Magic Wheel pulley upgrade, which allows the chain to keep moving even if a stick or debris jams the pulley spokes.",
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "RD-X0-E-B1",
+      "title": "X0 Eagle Transmission Features",
+      "url": "https://www.sram.com/en/sram/models/rd-x0-e-b1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "xx-transmission-magic-wheel-native",
+    "components": {
+      "rear_derailleur": "sram-xx-transmission-t-type",
+      "pulley_wheel": "sram-magic-wheel"
+    },
+    "verdict": "compatible",
+    "reason": "The XX Transmission rear derailleur comes standard with the Magic Wheel. This feature allows the outer ring of the pulley to rotate even if an object jams the inner spokes, preventing derailleur failure.",
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "RD-XX-E-B1",
+      "title": "XX Eagle Transmission Rear Derailleur",
+      "url": "https://www.sram.com/en/sram/models/rd-xx-e-b1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "xx-transmission-emtb-rating",
+    "components": {
+      "groupset": "sram-xx-transmission-t-type",
+      "bike_type": "full-power-emtb"
+    },
+    "verdict": "compatible",
+    "reason": "The XX Transmission is officially rated for high-torque E-MTB use. Its steel-heavy cassette and reinforced carbon cranks are designed to withstand motor-assisted shifting under load.",
+    "source": {
+      "type": "manufacturer_faq",
+      "publisher": "SRAM",
+      "reference": "Transmission E-MTB",
+      "title": "Which Transmission groups are E-MTB rated?",
+      "url": "https://www.sram.com/en/service/manuals-and-documentation/user-manuals/eagle-transmission-manual",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "xx-transmission-8-bolt-power-meter-compat",
+    "components": {
+      "crankset": "sram-xx-transmission-t-type",
+      "accessory": "sram-quarq-transmission-powermeter"
+    },
+    "verdict": "compatible",
+    "reason": "XX Transmission cranks use the 8-bolt mounting interface, which is the native standard for the newest Quarq spider-based power meters and integrated chainring power meters.",
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "PM-XX-ASSY-D1",
+      "title": "XX Eagle Transmission Power Meter",
+      "url": "https://www.sram.com/en/sram/models/pm-xx-assy-d1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "xx-sl-transmission-ebike-hard-block",
+    "components": {
+      "groupset": "sram-xx-sl-transmission-t-type",
+      "bike_type": "full-power-emtb"
+    },
+    "verdict": "block",
+    "reason": "XX SL is strictly designed for XC racing. The cassette features multiple aluminum cogs and the chain is hollow-pinned to save weight, making it unable to withstand the high torque of full-power e-bike motors.",
+    "alternatives": [
+      "sram-xx-transmission-t-type",
+      "sram-x0-transmission-t-type"
+    ],
+    "source": {
+      "type": "manufacturer_faq",
+      "publisher": "SRAM",
+      "reference": "Transmission E-MTB Compatibility",
+      "title": "Eagle Transmission Frequently Asked Questions",
+      "url": "https://www.sram.com/en/service/manuals-and-documentation/user-manuals/eagle-transmission-manual",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "xx-sl-rd-magic-wheel-absence",
+    "components": {
+      "rear_derailleur": "sram-xx-sl-transmission-t-type",
+      "accessory": "sram-magic-wheel"
+    },
+    "verdict": "block",
+    "reason": "To achieve the lowest possible weight, the XX SL derailleur does not come with the Magic Wheel and its cage is not designed to fit one. This makes it more vulnerable to debris than the standard XX version.",
+    "alternatives": ["sram-xx-transmission", "sram-x0-transmission"],
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "RD-XX-SLE-B1",
+      "title": "XX SL Eagle Transmission Rear Derailleur",
+      "url": "https://www.sram.com/en/sram/models/rd-xx-sle-b1",
+      "accessed": "2026-05-07"
+    }
+  },
+  {
+    "id": "xx-sl-crank-no-bashguard-block",
+    "components": {
+      "crankset": "sram-xx-sl-transmission-t-type",
+      "accessory": "sram-transmission-bashguard"
+    },
+    "verdict": "block",
+    "reason": "The XX SL carbon cranks are ultra-lightweight and lack the mounting points for the integrated bashguards found on X0 and XX sets. They are not intended for technical enduro-style rock strikes.",
+    "alternatives": ["sram-x0-transmission", "sram-xx-transmission"],
+    "source": {
+      "type": "manufacturer_product_page",
+      "publisher": "SRAM",
+      "reference": "FC-XX-SL-P-D1",
+      "title": "XX SL Eagle Transmission Crankset",
+      "url": "https://www.sram.com/en/sram/models/fc-xx-sl-p-d1",
+      "accessed": "2026-05-07"
+    }
+  }
+]

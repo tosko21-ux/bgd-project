@@ -1,0 +1,65 @@
+[
+  {
+    "_research_notes": "Focused strictly on M5100 interactions with other 11s Dyna-Sys11 components (M7000/M8000/M9000) and clear block scenarios with 12s systems. C-435 is the primary authority for 11s cross-compatibility. The M8000 RD vs M5100 Cassette block is a common point of confusion due to cage length and parallelogram geometry limits (46T max for M8000)."
+  },
+  {
+    "_research_notes": "Pre Deore M6100 (12-speed) je kľúčová matica C-558. Hlavným bodom 'blocku' je prechod z HG na Micro Spline orech pri kazete a nekompatibilita 11s/12s ťahu lanka. Upozornenie pri SRAM reťazi a Shimano prevodníku (M6100) je dôležité kvôli technológii HG+ (Hyperglide Plus), ktorú Shimano striktne vyžaduje pre hladký chod."
+  },
+  {
+    "_research_notes": "SLX M7100 je stredný článok 12s rodiny. Dáta sú overené podľa C-558 (kompatibilita v rámci 12s) a C-432 (blokácia voči 11s). Zvláštna pozornosť venovaná HG+ reťazi a jej interakcii s ne-Shimano prevodníkmi, čo je častý problém pri 'mačkopsoch'."
+  },
+  {
+    "_research_notes": "Pri XT M8100 som sa zameral na prechod medzi generáciami (11s vs 12s) a populárny mix so SRAM Eagle. Matica C-558 potvrdzuje plnú kompatibilitu v rámci Shimano 12s MTB. Blokácia voči M5100 (11s) a staršiemu HG orechu je technicky nevyhnutná kvôli Micro Spline štandardu a inému indexovaniu lanka."
+  },
+  {
+    "_research_notes": "XTR M9100 je technologická špička, kde Shimano zaviedlo 'Hyperglide+' a 'Micro Spline'. Matica C-558 je hlavný zdroj pre 12s kompatibilitu. Zvláštna poznámka k 11-rýchlostnému prepínaču na páčke: ten je určený len pre špeciálny náboj M9110-BS a kazetu CS-M9110-11, nie pre bežné 11s sady (M8000/M7000), čo je častý omyl používateľov."
+  },
+  {
+    "_research_notes": "Pri M6250 (bezdrôtová/analógová verzia) je kritické rozlíšiť Linkglide (LG) vs Hyperglide (HG). Mnoho používateľov si ju kúpi ako lacné Di2, ale neuvedomia si, že musia vymeniť aj kazetu za Linkglide verziu, inak to nebude radiť správne. Matice C-432 a C-435 jasne oddeľujú LG a HG ekosystémy."
+  },
+  {
+    "_research_notes": "XT Di2 M8150 je v porovnaní s M6250 oveľa uzavretejší systém. Kým M6250 sa snaží byť 'bezdrôtovým upgradom' pre všetkých, M8150 je čistá integrácia s e-bike motormi novej generácie. Matica C-780 je tu absolútny zdroj pravdy. Najväčší 'block' je absencia verzie pre klasické bicykle (bez motora)."
+  },
+  {
+    "_research_notes": "XTR Di2 M9250 je momentálne vlajkovou loďou Shimano e-MTB radenia. Podobne ako XT M8150, aj táto sada je 'hard-locked' na e-bike motory (EP801/EP6). Zaujímavosťou je, že neexistuje verzia pre klasické bicykle (analógové), čo robí z M9250 veľmi úzky špecializovaný produkt. Matica C-780 jasne definuje túto exkluzivitu."
+  },
+  {
+    "_research_notes": "SLX M7000 je stabilný 11-speed groupset. Hlavným obmedzením je prehadzovačka RD-M7000-11-GS, ktorá oficiálne končí na 46T (rovnako ako XT M8000). Prechod na 51T kazetu (M5100) teda vyžaduje aj novú M5100 prehadzovačku, hoci páčka M7000 môže ostať. Matica C-435 potvrdzuje túto HG-X11 krížovú kompatibilitu."
+  },
+  {
+    "_research_notes": "XT M8000 je legendárna 11-rýchlostná sada, ale jej prehadzovačka má tvrdý limit 46 zubov (pri 1x). To je najčastejšia chyba ľudí, čo chcú prejsť na 51T Deore kazetu. Naopak, páčka M8000 je skvelý upgrade pre M5100 prehadzovačku. Pri reťaziach som pridal block pre HG+ 12s reťaz na staré prevodníky, lebo 12s reťaz má predĺžené vnútorné platničky, ktoré sa zasekávajú na starých zuboch."
+  },
+  {
+    "_research_notes": "Pri SX Eagle je najdôležitejšie strážiť limit 50 zubov na prehadzovačke a typ orecha (HG). SRAM je v rámci Eagle rodiny veľmi otvorený, takže 'Blockov' je menej ako u Shimana, skôr ide o kvalitu radenia a materiály (plastová SX páčka vs. hliníková GX). Dáta overené podľa oficiálnych špecifikácií SRAM Eagle Ecosystem."
+  },
+  {
+    "_research_notes": "NX Eagle je 'vstupná brána' do Eagle sveta, ktorá nerieši typ orecha (ostáva na HG). To je jej najväčšia výhoda aj nevýhoda zároveň. Pri prehadzovačke NX si treba dať pozor na 50T limit, čo je v dnešnej dobe 52T kaziet častý bod zlyhania pri domácom upgrade. Inak je NX absolútne 'všežravá' v rámci Eagle rodiny."
+  },
+  {
+    "_research_notes": "GX Eagle je mostom medzi 'budget' (SX/NX) a 'high-end' (X01/XX1). Matica potvrdzuje, že AXS je spätne kompatibilné so všetkým Eagle. Najväčší pozor treba dávať na verziu Lunar (52T) pri mechanických prehadzovačkách – staré GX (označené ako A1) oficiálne 52T nepodporujú, čo je častý zdroj reklamácií pri zlej montáži."
+  },
+  {
+    "_research_notes": "X01 Eagle potvrdzuje silu Eagle ekosystému. Najčastejším problémom pri X01 je upgrade na 52T kazetu u starších prehadzovačiek (A1), ktoré to oficiálne nepodporujú. Tiež je dôležité sledovať XD Driver, pretože na rozdiel od sád SX/NX, pri X01 už neexistuje alternatíva pre HG orech."
+  },
+  {
+    "_research_notes": "XX1 Eagle je v rámci 'Ecosystemu' bezproblémová sada, pokiaľ zostávame pri 12-rýchlostnom mechanickom alebo AXS radení. Pridal som dôležitý 'Block' voči novej Transmission (T-Type) sade – tu už ľudia robia chyby, pretože si myslia, že 'Eagle reťaz ako Eagle reťaz', ale T-Type kazety vyžadujú Flattop reťaz. Matica kompatibility v Service sekcii SRAMu toto striktne oddeľuje."
+  },
+  {
+    "_research_notes": "GX AXS (pôvodná generácia) je v Spideri ten 'všežravý' komponent. Najväčší pozor treba dávať na miešanie s novou Transmission (T-Type). SRAM jasne hovorí: Staré AXS prehadzovačky NESMÚ používať Flattop reťaze. Naopak, GX AXS páčka/ovládač funguje so všetkým, čo má v názve AXS, čo je skvelá správa pre užívateľov."
+  },
+  {
+    "_research_notes": "X01 AXS v Spideri funguje ako prémiový 'Mullet' komponent. Najväčší 'Block' je smerom k novej Transmission (T-Type) kazete – hoci sú obe 12-rýchlostné, krok radenia a šírka reťaze sú iné. Naopak, potvrdzujeme kompatibilitu s novými Pod ovládačmi, čo je častá otázka pri upgrade starších XC/Enduro bikov."
+  },
+  {
+    "_research_notes": "Pri GX Transmission (T-Type) je kľúčové v Spideri postrážiť trojicu: UDH Rám + T-Type Kazeta + Flattop Reťaz. Ak jedna časť chýba, systém nefunguje. Naopak, potvrdzujeme 'Backward Compatibility' ovládačov a batérií, čo uľahčuje upgrade pre majiteľov starších AXS sád. Prevodníky sú tiež T-Type špecifické (8-bolt mount namiesto starého 3-bolt)."
+  },
+  {
+    "_research_notes": "X0 Transmission je v Spideri definovaná ako 'Enduro Rated' sada. Kľúčovým rozdielom oproti GX je 8-bolt uchytenie prevodníka a možnosť 'skladacej' prehadzovačky (rebuildable). Striktne vyžaduje Flattop reťaz a UDH rám, rovnako ako celá T-Type rodina."
+  },
+  {
+    "_research_notes": "XX Transmission v Spideri potvrdzuje status najodolnejšej prémiovej sady. Hlavný rozdiel oproti X0 je v Magic Wheel a karbónových kľukách, no zachováva si E-MTB rating, čo je pri XX SL (ktorá nasleduje) 'Blocker'. Všetky T-Type komponenty v rámci XX sú spätne kompatibilné s GX/X0 Transmission, pokiaľ je zachovaná Flattop reťaz."
+  },
+  {
+    "_research_notes": "XX SL je v Spideri špecifický prípad. Hoci technicky pasuje na každý UDH rám ako ostatné Transmission sady, jej použitie je limitované na XC/Maratón. Odstránenie Magic Wheel a použitie hliníka na kazete XS-1299 (tri najväčšie ozubené kolesá sú hliníkové, kým u XX len najväčšie jedno) vytvára jasnú bariéru pre e-bikery a enduro jazdcov."
+  }
+]

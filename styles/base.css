@@ -22,13 +22,25 @@
   --color-text-muted: #71717a;
   --color-border: #e4e4e7;
 
-  /* Sémantické farby (pre diff badges v Comparator-e neskôr) */
+  /* Sémantické farby — 5-state verdict palette (Component Match + Comparator).
+     Verdict mapping (Component Match):
+       compatible      -> success (green)
+       caveat low      -> warning-low (yellow)
+       caveat high     -> warning-high (orange)
+       block           -> danger (red)
+       unverified      -> neutral (gray)
+     Session 28: legacy `labradoodle` verdict removed; now caveat+risk_level=high.
+     Comparator diff badges still use success / warning-high / danger. */
   --color-success: #166534;
   --color-success-bg: #dcfce7;
-  --color-warning: #9a3412;
-  --color-warning-bg: #fed7aa;
+  --color-warning-low: #854d0e;
+  --color-warning-low-bg: #fef9c3;
+  --color-warning-high: #9a3412;
+  --color-warning-high-bg: #fed7aa;
   --color-danger: #991b1b;
   --color-danger-bg: #fee2e2;
+  --color-neutral: #52525b;
+  --color-neutral-bg: #e4e4e7;
 
   /* Typografia */
   --font-sans:

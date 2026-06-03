@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Component Match — BGD</title>
+    <meta
+      name="description"
+      content="Check if your drivetrain components fit together. Speed, actuation, chain — clear answers, no guesswork."
+    />
+
+    <meta property="og:title" content="Component Match — Bike Gear Decoder" />
+    <meta
+      property="og:description"
+      content="Check if your drivetrain components fit together. Real compatibility checks, not affiliate fluff."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bikegeardecoder.com/match" />
+    <meta
+      property="og:image"
+      content="https://bikegeardecoder.com/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Component Match — Bike Gear Decoder" />
+    <meta
+      name="twitter:description"
+      content="Check if your drivetrain components fit together."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bikegeardecoder.com/og-image.png"
+    />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="BGD" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/tools.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a href="/" class="wordmark" aria-label="BGD homepage">
+        <svg
+          class="logo"
+          width="500"
+          height="200"
+          viewBox="0 0 500 200"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="BGD — Bike Gear Decoder"
+        >
+          <defs>
+            <linearGradient
+              id="metalGradient"
+              x1="0%"
+              y1="0%"
+              x2="0%"
+              y2="100%"
+            >
+              <stop offset="0%" style="stop-color: #b8b0a8; stop-opacity: 1" />
+              <stop offset="50%" style="stop-color: #968d85; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #7a726b; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <path
+            d="M80,65 L84,55 L94,55 L98,65 L108,68 L115,62 L122,69 L116,79 L119,89 L129,93 L129,103 L119,107 L116,117 L122,127 L115,134 L105,128 L95,131 L91,141 L81,141 L77,131 L67,128 L57,134 L50,127 L56,117 L53,107 L43,103 L43,93 L53,89 L56,79 L50,69 L57,62 L67,68 Z"
+            fill="url(#metalGradient)"
+          />
+          <circle cx="86" cy="98" r="18" fill="white" />
+          <text
+            x="150"
+            y="125"
+            font-family="Arial, Helvetica, sans-serif"
+            font-weight="bold"
+            font-size="85"
+            fill="url(#metalGradient)"
+            letter-spacing="-2"
+          >
+            BGD
+          </text>
+          <text
+            x="80"
+            y="165"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="22"
+            fill="#b8b0a8"
+            letter-spacing="6"
+          >
+            BIKE GEAR DECODER
+          </text>
+        </svg>
+      </a>
+    </header>
+
+    <main class="site-main">
+      <section class="page-intro">
+        <p class="page-breadcrumb">
+          <a href="/">← Back to tools</a>
+        </p>
+        <h1 class="page-title">Component Match</h1>
+        <p class="page-subtitle">
+          Pick your drivetrain components, see if they fit together.
+        </p>
+      </section>
+
+      <section class="match" aria-label="Component Match tool">
+        <!-- Verdict bar (top of section, persistent, non-sticky) -->
+        <div
+          id="verdict-bar"
+          class="verdict-bar verdict-bar--unverified"
+          role="status"
+          aria-live="polite"
+        >
+          <span class="verdict-bar-dot" aria-hidden="true"></span>
+          <span class="verdict-bar-text"
+            >Select components to check compatibility</span
+          >
+        </div>
+
+        <!-- System-level rule banner (e.g. eMTB motor requirement) -->
+        <!-- Rendered/cleared by scripts/match.js based on findings of type:"system" -->
+        <div
+          id="system-banner"
+          class="system-banner is-hidden"
+          role="status"
+          aria-live="polite"
+        ></div>
+
+        <!-- 5 component cards -->
+        <div class="match-cards" id="match-cards">
+          <!-- Cards rendered by scripts/match.js -->
+        </div>
+
+        <!-- Reset button -->
+        <div class="match-actions">
+          <button
+            type="button"
+            id="match-reset"
+            class="reset-btn"
+            aria-label="Reset all components"
+          >
+            Reset
+          </button>
+        </div>
+
+        <!-- Findings list (single list below cards) -->
+        <div
+          id="match-findings"
+          class="findings"
+          aria-label="Compatibility findings"
+        >
+          <!-- Findings rendered by scripts/match.js -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/about">About</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+      <p class="footer-copy">© 2026 BGD</p>
+    </footer>
+
+    <!-- Picker modal/dropdown (rendered into body by match.js when needed) -->
+
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/compatibility-engine.js"></script>
+    <script src="scripts/match.js" defer></script>
+  </body>
+</html>

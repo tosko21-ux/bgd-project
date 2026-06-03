@@ -64,9 +64,9 @@
         "price_max_eur": 14
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": false
   },
-
   {
     "id": "shimano-altus-m2000",
     "brand": "Shimano",
@@ -133,7 +133,8 @@
         "price_max_eur": 19
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": false
   },
   {
     "id": "shimano-acera-m3000",
@@ -200,7 +201,8 @@
         "price_max_eur": 19
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": false
   },
   {
     "id": "shimano-acera-m3100",
@@ -269,7 +271,8 @@
         "price_max_eur": 19
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": false
   },
   {
     "id": "shimano-alivio-m3100",
@@ -322,8 +325,8 @@
       "crankset": {
         "model": "FC-M4050 (40-30-22T)",
         "tier": "Alivio",
-        "price_min_eur": 60,
-        "price_max_eur": 72,
+        "price_min_eur": 48,
+        "price_max_eur": 60,
         "note": "Native Alivio M3100 crankset; widely sold-out across EU retailers — Alivio M3100 line is in EOL phase as Shimano migrates 3x9 to CUES line"
       },
       "cassette": {
@@ -339,7 +342,8 @@
         "price_max_eur": 19
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": false
   },
   {
     "id": "shimano-deore-m4100",
@@ -400,7 +404,8 @@
         "price_max_eur": 15
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": false
   },
   {
     "id": "shimano-deore-m4120",
@@ -476,7 +481,8 @@
         "price_max_eur": 15
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": false
   },
   {
     "id": "shimano-deore-m5100",
@@ -538,7 +544,8 @@
         "price_max_eur": 22
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": true
   },
   {
     "id": "shimano-deore-m6100",
@@ -603,7 +610,8 @@
         "note": "Hyperglide+ allows shifting under load"
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": true
   },
   {
     "id": "shimano-slx-m7000",
@@ -668,7 +676,8 @@
         "note": "Shared with Deore M5100"
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": true
   },
   {
     "id": "shimano-slx-m7100",
@@ -732,7 +741,8 @@
         "note": "Hyperglide+ allows shifting under load"
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": true
   },
   {
     "id": "shimano-xt-m8000",
@@ -796,7 +806,8 @@
         "note": "XT-tier 11-speed chain"
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": true
   },
   {
     "id": "shimano-xt-m8100",
@@ -848,8 +859,8 @@
       "cassette": {
         "model": "CS-M8100-12 (10-51T)",
         "tier": "XT",
-        "price_min_eur": 92,
-        "price_max_eur": 129,
+        "price_min_eur": 84,
+        "price_max_eur": 115,
         "note": "Requires Microspline freehub — not compatible with HG wheelsets"
       },
       "chain": {
@@ -860,7 +871,8 @@
         "note": "Hyperglide+ XT chain"
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": true
   },
   {
     "id": "shimano-xtr-m9000",
@@ -925,7 +937,8 @@
         "note": "XTR-tier chain"
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": true
   },
   {
     "id": "shimano-xtr-m9100",
@@ -990,7 +1003,8 @@
         "note": "XTR Hyperglide+ chain"
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": true
   },
   {
     "id": "shimano-xtr-m9050-di2",
@@ -1063,7 +1077,8 @@
       }
     },
     "components_verified_at": "2026-05-04",
-    "components_extras_note": "Plus junction box (SM-JC41) + cables (EW-SD50) ~80-100€, charger (SM-PCE02) ~50€ if not owned. Cabling cost varies by frame routing and existing Di2 setup."
+    "components_extras_note": "Plus junction box (SM-JC41) + cables (EW-SD50) ~80-100€, charger (SM-PCE02) ~50€ if not owned. Cabling cost varies by frame routing and existing Di2 setup.",
+    "component_match_supported": true
   },
   {
     "id": "shimano-xtr-m9250-di2",
@@ -1136,7 +1151,8 @@
       }
     },
     "components_verified_at": "2026-05-04",
-    "components_extras_note": "Wireless system — no junction box or wired cables required. Charger SM-BCR2 ~40-50€ if not owned. Optional bar-mounted display (SC-MT800) sold separately."
+    "components_extras_note": "Wireless system — no junction box or wired cables required. Charger SM-BCR2 ~40-50€ if not owned. Optional bar-mounted display (SC-MT800) sold separately.",
+    "component_match_supported": true
   },
   {
     "id": "shimano-xt-m8150-di2",
@@ -1195,7 +1211,8 @@
       }
     },
     "components_verified_at": "2026-05-04",
-    "components_extras_note": "eMTB-only groupset. Crankset NOT included — part of motor unit (Shimano EP8/EP801, sold separately ~600-900€). Direct-mount chainring SM-CRE80 ~30-50€ if upgrading from existing motor. Battery powered from eBike main battery via Steps interface; no separate Di2 battery required. Optional bar-mounted display sold separately."
+    "components_extras_note": "eMTB-only groupset. Crankset NOT included — part of motor unit (Shimano EP8/EP801, sold separately ~600-900€). Direct-mount chainring SM-CRE80 ~30-50€ if upgrading from existing motor. Battery powered from eBike main battery via Steps interface; no separate Di2 battery required. Optional bar-mounted display sold separately.",
+    "component_match_supported": true
   },
   {
     "id": "shimano-deore-m6250-di2",
@@ -1268,7 +1285,8 @@
       }
     },
     "components_verified_at": "2026-05-04",
-    "components_extras_note": "Wireless system — no junction box or wired cables required. Charger EC-EN100 ~40-50€ if not owned. Shifter available in band-on and I-Spec EV mounts. Honest take note: text mentions motor torque, which applies more to eMTB context — Deore Di2 M6250 is designed for regular MTB use (eMTB-specific groupset is XT Di2 M8150)."
+    "components_extras_note": "Wireless system — no junction box or wired cables required. Charger EC-EN100 ~40-50€ if not owned. Shifter available in band-on and I-Spec EV mounts. Honest take note: text mentions motor torque, which applies more to eMTB context — Deore Di2 M6250 is designed for regular MTB use (eMTB-specific groupset is XT Di2 M8150).",
+    "component_match_supported": true
   },
   {
     "id": "sram-sx-eagle",
@@ -1332,7 +1350,8 @@
         "note": "No native SX Eagle chain in EU retail; PC-1110 (NX Eagle) is the typical substitute"
       }
     },
-    "components_verified_at": "2026-05-04"
+    "components_verified_at": "2026-05-04",
+    "component_match_supported": true
   },
   {
     "id": "sram-nx-eagle",
@@ -1388,7 +1407,8 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "Crankset based on 2 price points (Allegro PL low, mojekolo.sk SK high) — typical spread for DUB cranks. Cassette PG-1230 uses HG freehub (NX Eagle exception in Eagle line)."
+    "components_note": "Crankset based on 2 price points (Allegro PL low, mojekolo.sk SK high) — typical spread for DUB cranks. Cassette PG-1230 uses HG freehub (NX Eagle exception in Eagle line).",
+    "component_match_supported": true
   },
   {
     "id": "sram-gx-eagle",
@@ -1444,7 +1464,8 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "Wide crankset price spread (Allegro PL low at 85€, mtbiker high at 139€) — typical for DUB cranks across PL/SK markets. Chain shows similar range (sportrysy 41€ appears outlier vs. axit/mtbiker 23-27€)."
+    "components_note": "Wide crankset price spread (Allegro PL low at 85€, mtbiker high at 139€) — typical for DUB cranks across PL/SK markets. Chain shows similar range (sportrysy 41€ appears outlier vs. axit/mtbiker 23-27€).",
+    "component_match_supported": true
   },
   {
     "id": "sram-x01-eagle",
@@ -1500,7 +1521,8 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "Cassette XG-1295 based on 2 price points (axit + mtbiker), tight 299-309€ consensus. Shifter low-end (70-71€) confirmed across multiple shops as standard pricing, not just a discount. Crankset assumed carbon DUB variant (alu OEM-only)."
+    "components_note": "Cassette XG-1295 based on 2 price points (axit + mtbiker), tight 299-309€ consensus. Shifter low-end (70-71€) confirmed across multiple shops as standard pricing, not just a discount. Crankset assumed carbon DUB variant (alu OEM-only).",
+    "component_match_supported": true
   },
   {
     "id": "sram-xx1-eagle",
@@ -1556,7 +1578,8 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "Wide shifter spread (kolokram 105€ vs axit 177€) suggests possible discounted color/old stock at low end. Cassette XG-1299 priced unexpectedly close to XG-1295 (X01) — shops may not always differentiate, or XX1 cassette pricing has compressed over time. Crankset bikeinn 254€ low likely reflects older gen or chainring-excluded variant."
+    "components_note": "Wide shifter spread (kolokram 105€ vs axit 177€) suggests possible discounted color/old stock at low end. Cassette XG-1299 priced unexpectedly close to XG-1295 (X01) — shops may not always differentiate, or XX1 cassette pricing has compressed over time. Crankset bikeinn 254€ low likely reflects older gen or chainring-excluded variant.",
+    "component_match_supported": true
   },
   {
     "id": "sram-gx-eagle-axs",
@@ -1617,7 +1640,8 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "Drivetrain core (crankset, cassette, chain) shared with GX Eagle mech — prices identical. RD sold without battery (typical at this tier); battery added separately as essential component. Plus AXS charger ~25-35€ if not owned. POD controller battery (CR2032 internal, ~2 years) not included — non-replaceable consumable."
+    "components_note": "Drivetrain core (crankset, cassette, chain) shared with GX Eagle mech — prices identical. RD sold without battery (typical at this tier); battery added separately as essential component. Plus AXS charger ~25-35€ if not owned. POD controller battery (CR2032 internal, ~2 years) not included — non-replaceable consumable.",
+    "component_match_supported": true
   },
   {
     "id": "sram-x01-eagle-axs",
@@ -1678,7 +1702,8 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "X01 Eagle AXS has no dedicated controller — SRAM ships GX rocker paddle with X01 upgrade kits and OEM specs. Riders wanting premium controller feel upgrade to XX1 Eagle AXS controller separately. RD priced as 'RD only' (battery sold separately); X01 RD adds Overload Clutch and carbon cage vs GX. Plus AXS charger ~25-35€ if not owned."
+    "components_note": "X01 Eagle AXS has no dedicated controller — SRAM ships GX rocker paddle with X01 upgrade kits and OEM specs. Riders wanting premium controller feel upgrade to XX1 Eagle AXS controller separately. RD priced as 'RD only' (battery sold separately); X01 RD adds Overload Clutch and carbon cage vs GX. Plus AXS charger ~25-35€ if not owned.",
+    "component_match_supported": true
   },
   {
     "id": "sram-xx1-eagle-axs",
@@ -1739,7 +1764,8 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "XX1 controller has limited availability (often EOL/discontinued as Transmission replaced AXS Eagle line) — based on 2 price points (koloshop, bikeinn) with tight 141-147€ consensus. Drivetrain core (crankset, cassette, chain) shared with XX1 mech. RD priced as 'RD only'; battery sold separately. Plus AXS charger ~25-35€ if not owned. RD is the most expensive single component in the entire dataset (up to 559€)."
+    "components_note": "XX1 controller has limited availability (often EOL/discontinued as Transmission replaced AXS Eagle line) — based on 2 price points (koloshop, bikeinn) with tight 141-147€ consensus. Drivetrain core (crankset, cassette, chain) shared with XX1 mech. RD priced as 'RD only'; battery sold separately. Plus AXS charger ~25-35€ if not owned. RD is the most expensive single component in the entire dataset (up to 559€).",
+    "component_match_supported": true
   },
   {
     "id": "sram-gx-transmission",
@@ -1800,7 +1826,8 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "GX Transmission ships with POD Pro (D1), not POD Ultimate (X0/XX/XX SL ship with Ultimate). RD priced 'RD only' — typical for SRAM Transmission market (rider already owns AXS battery from previous build or buys separately). Cassette XS-1275 NOT interchangeable with XG-1275 (AXS Eagle) — T-Type uses dedicated shift ramps for under-load shifting. Plus AXS charger ~25-35€ if not owned. Tight 34€ price spread reflects newer product line with fewer discount channels."
+    "components_note": "GX Transmission ships with POD Pro (D1), not POD Ultimate (X0/XX/XX SL ship with Ultimate). RD priced 'RD only' — typical for SRAM Transmission market (rider already owns AXS battery from previous build or buys separately). Cassette XS-1275 NOT interchangeable with XG-1275 (AXS Eagle) — T-Type uses dedicated shift ramps for under-load shifting. Plus AXS charger ~25-35€ if not owned. Tight 34€ price spread reflects newer product line with fewer discount channels.",
+    "component_match_supported": true
   },
   {
     "id": "sram-x0-transmission",
@@ -1861,7 +1888,8 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "X0 Transmission ships with POD Ultimate (vs GX which uses POD Pro). RD has carbon outer link and skid plate vs aluminum GX RD. Crankset based on single price point (mtbiker 309€) — non-power-meter variant; with Quarq power meter adds ~300-400€. Cassette XS-1295 wide spread (bikeinn high at 358€ likely USD-converted EUR pricing). Plus AXS charger ~25-35€ if not owned."
+    "components_note": "X0 Transmission ships with POD Ultimate (vs GX which uses POD Pro). RD has carbon outer link and skid plate vs aluminum GX RD. Crankset based on single price point (mtbiker 309€) — non-power-meter variant; with Quarq power meter adds ~300-400€. Cassette XS-1295 wide spread (bikeinn high at 358€ likely USD-converted EUR pricing). Plus AXS charger ~25-35€ if not owned.",
+    "component_match_supported": true
   },
   {
     "id": "sram-xx-transmission",
@@ -1922,7 +1950,8 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "Crankset priced as non-power-meter variant — XX Transmission with Quarq power meter adds ~250-400€. RD priced 'RD only' — battery sold separately. Cassette XS-1297 uses alu/steel hybrid construction (~80g lighter than XS-1295). Chain shows wide PL/SK spread (76-109€). Plus AXS charger ~25-35€ if not owned. Note: XX RD priced same as XX1 Eagle AXS RD (539-559€) — top-tier carbon construction commands consistent pricing across mounting systems."
+    "components_note": "Crankset priced as non-power-meter variant — XX Transmission with Quarq power meter adds ~250-400€. RD priced 'RD only' — battery sold separately. Cassette XS-1297 uses alu/steel hybrid construction (~80g lighter than XS-1295). Chain shows wide PL/SK spread (76-109€). Plus AXS charger ~25-35€ if not owned. Note: XX RD priced same as XX1 Eagle AXS RD (539-559€) — top-tier carbon construction commands consistent pricing across mounting systems.",
+    "component_match_supported": true
   },
   {
     "id": "sram-xx-sl-transmission",
@@ -1983,6 +2012,7 @@
       }
     },
     "components_verified_at": "2026-05-06",
-    "components_note": "Crankset priced as non-power-meter variant — XX SL Transmission with Quarq DUB power meter adds ~300-450€. Wide crankset spread (mtbstupak 425€ low likely older gen or chainring-excluded; axit 567€ matches expected flagship carbon pricing). Cassette XS-1299 ANOMALY: priced lower than XS-1297 (XX) in surveyed shops (329-379€ vs XX cassette 439-479€), which contradicts spec hierarchy — possible causes: heureka aggregator low-price (EOL/discount stock), shop SKU mislabeling, or genuine market correction. Chain shares SKU with XX Transmission (no separate XX SL chain code in retail). RD priced 'RD only'. Plus AXS charger ~25-35€ if not owned."
+    "components_note": "Crankset priced as non-power-meter variant — XX SL Transmission with Quarq DUB power meter adds ~300-450€. Wide crankset spread (mtbstupak 425€ low likely older gen or chainring-excluded; axit 567€ matches expected flagship carbon pricing). Cassette XS-1299 ANOMALY: priced lower than XS-1297 (XX) in surveyed shops (329-379€ vs XX cassette 439-479€), which contradicts spec hierarchy — possible causes: heureka aggregator low-price (EOL/discount stock), shop SKU mislabeling, or genuine market correction. Chain shares SKU with XX Transmission (no separate XX SL chain code in retail). RD priced 'RD only'. Plus AXS charger ~25-35€ if not owned.",
+    "component_match_supported": true
   }
 ]

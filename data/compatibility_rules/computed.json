@@ -1,0 +1,49 @@
+[
+  {
+    "id": "speed-match",
+    "check_type": "all_equal",
+    "applies_to_roles": [
+      "shifter",
+      "rear_derailleur",
+      "cassette",
+      "chain",
+      "crankset"
+    ],
+    "attribute": "speeds",
+    "min_components_required": 2,
+    "verdict_on_match": "compatible",
+    "verdict_on_mismatch": "block",
+    "message_match": "All selected components are {value}-speed.",
+    "message_mismatch": "Speed mismatch — selected components do not share the same speed count: {details}.",
+    "_note": "Crankset included so it gets a verdict badge — a 1x12 crank with an 11s drivetrain is a real mismatch."
+  },
+  {
+    "id": "actuation-match",
+    "check_type": "all_equal",
+    "applies_to_roles": ["shifter", "rear_derailleur"],
+    "attribute": "technology",
+    "min_components_required": 2,
+    "verdict_on_match": "compatible",
+    "verdict_on_mismatch": "block",
+    "message_match": "Shifter and rear derailleur both use {value} actuation.",
+    "message_mismatch": "Actuation mismatch — shifter and rear derailleur use different technologies: {details}. A mechanical shifter cannot drive a wireless/electronic derailleur (and vice versa).",
+    "_note": "groupsets.json technology values seen so far: 'mechanical', 'wireless'. Future: 'electronic-wired' (Di2). The check is exact-string equality."
+  },
+  {
+    "id": "sram-transmission-flattop",
+    "check_type": "chain_compatibility",
+    "applies_to_roles": ["rear_derailleur", "chain"],
+    "min_components_required": 2,
+    "rd_requires_flattop_if": {
+      "compatible_chains_contains": "Flattop"
+    },
+    "chain_is_flattop_if": {
+      "compatible_chains_contains": "Flattop"
+    },
+    "verdict_on_match": "compatible",
+    "verdict_on_mismatch": "block",
+    "message_match": "Rear derailleur and chain agree on the SRAM Flattop standard.",
+    "message_mismatch": "SRAM Transmission/Flattop mismatch — {details}. SRAM T-Type Transmission derailleurs require a Flattop chain; classic SRAM Eagle derailleurs require a non-Flattop chain.",
+    "_note": "Flattop detection: groupsets.json compatible_chains string contains 'Flattop'. Covers both T-Type Transmission (Eagle 90/X0/XX/XX SL) and SRAM Road AXS (which also uses Flattop)."
+  }
+]
