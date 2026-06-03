@@ -1811,8 +1811,8 @@
       },
       "cassette": {
         "model": "SRAM XS-1275 (10-52t, XD, T-Type with shift ramps)",
-        "price_min_eur": 206.0,
-        "price_max_eur": 229.0
+        "price_min_eur": 215.0,
+        "price_max_eur": 239.0
       },
       "chain": {
         "model": "SRAM GX Eagle T-Type Flattop",
@@ -1873,8 +1873,8 @@
       },
       "cassette": {
         "model": "SRAM XS-1295 (10-52t, XD, T-Type)",
-        "price_min_eur": 299.0,
-        "price_max_eur": 358.0
+        "price_min_eur": 315.0,
+        "price_max_eur": 349.0
       },
       "chain": {
         "model": "SRAM X0 Eagle T-Type Flattop (hardchrome, hollow pin)",
@@ -1935,8 +1935,8 @@
       },
       "cassette": {
         "model": "SRAM XS-1297 (10-52t, XD, T-Type, alu/steel hybrid)",
-        "price_min_eur": 439.0,
-        "price_max_eur": 479.0
+        "price_min_eur": 449.0,
+        "price_max_eur": 489.0
       },
       "chain": {
         "model": "SRAM XX Eagle T-Type Flattop (premium hardchrome)",
@@ -1997,8 +1997,8 @@
       },
       "cassette": {
         "model": "SRAM XS-1299 (10-52t, XD, T-Type, machined alu + steel construction)",
-        "price_min_eur": 329.0,
-        "price_max_eur": 379.0
+        "price_min_eur": 499.0,
+        "price_max_eur": 579.0
       },
       "chain": {
         "model": "SRAM XX SL Eagle T-Type Flattop (shared SKU with XX)",
