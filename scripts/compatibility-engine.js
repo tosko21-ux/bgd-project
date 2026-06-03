@@ -96,13 +96,29 @@ function validateSelection(selection, groupsets) {
 // Each pair is [roleA, roleB] in canonical SPIDER_ROLES order — so
 // {shifter, cassette} is always ["shifter", "cassette"], never reversed.
 // This canonical order makes per-pair lookups deterministic downstream.
+// Whitelist of meaningful drivetrain role-pairs. Pairs not in this list are
+// physically irrelevant (e.g. shifter↔crankset, cassette↔crankset) — they
+// share no mechanical interface, so generating findings for them only causes
+// false unverified results that poison the worst-wins aggregation.
+const MEANINGFUL_PAIRS = new Set([
+  "shifter|rear_derailleur",
+  "shifter|cassette",
+  "rear_derailleur|cassette",
+  "rear_derailleur|chain",
+  "cassette|chain",
+  "chain|crankset",
+]);
+
 function generatePairs(selection) {
   const safeSelection = selection || {};
   const selectedRoles = SPIDER_ROLES.filter((role) => safeSelection[role]);
   const pairs = [];
   for (let i = 0; i < selectedRoles.length; i++) {
     for (let j = i + 1; j < selectedRoles.length; j++) {
-      pairs.push([selectedRoles[i], selectedRoles[j]]);
+      const key = `${selectedRoles[i]}|${selectedRoles[j]}`;
+      if (MEANINGFUL_PAIRS.has(key)) {
+        pairs.push([selectedRoles[i], selectedRoles[j]]);
+      }
     }
   }
   return pairs;
