@@ -52,26 +52,6 @@
     }
   },
   {
-    "id": "m5100-cassette-12s-rd-caveat",
-    "components": {
-      "cassette": "shimano-deore-m5100",
-      "rear_derailleur": "shimano-slx-m7100"
-    },
-    "verdict": "caveat",
-    "risk_level": "high",
-    "reason": "While the M5100 cassette fits on standard HG hubs, using it with a 12-speed SLX derailleur is a 'sub-optimal' mix of 11-speed spacing and 12-speed indexing.",
-    "economic_warning": "Mixing 11s and 12s requires specific shifters/chains. Buying a matching 12s cassette and Micro Spline hub is often better for long-term performance.",
-    "alternatives": ["shimano-slx-m7000"],
-    "source": {
-      "type": "manufacturer_matrix",
-      "publisher": "Shimano",
-      "reference": "C-435",
-      "title": "Rear Drivetrain Compatibility [MTB]",
-      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
-      "accessed": "2026-05-06"
-    }
-  },
-  {
     "id": "m5100-chain-11s-cross-compat",
     "components": {
       "chain": "shimano-deore-m5100",
@@ -955,24 +935,6 @@
       "reference": "C-435",
       "title": "Rear Drivetrain Compatibility [MTB]",
       "url": "[https://productinfo.shimano.com/en/compatibility/C-435](https://productinfo.shimano.com/en/compatibility/C-435)",
-      "accessed": "2026-05-07"
-    }
-  },
-  {
-    "id": "m8000-rd-m5100-cassette-block",
-    "components": {
-      "rear_derailleur": "shimano-xt-m8000",
-      "cassette": "shimano-deore-m5100"
-    },
-    "verdict": "block",
-    "reason": "The XT M8000 rear derailleur has a maximum low sprocket limit of 46T (1x11). It cannot physically clear or shift properly onto the 51T cog of the M5100 cassette.",
-    "alternatives": ["shimano-deore-m5100"],
-    "source": {
-      "type": "manufacturer_pdf",
-      "publisher": "Shimano",
-      "reference": "DM-M8000-05",
-      "title": "Dealer's Manual: Rear Derailleur (M8000)",
-      "url": "[https://si.shimano.com/en/pdfs/dm/M8000/DM-M8000-05-ENG.pdf](https://si.shimano.com/en/pdfs/dm/M8000/DM-M8000-05-ENG.pdf)",
       "accessed": "2026-05-07"
     }
   },
@@ -5653,108 +5615,6 @@
     }
   },
   {
-    "id": "m6100-shifter-rd-compat",
-    "components": {
-      "shifter": "shimano-deore-m6100",
-      "rear_derailleur": "shimano-deore-m6100"
-    },
-    "verdict": "compatible",
-    "reason": "Shimano Deore M6100 shifter (SL-M6100-R) and rear derailleur (RD-M6100-SGS) are part of the same groupset. Both use the HG+ 12-speed cable pull standard.",
-    "source": {
-      "type": "manufacturer_matrix",
-      "publisher": "Shimano",
-      "reference": "C-433",
-      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Micro Spline",
-      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
-      "accessed": "2026-05-19"
-    }
-  },
-  {
-    "id": "m6100-shifter-cassette-compat",
-    "components": {
-      "shifter": "shimano-deore-m6100",
-      "cassette": "shimano-deore-m6100"
-    },
-    "verdict": "compatible",
-    "reason": "Shimano Deore M6100 shifter is designed for the M6100 12-speed cassette (CS-M6100-12, 10-51T). Both share the HG+ 12-speed indexing standard.",
-    "source": {
-      "type": "manufacturer_matrix",
-      "publisher": "Shimano",
-      "reference": "C-433",
-      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Micro Spline",
-      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
-      "accessed": "2026-05-19"
-    }
-  },
-  {
-    "id": "m6100-rd-cassette-compat",
-    "components": {
-      "rear_derailleur": "shimano-deore-m6100",
-      "cassette": "shimano-deore-m6100"
-    },
-    "verdict": "compatible",
-    "reason": "Shimano Deore M6100 rear derailleur (RD-M6100-SGS) is rated for the M6100 10-51T cassette. Both are part of the M6100 groupset.",
-    "source": {
-      "type": "manufacturer_matrix",
-      "publisher": "Shimano",
-      "reference": "C-433",
-      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Micro Spline",
-      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
-      "accessed": "2026-05-19"
-    }
-  },
-  {
-    "id": "m6100-rd-chain-compat",
-    "components": {
-      "rear_derailleur": "shimano-deore-m6100",
-      "chain": "shimano-deore-m6100"
-    },
-    "verdict": "compatible",
-    "reason": "Shimano Deore M6100 rear derailleur uses the M6100 12-speed chain (CN-M6100). Standard HG+ 12-speed chain geometry.",
-    "source": {
-      "type": "manufacturer_matrix",
-      "publisher": "Shimano",
-      "reference": "C-433",
-      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Micro Spline",
-      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
-      "accessed": "2026-05-19"
-    }
-  },
-  {
-    "id": "m6100-cassette-chain-compat",
-    "components": {
-      "cassette": "shimano-deore-m6100",
-      "chain": "shimano-deore-m6100"
-    },
-    "verdict": "compatible",
-    "reason": "Shimano Deore M6100 cassette (CS-M6100-12, 10-51T) is paired with the M6100 12-speed chain (CN-M6100). Both share HG+ 12-speed tooth spacing.",
-    "source": {
-      "type": "manufacturer_matrix",
-      "publisher": "Shimano",
-      "reference": "C-433",
-      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Micro Spline",
-      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
-      "accessed": "2026-05-19"
-    }
-  },
-  {
-    "id": "m6100-chain-crankset-compat",
-    "components": {
-      "chain": "shimano-deore-m6100",
-      "crankset": "shimano-deore-m6100"
-    },
-    "verdict": "compatible",
-    "reason": "Shimano Deore M6100 crankset (FC-M6100) uses a 12-speed chainring designed for the HG+ 12-speed chain. Plate geometry matches.",
-    "source": {
-      "type": "manufacturer_matrix",
-      "publisher": "Shimano",
-      "reference": "C-433",
-      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Micro Spline",
-      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
-      "accessed": "2026-05-19"
-    }
-  },
-  {
     "id": "m7000-shifter-rd-compat",
     "components": {
       "shifter": "shimano-slx-m7000",
@@ -8369,6 +8229,3185 @@
       "reference": "C-433",
       "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Micro Spline (HG+)",
       "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-shifter-rd-m8150-di2-compat",
+    "components": {
+      "shifter": "shimano-deore-m6250-di2",
+      "rear_derailleur": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 wireless shifter and XT Di2 M8150 rear derailleur are cross-compatible over the Shimano Di2 wireless protocol. All Shimano 12-speed Di2 MTB shifters and RDs communicate over the same protocol per Shimano compatibility matrix C-433.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-shifter-rd-m6250-di2-compat",
+    "components": {
+      "shifter": "shimano-xt-m8150-di2",
+      "rear_derailleur": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 wireless shifter and Deore Di2 M6250 rear derailleur are cross-compatible over the Shimano Di2 wireless protocol. All Shimano 12-speed Di2 MTB shifters and RDs communicate over the same protocol per Shimano compatibility matrix C-433.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-shifter-cassette-m8150-di2-compat",
+    "components": {
+      "shifter": "shimano-deore-m6250-di2",
+      "cassette": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 wireless shifter drives the XT Di2 M8150 12-speed cassette (CS-M8100-12 (10-51T)). All Shimano HG+ 12-speed shifters and cassettes share the same indexing standard.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-shifter-cassette-m6250-di2-compat",
+    "components": {
+      "shifter": "shimano-xt-m8150-di2",
+      "cassette": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 wireless shifter drives the Deore Di2 M6250 12-speed cassette (CS-M6100-12 (10-51T)). All Shimano HG+ 12-speed shifters and cassettes share the same indexing standard.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-cassette-m6250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "cassette": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur is compatible with the Deore Di2 M6250 12-speed cassette (CS-M6100-12 (10-51T)). All Shimano HG+ 12s RDs handle the Di2 12-speed cassettes.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-chain-m6250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "chain": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur uses a 12-speed HG+ chain (CN-M6100). Standard HG+ 12-speed chain geometry across the Shimano 12s Di2 family.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-cassette-chain-m8150-di2-compat",
+    "components": {
+      "cassette": "shimano-deore-m6250-di2",
+      "chain": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 cassette (CS-M6100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M8100). All HG+ 12-speed chains share the same tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-chain-crankset-m8150-di2-compat",
+    "components": {
+      "chain": "shimano-deore-m6250-di2",
+      "crankset": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 12-speed chain (CN-M6100) is paired with the XT Di2 M8150 crankset. All HG+ 12-speed chainrings share plate geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-shifter-rd-m9250-di2-compat",
+    "components": {
+      "shifter": "shimano-deore-m6250-di2",
+      "rear_derailleur": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 wireless shifter and XTR Di2 M9250 rear derailleur are cross-compatible over the Shimano Di2 wireless protocol. All Shimano 12-speed Di2 MTB shifters and RDs communicate over the same protocol per Shimano compatibility matrix C-433.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-shifter-cassette-m9250-di2-compat",
+    "components": {
+      "shifter": "shimano-deore-m6250-di2",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 wireless shifter drives the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). All Shimano HG+ 12-speed shifters and cassettes share the same indexing standard.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-rd-cassette-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6250-di2",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 rear derailleur is compatible with the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). All Shimano HG+ 12s RDs handle the Di2 12-speed cassettes.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-rd-chain-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6250-di2",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 rear derailleur uses a 12-speed HG+ chain (CN-M9100). Standard HG+ 12-speed chain geometry across the Shimano 12s Di2 family.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-cassette-chain-m9250-di2-compat",
+    "components": {
+      "cassette": "shimano-deore-m6250-di2",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 cassette (CS-M6100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M9100). All HG+ 12-speed chains share the same tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-chain-crankset-m9250-di2-compat",
+    "components": {
+      "chain": "shimano-deore-m6250-di2",
+      "crankset": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 12-speed chain (CN-M6100) is paired with the XTR Di2 M9250 crankset. All HG+ 12-speed chainrings share plate geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-shifter-rd-m9250-di2-compat",
+    "components": {
+      "shifter": "shimano-xt-m8150-di2",
+      "rear_derailleur": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 wireless shifter and XTR Di2 M9250 rear derailleur are cross-compatible over the Shimano Di2 wireless protocol. All Shimano 12-speed Di2 MTB shifters and RDs communicate over the same protocol per Shimano compatibility matrix C-433.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-shifter-rd-m8150-di2-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9250-di2",
+      "rear_derailleur": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 wireless shifter and XT Di2 M8150 rear derailleur are cross-compatible over the Shimano Di2 wireless protocol. All Shimano 12-speed Di2 MTB shifters and RDs communicate over the same protocol per Shimano compatibility matrix C-433.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-shifter-cassette-m9250-di2-compat",
+    "components": {
+      "shifter": "shimano-xt-m8150-di2",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 wireless shifter drives the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). All Shimano HG+ 12-speed shifters and cassettes share the same indexing standard.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-shifter-cassette-m8150-di2-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9250-di2",
+      "cassette": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 wireless shifter drives the XT Di2 M8150 12-speed cassette (CS-M8100-12 (10-51T)). All Shimano HG+ 12-speed shifters and cassettes share the same indexing standard.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-cassette-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur is compatible with the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). All Shimano HG+ 12s RDs handle the Di2 12-speed cassettes.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-chain-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur uses a 12-speed HG+ chain (CN-M9100). Standard HG+ 12-speed chain geometry across the Shimano 12s Di2 family.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-cassette-chain-m8150-di2-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9250-di2",
+      "chain": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 cassette (CS-M9200-12 (9-45T / 10-51T)) is paired with a 12-speed HG+ chain (CN-M8100). All HG+ 12-speed chains share the same tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-chain-crankset-m8150-di2-compat",
+    "components": {
+      "chain": "shimano-xtr-m9250-di2",
+      "crankset": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 12-speed chain (CN-M9100) is paired with the XT Di2 M8150 crankset. All HG+ 12-speed chainrings share plate geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2 (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-shifter-cassette-m6100-compat",
+    "components": {
+      "shifter": "shimano-deore-m6250-di2",
+      "cassette": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 shifter drives the Deore M6100 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-shifter-cassette-m6250-di2-compat",
+    "components": {
+      "shifter": "shimano-deore-m6100",
+      "cassette": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 shifter drives the Deore Di2 M6250 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-rd-cassette-m6250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6100",
+      "cassette": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 rear derailleur is compatible with the Deore Di2 M6250 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-rd-chain-m6100-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6250-di2",
+      "chain": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 rear derailleur uses a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-rd-chain-m6250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6100",
+      "chain": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 rear derailleur uses a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-cassette-chain-m6100-compat",
+    "components": {
+      "cassette": "shimano-deore-m6250-di2",
+      "chain": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 cassette (CS-M6100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-cassette-chain-m6250-di2-compat",
+    "components": {
+      "cassette": "shimano-deore-m6100",
+      "chain": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 cassette (CS-M6100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-chain-crankset-m6100-compat",
+    "components": {
+      "chain": "shimano-deore-m6250-di2",
+      "crankset": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 12-speed chain (CN-M6100) is paired with the Deore M6100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-chain-crankset-m6250-di2-compat",
+    "components": {
+      "chain": "shimano-deore-m6100",
+      "crankset": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 12-speed chain (CN-M6100) is paired with the Deore Di2 M6250 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-shifter-cassette-m7100-compat",
+    "components": {
+      "shifter": "shimano-deore-m6250-di2",
+      "cassette": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 shifter drives the SLX M7100 12-speed cassette (CS-M7100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-shifter-cassette-m6250-di2-compat",
+    "components": {
+      "shifter": "shimano-slx-m7100",
+      "cassette": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 shifter drives the Deore Di2 M6250 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-rd-cassette-m7100-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6250-di2",
+      "cassette": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 rear derailleur is compatible with the SLX M7100 12-speed cassette (CS-M7100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-rd-cassette-m6250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-slx-m7100",
+      "cassette": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 rear derailleur is compatible with the Deore Di2 M6250 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-rd-chain-m7100-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6250-di2",
+      "chain": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 rear derailleur uses a 12-speed HG+ chain (CN-M7100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-rd-chain-m6250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-slx-m7100",
+      "chain": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 rear derailleur uses a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-cassette-chain-m7100-compat",
+    "components": {
+      "cassette": "shimano-deore-m6250-di2",
+      "chain": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 cassette (CS-M6100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M7100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-cassette-chain-m6250-di2-compat",
+    "components": {
+      "cassette": "shimano-slx-m7100",
+      "chain": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 cassette (CS-M7100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-chain-crankset-m7100-compat",
+    "components": {
+      "chain": "shimano-deore-m6250-di2",
+      "crankset": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 12-speed chain (CN-M6100) is paired with the SLX M7100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-chain-crankset-m6250-di2-compat",
+    "components": {
+      "chain": "shimano-slx-m7100",
+      "crankset": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 12-speed chain (CN-M7100) is paired with the Deore Di2 M6250 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-shifter-cassette-m8100-compat",
+    "components": {
+      "shifter": "shimano-deore-m6250-di2",
+      "cassette": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 shifter drives the XT M8100 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-shifter-cassette-m6250-di2-compat",
+    "components": {
+      "shifter": "shimano-xt-m8100",
+      "cassette": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 shifter drives the Deore Di2 M6250 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-rd-cassette-m8100-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6250-di2",
+      "cassette": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 rear derailleur is compatible with the XT M8100 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-rd-cassette-m6250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8100",
+      "cassette": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 rear derailleur is compatible with the Deore Di2 M6250 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-rd-chain-m8100-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6250-di2",
+      "chain": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 rear derailleur uses a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-rd-chain-m6250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8100",
+      "chain": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 rear derailleur uses a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-cassette-chain-m8100-compat",
+    "components": {
+      "cassette": "shimano-deore-m6250-di2",
+      "chain": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 cassette (CS-M6100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-cassette-chain-m6250-di2-compat",
+    "components": {
+      "cassette": "shimano-xt-m8100",
+      "chain": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 cassette (CS-M8100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-chain-crankset-m8100-compat",
+    "components": {
+      "chain": "shimano-deore-m6250-di2",
+      "crankset": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 12-speed chain (CN-M6100) is paired with the XT M8100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-chain-crankset-m6250-di2-compat",
+    "components": {
+      "chain": "shimano-xt-m8100",
+      "crankset": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 12-speed chain (CN-M8100) is paired with the Deore Di2 M6250 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-shifter-cassette-m9100-compat",
+    "components": {
+      "shifter": "shimano-deore-m6250-di2",
+      "cassette": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 shifter drives the XTR M9100 12-speed cassette (CS-M9100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-shifter-cassette-m6250-di2-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9100",
+      "cassette": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 shifter drives the Deore Di2 M6250 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-rd-cassette-m9100-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6250-di2",
+      "cassette": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 rear derailleur is compatible with the XTR M9100 12-speed cassette (CS-M9100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-rd-cassette-m6250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9100",
+      "cassette": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 rear derailleur is compatible with the Deore Di2 M6250 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-rd-chain-m9100-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6250-di2",
+      "chain": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 rear derailleur uses a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-rd-chain-m6250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9100",
+      "chain": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 rear derailleur uses a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-cassette-chain-m9100-compat",
+    "components": {
+      "cassette": "shimano-deore-m6250-di2",
+      "chain": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 cassette (CS-M6100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-cassette-chain-m6250-di2-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9100",
+      "chain": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 cassette (CS-M9100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6250-di2-chain-crankset-m9100-compat",
+    "components": {
+      "chain": "shimano-deore-m6250-di2",
+      "crankset": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore Di2 M6250 12-speed chain (CN-M6100) is paired with the XTR M9100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-chain-crankset-m6250-di2-compat",
+    "components": {
+      "chain": "shimano-xtr-m9100",
+      "crankset": "shimano-deore-m6250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 12-speed chain (CN-M9100) is paired with the Deore Di2 M6250 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-shifter-cassette-m6100-compat",
+    "components": {
+      "shifter": "shimano-xt-m8150-di2",
+      "cassette": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 shifter drives the Deore M6100 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-shifter-cassette-m8150-di2-compat",
+    "components": {
+      "shifter": "shimano-deore-m6100",
+      "cassette": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 shifter drives the XT Di2 M8150 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-cassette-m6100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "cassette": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur is compatible with the Deore M6100 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-rd-cassette-m8150-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6100",
+      "cassette": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 rear derailleur is compatible with the XT Di2 M8150 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-chain-m6100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "chain": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur uses a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-rd-chain-m8150-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6100",
+      "chain": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 rear derailleur uses a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-cassette-chain-m6100-compat",
+    "components": {
+      "cassette": "shimano-xt-m8150-di2",
+      "chain": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 cassette (CS-M8100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-cassette-chain-m8150-di2-compat",
+    "components": {
+      "cassette": "shimano-deore-m6100",
+      "chain": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 cassette (CS-M6100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-chain-crankset-m6100-compat",
+    "components": {
+      "chain": "shimano-xt-m8150-di2",
+      "crankset": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 12-speed chain (CN-M8100) is paired with the Deore M6100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-chain-crankset-m8150-di2-compat",
+    "components": {
+      "chain": "shimano-deore-m6100",
+      "crankset": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 12-speed chain (CN-M6100) is paired with the XT Di2 M8150 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-shifter-cassette-m7100-compat",
+    "components": {
+      "shifter": "shimano-xt-m8150-di2",
+      "cassette": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 shifter drives the SLX M7100 12-speed cassette (CS-M7100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-shifter-cassette-m8150-di2-compat",
+    "components": {
+      "shifter": "shimano-slx-m7100",
+      "cassette": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 shifter drives the XT Di2 M8150 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-cassette-m7100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "cassette": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur is compatible with the SLX M7100 12-speed cassette (CS-M7100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-rd-cassette-m8150-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-slx-m7100",
+      "cassette": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 rear derailleur is compatible with the XT Di2 M8150 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-chain-m7100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "chain": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur uses a 12-speed HG+ chain (CN-M7100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-rd-chain-m8150-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-slx-m7100",
+      "chain": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 rear derailleur uses a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-cassette-chain-m7100-compat",
+    "components": {
+      "cassette": "shimano-xt-m8150-di2",
+      "chain": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 cassette (CS-M8100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M7100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-cassette-chain-m8150-di2-compat",
+    "components": {
+      "cassette": "shimano-slx-m7100",
+      "chain": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 cassette (CS-M7100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-chain-crankset-m7100-compat",
+    "components": {
+      "chain": "shimano-xt-m8150-di2",
+      "crankset": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 12-speed chain (CN-M8100) is paired with the SLX M7100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-chain-crankset-m8150-di2-compat",
+    "components": {
+      "chain": "shimano-slx-m7100",
+      "crankset": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 12-speed chain (CN-M7100) is paired with the XT Di2 M8150 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-shifter-cassette-m8100-compat",
+    "components": {
+      "shifter": "shimano-xt-m8150-di2",
+      "cassette": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 shifter drives the XT M8100 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-shifter-cassette-m8150-di2-compat",
+    "components": {
+      "shifter": "shimano-xt-m8100",
+      "cassette": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 shifter drives the XT Di2 M8150 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-cassette-m8100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "cassette": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur is compatible with the XT M8100 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-rd-cassette-m8150-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8100",
+      "cassette": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 rear derailleur is compatible with the XT Di2 M8150 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-chain-m8100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "chain": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur uses a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-rd-chain-m8150-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8100",
+      "chain": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 rear derailleur uses a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-cassette-chain-m8100-compat",
+    "components": {
+      "cassette": "shimano-xt-m8150-di2",
+      "chain": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 cassette (CS-M8100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-cassette-chain-m8150-di2-compat",
+    "components": {
+      "cassette": "shimano-xt-m8100",
+      "chain": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 cassette (CS-M8100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-chain-crankset-m8100-compat",
+    "components": {
+      "chain": "shimano-xt-m8150-di2",
+      "crankset": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 12-speed chain (CN-M8100) is paired with the XT M8100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-chain-crankset-m8150-di2-compat",
+    "components": {
+      "chain": "shimano-xt-m8100",
+      "crankset": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 12-speed chain (CN-M8100) is paired with the XT Di2 M8150 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-shifter-cassette-m9100-compat",
+    "components": {
+      "shifter": "shimano-xt-m8150-di2",
+      "cassette": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 shifter drives the XTR M9100 12-speed cassette (CS-M9100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-shifter-cassette-m8150-di2-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9100",
+      "cassette": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 shifter drives the XT Di2 M8150 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-cassette-m9100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "cassette": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur is compatible with the XTR M9100 12-speed cassette (CS-M9100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-rd-cassette-m8150-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9100",
+      "cassette": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 rear derailleur is compatible with the XT Di2 M8150 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-rd-chain-m9100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8150-di2",
+      "chain": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 rear derailleur uses a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-rd-chain-m8150-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9100",
+      "chain": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 rear derailleur uses a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-cassette-chain-m9100-compat",
+    "components": {
+      "cassette": "shimano-xt-m8150-di2",
+      "chain": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 cassette (CS-M8100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-cassette-chain-m8150-di2-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9100",
+      "chain": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 cassette (CS-M9100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8150-di2-chain-crankset-m9100-compat",
+    "components": {
+      "chain": "shimano-xt-m8150-di2",
+      "crankset": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT Di2 M8150 12-speed chain (CN-M8100) is paired with the XTR M9100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-chain-crankset-m8150-di2-compat",
+    "components": {
+      "chain": "shimano-xtr-m9100",
+      "crankset": "shimano-xt-m8150-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 12-speed chain (CN-M9100) is paired with the XT Di2 M8150 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-shifter-cassette-m6100-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9250-di2",
+      "cassette": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 shifter drives the Deore M6100 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-shifter-cassette-m9250-di2-compat",
+    "components": {
+      "shifter": "shimano-deore-m6100",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 shifter drives the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-rd-cassette-m6100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9250-di2",
+      "cassette": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 rear derailleur is compatible with the Deore M6100 12-speed cassette (CS-M6100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-rd-cassette-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6100",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 rear derailleur is compatible with the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-rd-chain-m6100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9250-di2",
+      "chain": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 rear derailleur uses a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-rd-chain-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m6100",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 rear derailleur uses a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-cassette-chain-m6100-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9250-di2",
+      "chain": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 cassette (CS-M9200-12 (9-45T / 10-51T)) is paired with a 12-speed HG+ chain (CN-M6100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-cassette-chain-m9250-di2-compat",
+    "components": {
+      "cassette": "shimano-deore-m6100",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 cassette (CS-M6100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-chain-crankset-m6100-compat",
+    "components": {
+      "chain": "shimano-xtr-m9250-di2",
+      "crankset": "shimano-deore-m6100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 12-speed chain (CN-M9100) is paired with the Deore M6100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m6100-chain-crankset-m9250-di2-compat",
+    "components": {
+      "chain": "shimano-deore-m6100",
+      "crankset": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M6100 12-speed chain (CN-M6100) is paired with the XTR Di2 M9250 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-shifter-cassette-m7100-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9250-di2",
+      "cassette": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 shifter drives the SLX M7100 12-speed cassette (CS-M7100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-shifter-cassette-m9250-di2-compat",
+    "components": {
+      "shifter": "shimano-slx-m7100",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 shifter drives the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-rd-cassette-m7100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9250-di2",
+      "cassette": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 rear derailleur is compatible with the SLX M7100 12-speed cassette (CS-M7100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-rd-cassette-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-slx-m7100",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 rear derailleur is compatible with the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-rd-chain-m7100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9250-di2",
+      "chain": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 rear derailleur uses a 12-speed HG+ chain (CN-M7100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-rd-chain-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-slx-m7100",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 rear derailleur uses a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-cassette-chain-m7100-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9250-di2",
+      "chain": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 cassette (CS-M9200-12 (9-45T / 10-51T)) is paired with a 12-speed HG+ chain (CN-M7100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-cassette-chain-m9250-di2-compat",
+    "components": {
+      "cassette": "shimano-slx-m7100",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 cassette (CS-M7100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-chain-crankset-m7100-compat",
+    "components": {
+      "chain": "shimano-xtr-m9250-di2",
+      "crankset": "shimano-slx-m7100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 12-speed chain (CN-M9100) is paired with the SLX M7100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7100-chain-crankset-m9250-di2-compat",
+    "components": {
+      "chain": "shimano-slx-m7100",
+      "crankset": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7100 12-speed chain (CN-M7100) is paired with the XTR Di2 M9250 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-shifter-cassette-m8100-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9250-di2",
+      "cassette": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 shifter drives the XT M8100 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-shifter-cassette-m9250-di2-compat",
+    "components": {
+      "shifter": "shimano-xt-m8100",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 shifter drives the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-rd-cassette-m8100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9250-di2",
+      "cassette": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 rear derailleur is compatible with the XT M8100 12-speed cassette (CS-M8100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-rd-cassette-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8100",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 rear derailleur is compatible with the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-rd-chain-m8100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9250-di2",
+      "chain": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 rear derailleur uses a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-rd-chain-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8100",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 rear derailleur uses a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-cassette-chain-m8100-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9250-di2",
+      "chain": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 cassette (CS-M9200-12 (9-45T / 10-51T)) is paired with a 12-speed HG+ chain (CN-M8100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-cassette-chain-m9250-di2-compat",
+    "components": {
+      "cassette": "shimano-xt-m8100",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 cassette (CS-M8100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-chain-crankset-m8100-compat",
+    "components": {
+      "chain": "shimano-xtr-m9250-di2",
+      "crankset": "shimano-xt-m8100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 12-speed chain (CN-M9100) is paired with the XT M8100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8100-chain-crankset-m9250-di2-compat",
+    "components": {
+      "chain": "shimano-xt-m8100",
+      "crankset": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8100 12-speed chain (CN-M8100) is paired with the XTR Di2 M9250 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-shifter-cassette-m9100-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9250-di2",
+      "cassette": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 shifter drives the XTR M9100 12-speed cassette (CS-M9100-12 (10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-shifter-cassette-m9250-di2-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9100",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 shifter drives the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). The Di2 12-speed and mechanical 12-speed Shimano MTB families share the HG+ 12-speed indexing standard, so the cassette is interchangeable.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-rd-cassette-m9100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9250-di2",
+      "cassette": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 rear derailleur is compatible with the XTR M9100 12-speed cassette (CS-M9100-12 (10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-rd-cassette-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9100",
+      "cassette": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 rear derailleur is compatible with the XTR Di2 M9250 12-speed cassette (CS-M9200-12 (9-45T / 10-51T)). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-rd-chain-m9100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9250-di2",
+      "chain": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 rear derailleur uses a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-rd-chain-m9250-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9100",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 rear derailleur uses a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-cassette-chain-m9100-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9250-di2",
+      "chain": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 cassette (CS-M9200-12 (9-45T / 10-51T)) is paired with a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-cassette-chain-m9250-di2-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9100",
+      "chain": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 cassette (CS-M9100-12 (10-51T)) is paired with a 12-speed HG+ chain (CN-M9100). The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9250-di2-chain-crankset-m9100-compat",
+    "components": {
+      "chain": "shimano-xtr-m9250-di2",
+      "crankset": "shimano-xtr-m9100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9250 12-speed chain (CN-M9100) is paired with the XTR M9100 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9100-chain-crankset-m9250-di2-compat",
+    "components": {
+      "chain": "shimano-xtr-m9100",
+      "crankset": "shimano-xtr-m9250-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9100 12-speed chain (CN-M9100) is paired with the XTR Di2 M9250 crankset. The Di2 12s and mechanical 12s Shimano MTB families share the HG+ 12-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-433",
+      "title": "Rear Drivetrain Compatibility [MTB] — 12-speed Di2/mech shared (HG+)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-433",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-shifter-cassette-m5100-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9050-di2",
+      "cassette": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 shifter drives the Deore M5100 11-speed cassette (CS-M5100 (11-51T)). The XTR Di2 M9050 (11-speed wired Di2) and mechanical 11-speed Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-shifter-cassette-m9050-di2-compat",
+    "components": {
+      "shifter": "shimano-deore-m5100",
+      "cassette": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 shifter drives the XTR Di2 M9050 11-speed cassette (CS-M9000 (up to 11-46T)). The XTR Di2 M9050 (11-speed wired Di2) and mechanical 11-speed Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-rd-cassette-m5100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9050-di2",
+      "cassette": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 rear derailleur is compatible with the Deore M5100 11-speed cassette (CS-M5100 (11-51T)). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-rd-cassette-m9050-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m5100",
+      "cassette": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 rear derailleur is compatible with the XTR Di2 M9050 11-speed cassette (CS-M9000 (up to 11-46T)). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-rd-chain-m5100-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9050-di2",
+      "chain": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 rear derailleur uses an 11-speed HG chain (CN-HG601-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-rd-chain-m9050-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m5100",
+      "chain": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 rear derailleur uses an 11-speed HG chain (CN-HG901-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-cassette-chain-m5100-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9050-di2",
+      "chain": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 cassette (CS-M9000 (up to 11-46T)) is paired with an 11-speed HG chain (CN-HG601-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-cassette-chain-m9050-di2-compat",
+    "components": {
+      "cassette": "shimano-deore-m5100",
+      "chain": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 cassette (CS-M5100 (11-51T)) is paired with an 11-speed HG chain (CN-HG901-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-chain-crankset-m5100-compat",
+    "components": {
+      "chain": "shimano-xtr-m9050-di2",
+      "crankset": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 11-speed chain (CN-HG901-11) is paired with the Deore M5100 crankset. The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-chain-crankset-m9050-di2-compat",
+    "components": {
+      "chain": "shimano-deore-m5100",
+      "crankset": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 11-speed chain (CN-HG601-11) is paired with the XTR Di2 M9050 crankset. The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-shifter-cassette-m7000-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9050-di2",
+      "cassette": "shimano-slx-m7000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 shifter drives the SLX M7000 11-speed cassette (CS-M7000 (up to 11-46T)). The XTR Di2 M9050 (11-speed wired Di2) and mechanical 11-speed Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7000-shifter-cassette-m9050-di2-compat",
+    "components": {
+      "shifter": "shimano-slx-m7000",
+      "cassette": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7000 shifter drives the XTR Di2 M9050 11-speed cassette (CS-M9000 (up to 11-46T)). The XTR Di2 M9050 (11-speed wired Di2) and mechanical 11-speed Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-rd-cassette-m7000-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9050-di2",
+      "cassette": "shimano-slx-m7000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 rear derailleur is compatible with the SLX M7000 11-speed cassette (CS-M7000 (up to 11-46T)). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7000-rd-cassette-m9050-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-slx-m7000",
+      "cassette": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7000 rear derailleur is compatible with the XTR Di2 M9050 11-speed cassette (CS-M9000 (up to 11-46T)). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-rd-chain-m7000-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9050-di2",
+      "chain": "shimano-slx-m7000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 rear derailleur uses an 11-speed HG chain (CN-HG601-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7000-rd-chain-m9050-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-slx-m7000",
+      "chain": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7000 rear derailleur uses an 11-speed HG chain (CN-HG901-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-cassette-chain-m7000-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9050-di2",
+      "chain": "shimano-slx-m7000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 cassette (CS-M9000 (up to 11-46T)) is paired with an 11-speed HG chain (CN-HG601-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7000-cassette-chain-m9050-di2-compat",
+    "components": {
+      "cassette": "shimano-slx-m7000",
+      "chain": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7000 cassette (CS-M7000 (up to 11-46T)) is paired with an 11-speed HG chain (CN-HG901-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-chain-crankset-m7000-compat",
+    "components": {
+      "chain": "shimano-xtr-m9050-di2",
+      "crankset": "shimano-slx-m7000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 11-speed chain (CN-HG901-11) is paired with the SLX M7000 crankset. The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m7000-chain-crankset-m9050-di2-compat",
+    "components": {
+      "chain": "shimano-slx-m7000",
+      "crankset": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano SLX M7000 11-speed chain (CN-HG601-11) is paired with the XTR Di2 M9050 crankset. The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-shifter-cassette-m8000-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9050-di2",
+      "cassette": "shimano-xt-m8000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 shifter drives the XT M8000 11-speed cassette (CS-M8000 (up to 11-46T)). The XTR Di2 M9050 (11-speed wired Di2) and mechanical 11-speed Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8000-shifter-cassette-m9050-di2-compat",
+    "components": {
+      "shifter": "shimano-xt-m8000",
+      "cassette": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8000 shifter drives the XTR Di2 M9050 11-speed cassette (CS-M9000 (up to 11-46T)). The XTR Di2 M9050 (11-speed wired Di2) and mechanical 11-speed Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-rd-cassette-m8000-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9050-di2",
+      "cassette": "shimano-xt-m8000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 rear derailleur is compatible with the XT M8000 11-speed cassette (CS-M8000 (up to 11-46T)). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8000-rd-cassette-m9050-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8000",
+      "cassette": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8000 rear derailleur is compatible with the XTR Di2 M9050 11-speed cassette (CS-M9000 (up to 11-46T)). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-rd-chain-m8000-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9050-di2",
+      "chain": "shimano-xt-m8000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 rear derailleur uses an 11-speed HG chain (CN-HG701-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8000-rd-chain-m9050-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xt-m8000",
+      "chain": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8000 rear derailleur uses an 11-speed HG chain (CN-HG901-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-cassette-chain-m8000-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9050-di2",
+      "chain": "shimano-xt-m8000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 cassette (CS-M9000 (up to 11-46T)) is paired with an 11-speed HG chain (CN-HG701-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8000-cassette-chain-m9050-di2-compat",
+    "components": {
+      "cassette": "shimano-xt-m8000",
+      "chain": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8000 cassette (CS-M8000 (up to 11-46T)) is paired with an 11-speed HG chain (CN-HG901-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-chain-crankset-m8000-compat",
+    "components": {
+      "chain": "shimano-xtr-m9050-di2",
+      "crankset": "shimano-xt-m8000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 11-speed chain (CN-HG901-11) is paired with the XT M8000 crankset. The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m8000-chain-crankset-m9050-di2-compat",
+    "components": {
+      "chain": "shimano-xt-m8000",
+      "crankset": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XT M8000 11-speed chain (CN-HG701-11) is paired with the XTR Di2 M9050 crankset. The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-shifter-cassette-m9000-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9050-di2",
+      "cassette": "shimano-xtr-m9000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 shifter drives the XTR M9000 11-speed cassette (CS-M9000 (up to 11-46T)). The XTR Di2 M9050 (11-speed wired Di2) and mechanical 11-speed Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9000-shifter-cassette-m9050-di2-compat",
+    "components": {
+      "shifter": "shimano-xtr-m9000",
+      "cassette": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9000 shifter drives the XTR Di2 M9050 11-speed cassette (CS-M9000 (up to 11-46T)). The XTR Di2 M9050 (11-speed wired Di2) and mechanical 11-speed Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-rd-cassette-m9000-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9050-di2",
+      "cassette": "shimano-xtr-m9000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 rear derailleur is compatible with the XTR M9000 11-speed cassette (CS-M9000 (up to 11-46T)). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9000-rd-cassette-m9050-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9000",
+      "cassette": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9000 rear derailleur is compatible with the XTR Di2 M9050 11-speed cassette (CS-M9000 (up to 11-46T)). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed cassette interface.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-rd-chain-m9000-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9050-di2",
+      "chain": "shimano-xtr-m9000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 rear derailleur uses an 11-speed HG chain (CN-HG901-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9000-rd-chain-m9050-di2-compat",
+    "components": {
+      "rear_derailleur": "shimano-xtr-m9000",
+      "chain": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9000 rear derailleur uses an 11-speed HG chain (CN-HG901-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-cassette-chain-m9000-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9050-di2",
+      "chain": "shimano-xtr-m9000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 cassette (CS-M9000 (up to 11-46T)) is paired with an 11-speed HG chain (CN-HG901-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9000-cassette-chain-m9050-di2-compat",
+    "components": {
+      "cassette": "shimano-xtr-m9000",
+      "chain": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9000 cassette (CS-M9000 (up to 11-46T)) is paired with an 11-speed HG chain (CN-HG901-11). The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9050-di2-chain-crankset-m9000-compat",
+    "components": {
+      "chain": "shimano-xtr-m9050-di2",
+      "crankset": "shimano-xtr-m9000"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR Di2 M9050 11-speed chain (CN-HG901-11) is paired with the XTR M9000 crankset. The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m9000-chain-crankset-m9050-di2-compat",
+    "components": {
+      "chain": "shimano-xtr-m9000",
+      "crankset": "shimano-xtr-m9050-di2"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano XTR M9000 11-speed chain (CN-HG901-11) is paired with the XTR Di2 M9050 crankset. The Di2 M9050 11s and mechanical 11s Shimano MTB families share the HG 11-speed chainring geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed Di2/mech shared (Dyna-Sys11 / HG)",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-shifter-rd-compat",
+    "components": {
+      "shifter": "shimano-deore-m5100",
+      "rear_derailleur": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 shifter (SL-M5100) and rear derailleur (RD-M5100) are part of the same groupset. Both use the Dyna-Sys11 cable pull standard.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-shifter-cassette-compat",
+    "components": {
+      "shifter": "shimano-deore-m5100",
+      "cassette": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 shifter is designed for the M5100 11-speed cassette (CS-M5100). Both share the Dyna-Sys11 indexing standard.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-rd-cassette-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m5100",
+      "cassette": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 rear derailleur (RD-M5100-SGS) is rated for the M5100 11-51T cassette. Both are part of the M5100 groupset.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-rd-chain-compat",
+    "components": {
+      "rear_derailleur": "shimano-deore-m5100",
+      "chain": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 rear derailleur uses the M5100 11-speed chain (CN-M5100 / HG601). Standard HG 11-speed chain geometry.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-cassette-chain-compat",
+    "components": {
+      "cassette": "shimano-deore-m5100",
+      "chain": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 cassette (CS-M5100, 11-51T) is paired with the M5100 11-speed chain (CN-M5100 / HG601). Both share HG 11-speed tooth spacing.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
+      "accessed": "2026-05-19"
+    }
+  },
+  {
+    "id": "m5100-chain-crankset-compat",
+    "components": {
+      "chain": "shimano-deore-m5100",
+      "crankset": "shimano-deore-m5100"
+    },
+    "verdict": "compatible",
+    "reason": "Shimano Deore M5100 crankset (FC-M5100) uses an 11-speed chainring designed for the Dyna-Sys11 chain. Plate geometry matches.",
+    "source": {
+      "type": "manufacturer_matrix",
+      "publisher": "Shimano",
+      "reference": "C-435",
+      "title": "Rear Drivetrain Compatibility [MTB] — 11-speed",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-435",
       "accessed": "2026-05-19"
     }
   }
