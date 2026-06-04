@@ -45,5 +45,17 @@
     "message_match": "Rear derailleur and chain agree on the SRAM Flattop standard.",
     "message_mismatch": "SRAM Transmission/Flattop mismatch — {details}. SRAM T-Type Transmission derailleurs require a Flattop chain; classic SRAM Eagle derailleurs require a non-Flattop chain.",
     "_note": "Flattop detection: groupsets.json compatible_chains string contains 'Flattop'. Covers both T-Type Transmission (Eagle 90/X0/XX/XX SL) and SRAM Road AXS (which also uses Flattop)."
+  },
+  {
+    "id": "brand-cable-pull-match",
+    "check_type": "all_equal",
+    "applies_to_roles": ["shifter", "rear_derailleur"],
+    "attribute": "brand",
+    "min_components_required": 2,
+    "verdict_on_match": "compatible",
+    "verdict_on_mismatch": "block",
+    "message_match": "Shifter and rear derailleur are from the same brand ({value}) — cable pull / wireless protocol consistent.",
+    "message_mismatch": "Brand mismatch — {details}. Shimano and SRAM shifters and rear derailleurs use different cable pull ratios (Dyna-Sys / HG+ vs Eagle Exact Actuation) or wireless protocols (Di2 vs AXS). They cannot drive each other across brands.",
+    "_note": "Cross-brand shifter↔RD is always incompatible. Other role-pairs (chain↔cassette, chain↔crankset) are NOT covered here — they have legitimate caveat cases (e.g. SRAM chain on Shimano cassette functions but lacks HG+ chamfering) handled by explicit caveat rules."
   }
 ]
